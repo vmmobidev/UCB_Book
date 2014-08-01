@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */; };
+		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
+		8646F574198B53410081BD9F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646F573198B53410081BD9F /* SignInViewController.m */; };
 		8696BE111988EEA200AAA3C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE101988EEA200AAA3C7 /* Foundation.framework */; };
 		8696BE131988EEA200AAA3C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE121988EEA200AAA3C7 /* CoreGraphics.framework */; };
 		8696BE151988EEA200AAA3C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE141988EEA200AAA3C7 /* UIKit.framework */; };
@@ -21,6 +24,9 @@
 		8696BE321988EEA200AAA3C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE141988EEA200AAA3C7 /* UIKit.framework */; };
 		8696BE3A1988EEA200AAA3C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8696BE381988EEA200AAA3C7 /* InfoPlist.strings */; };
 		8696BE3C1988EEA200AAA3C7 /* UCBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8696BE3B1988EEA200AAA3C7 /* UCBTests.m */; };
+		8696BE53198919D300AAA3C7 /* CenterImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8696BE50198919D300AAA3C7 /* CenterImage.png */; };
+		8696BE54198919D300AAA3C7 /* RightImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8696BE51198919D300AAA3C7 /* RightImage.png */; };
+		8696BE55198919D300AAA3C7 /* LeftImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8696BE52198919D300AAA3C7 /* LeftImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-480h.png"; sourceTree = "<group>"; };
+		8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-568_h.png"; sourceTree = "<group>"; };
+		8646F572198B53410081BD9F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		8646F573198B53410081BD9F /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		8696BE0D1988EEA200AAA3C7 /* UCB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8696BE101988EEA200AAA3C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8696BE121988EEA200AAA3C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +63,9 @@
 		8696BE371988EEA200AAA3C7 /* UCBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UCBTests-Info.plist"; sourceTree = "<group>"; };
 		8696BE391988EEA200AAA3C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8696BE3B1988EEA200AAA3C7 /* UCBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCBTests.m; sourceTree = "<group>"; };
+		8696BE50198919D300AAA3C7 /* CenterImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterImage.png; sourceTree = "<group>"; };
+		8696BE51198919D300AAA3C7 /* RightImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightImage.png; sourceTree = "<group>"; };
+		8696BE52198919D300AAA3C7 /* LeftImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +130,13 @@
 				8696BE221988EEA200AAA3C7 /* Main.storyboard */,
 				8696BE251988EEA200AAA3C7 /* ViewController.h */,
 				8696BE261988EEA200AAA3C7 /* ViewController.m */,
+				8646F572198B53410081BD9F /* SignInViewController.h */,
+				8646F573198B53410081BD9F /* SignInViewController.m */,
+				8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */,
+				8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */,
+				8696BE50198919D300AAA3C7 /* CenterImage.png */,
+				8696BE51198919D300AAA3C7 /* RightImage.png */,
+				8696BE52198919D300AAA3C7 /* LeftImage.png */,
 				8696BE281988EEA200AAA3C7 /* Images.xcassets */,
 				8696BE171988EEA200AAA3C7 /* Supporting Files */,
 			);
@@ -229,7 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8696BE291988EEA200AAA3C7 /* Images.xcassets in Resources */,
+				8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */,
+				8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */,
+				8696BE53198919D300AAA3C7 /* CenterImage.png in Resources */,
 				8696BE1B1988EEA200AAA3C7 /* InfoPlist.strings in Resources */,
+				8696BE55198919D300AAA3C7 /* LeftImage.png in Resources */,
+				8696BE54198919D300AAA3C7 /* RightImage.png in Resources */,
 				8696BE241988EEA200AAA3C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8646F574198B53410081BD9F /* SignInViewController.m in Sources */,
 				8696BE271988EEA200AAA3C7 /* ViewController.m in Sources */,
 				8696BE211988EEA200AAA3C7 /* AppDelegate.m in Sources */,
 				8696BE1D1988EEA200AAA3C7 /* main.m in Sources */,
@@ -456,6 +482,7 @@
 				8696BE411988EEA200AAA3C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8696BE421988EEA200AAA3C7 /* Build configuration list for PBXNativeTarget "UCBTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +491,7 @@
 				8696BE441988EEA200AAA3C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *backgroundImageHeightConst;
 
 @end
 
@@ -18,6 +20,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    if ([UIScreen mainScreen].bounds.size.height != 568)
+    {
+//        self.backgroundView.image = [UIImage imageNamed:@"UCB-Raw-Image-480h.png"];
+        self.backgroundImageHeightConst.constant = 480;
+    }
 }
 
 - (void)didReceiveMemoryWarning
