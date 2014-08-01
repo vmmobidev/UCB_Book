@@ -204,6 +204,7 @@
 			children = (
 				86B74AF6198B7BA30094C98C /* menu@2x.png */,
 				86B74AF4198B7B9F0094C98C /* menu.png */,
+				869FBFEE198B89B400A1D202 /* login_bg@2x.png */,
 				86B74AEB198B62130094C98C /* Logo-258X60.png */,
 				8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */,
 				8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */,
