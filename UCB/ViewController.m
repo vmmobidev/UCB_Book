@@ -36,6 +36,8 @@
     self.logInButton.layer.borderColor = [UIColor blackColor].CGColor;
     self.logInButton.layer.borderWidth = 0.5f;
     self.logInButton.layer.cornerRadius = 8.0f;
+    
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated

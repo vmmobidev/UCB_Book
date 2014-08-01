@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -82,6 +82,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7DW-CJ-PMD"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="backgroundImageHeightConst" destination="hgf-B3-dYz" id="eyk-7C-BBD"/>
                         <outlet property="backgroundView" destination="iwR-ng-OU6" id="1QZ-4C-qgF"/>
