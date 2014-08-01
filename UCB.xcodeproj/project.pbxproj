@@ -28,6 +28,7 @@
 		8696BE54198919D300AAA3C7 /* RightImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8696BE51198919D300AAA3C7 /* RightImage.png */; };
 		8696BE55198919D300AAA3C7 /* LeftImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8696BE52198919D300AAA3C7 /* LeftImage.png */; };
 		869FBFED198B75FF00A1D202 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 869FBFEC198B75FF00A1D202 /* Postman.m */; };
+		869FBFEF198B89B400A1D202 /* login_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 869FBFEE198B89B400A1D202 /* login_bg@2x.png */; };
 		86B74AEC198B62130094C98C /* Logo-258X60.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B74AEB198B62130094C98C /* Logo-258X60.png */; };
 		86B74AF0198B69FB0094C98C /* DirectryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74AEF198B69FB0094C98C /* DirectryViewController.m */; };
 		86B74AF3198B78B70094C98C /* SlideOutMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74AF2198B78B70094C98C /* SlideOutMenuViewController.m */; };
@@ -76,6 +77,7 @@
 		8696BE52198919D300AAA3C7 /* LeftImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftImage.png; sourceTree = "<group>"; };
 		869FBFEB198B75FF00A1D202 /* Postman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postman.h; sourceTree = "<group>"; };
 		869FBFEC198B75FF00A1D202 /* Postman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postman.m; sourceTree = "<group>"; };
+		869FBFEE198B89B400A1D202 /* login_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_bg@2x.png"; sourceTree = "<group>"; };
 		86B74AEB198B62130094C98C /* Logo-258X60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-258X60.png"; sourceTree = "<group>"; };
 		86B74AEE198B69FB0094C98C /* DirectryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectryViewController.h; sourceTree = "<group>"; };
 		86B74AEF198B69FB0094C98C /* DirectryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectryViewController.m; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */,
 				8696BE53198919D300AAA3C7 /* CenterImage.png in Resources */,
 				8696BE1B1988EEA200AAA3C7 /* InfoPlist.strings in Resources */,
+				869FBFEF198B89B400A1D202 /* login_bg@2x.png in Resources */,
 				8696BE55198919D300AAA3C7 /* LeftImage.png in Resources */,
 				86B74AF5198B7B9F0094C98C /* menu.png in Resources */,
 				8696BE54198919D300AAA3C7 /* RightImage.png in Resources */,

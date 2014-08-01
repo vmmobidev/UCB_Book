@@ -16,7 +16,7 @@
 
 @end
 
-@interface SignInViewController : UIViewController <postmanDelegate>
+@interface SignInViewController : UIViewController < UITextFieldDelegate,postmanDelegate>
 
 @property (weak, nonatomic) id <signInDelegate>delegate;
 
