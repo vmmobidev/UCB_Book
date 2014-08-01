@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-UCB-AFNetworking.a"
-               BlueprintName = "Pods-UCB-AFNetworking"
-               BlueprintIdentifier = "2B61B5F148564DC790C36AA7">
+               BuildableName = "libPods-UCB-SWRevealViewController.a"
+               BlueprintName = "Pods-UCB-SWRevealViewController"
+               BlueprintIdentifier = "D97392B5A5D74E25B9904E4D">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

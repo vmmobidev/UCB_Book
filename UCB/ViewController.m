@@ -8,14 +8,19 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *backgroundImageHeightConst;
 @property (weak, nonatomic) IBOutlet UIButton *logInButton;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
 @implementation ViewController
+{
+    NSTimer *movementTimer;
+    NSInteger currentPageNo;
+}
 
 - (void)viewDidLoad
 {
@@ -31,8 +36,50 @@
     self.logInButton.layer.borderColor = [UIColor blackColor].CGColor;
     self.logInButton.layer.borderWidth = 0.5f;
     self.logInButton.layer.cornerRadius = 8.0f;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
-    self.
+    movementTimer = [NSTimer scheduledTimerWithTimeInterval:2
+                                                     target:self
+                                                   selector:@selector(timerIsFired:)
+                                                   userInfo:nil
+                                                    repeats:YES];
+    
+    currentPageNo = 0;
+    [self setScrollView:self.scrollView toPageNo:currentPageNo animated:NO];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [movementTimer invalidate];
+    movementTimer = nil;
+}
+
+- (void)timerIsFired:(NSTimer *)firedTimer
+{
+    if (currentPageNo != 3)
+    {
+        currentPageNo++;
+        [self setScrollView:self.scrollView toPageNo:currentPageNo animated:YES];
+    }else
+    {
+        currentPageNo = 0;
+        [self setScrollView:self.scrollView toPageNo:currentPageNo animated:YES];
+    }
+}
+
+- (void)setScrollView:(UIScrollView *)scrollView toPageNo:(NSInteger)toPageNo animated:(BOOL)animated
+{
+    CGPoint nextContentOffset = CGPointMake(toPageNo*320, 0);
+    [scrollView setContentOffset:nextContentOffset animated:animated];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    currentPageNo = [scrollView contentOffset].x / 320;
 }
 
 - (void)didReceiveMemoryWarning
