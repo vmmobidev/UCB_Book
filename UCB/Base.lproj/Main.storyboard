@@ -88,11 +88,22 @@
                         <outlet property="backgroundView" destination="iwR-ng-OU6" id="1QZ-4C-qgF"/>
                         <outlet property="logInButton" destination="MvA-4h-laR" id="SrQ-jx-oHV"/>
                         <outlet property="scrollView" destination="L57-cl-VlS" id="rO5-aT-6HU"/>
+                        <segue destination="g3e-Il-rk5" kind="push" id="Nt3-gE-OWM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="251" y="31"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="Iyp-Ee-I8X">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBU-yW-MWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="g3e-Il-rk5" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="M0B-9V-o4w"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="794" y="339"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1aS-6Y-vjz">
