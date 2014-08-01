@@ -11,6 +11,9 @@
 @interface SignInViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameTxtFld;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTxtFld;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorOutlet;
+@property (weak, nonatomic) IBOutlet UIView *alphaView;
+@property (weak, nonatomic) IBOutlet UILabel *authenticationFailLable;
 
 @end
 
@@ -29,13 +32,56 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.userNameTxtFld.text = @"surajm@vmokshagroup.com";
+    self.passwordTxtFld.text = @"Power@1234";
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismisskeyBoard)];
+    [self.view addGestureRecognizer:tap];
+
+    
 }
+-(void)dismisskeyBoard
+{
+    [self.view endEditing:YES];
+}
+
+
+
 - (IBAction)signInBtnAction:(id)sender {
-    NSString *parameterString = [NSString stringWithFormat:@"{\"request\":{\"Username\":\"manoharas@vmokshagroup.com\",\"Password\":\"Power@1234\"}}"];
+    
+    [self.view endEditing:YES];
+
+    NSString *parameterString = [NSString stringWithFormat:@"{\"request\":{\"Username\":\"%@\",\"Password\":\"%@\"}}",self.userNameTxtFld.text,self.passwordTxtFld.text];
     
     Postman *postman = [[Postman alloc] init];
     postman.delegate = self;
     [postman  post:@"http://vzoneapps.ripple-io.in/Account/Authenticate" withParameters:parameterString];
+    
+    [UIView animateWithDuration:.3 animations:^{
+        self.alphaView.alpha = .4;
+    } completion:^(BOOL finished) {
+        [self.activityIndicatorOutlet startAnimating];
+        self.alphaView.hidden = NO;
+        
+    }];
+}
+
+#pragma mark UITextFieldDelegate methods
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.view endEditing:YES];
+    return YES;
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField;
+{
+    [UIView animateWithDuration:.3 animations:^{
+        self.authenticationFailLable.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.authenticationFailLable.hidden = YES;
+        
+    }];    return YES;
 }
 
 
@@ -44,6 +90,13 @@
 -(void)postman:(Postman *)postman gotSuccess:(NSData *)response
 {
     
+    [UIView animateWithDuration:.5 animations:^{
+        self.alphaView.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.alphaView.hidden = YES;
+
+        
+    }];
     //    NSString *string = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
     //    NSLog(@"====== %@",string);
     
@@ -52,6 +105,11 @@
     
     if ([aaDataDict[@"Success"] boolValue])
     {
+        
+
+
+        [self.activityIndicatorOutlet stopAnimating];
+
         NSLog(@"Authentication successful");
         [self dismissViewControllerAnimated:YES completion:^{
             if ([self.delegate respondsToSelector:@selector(loginSucessfull)])
@@ -64,6 +122,14 @@
     }else
     {
         NSLog(@"Authentication failed");
+        [UIView animateWithDuration:.5 animations:^{
+            self.authenticationFailLable.alpha = 1;
+            self.authenticationFailLable.hidden = NO;
+
+        } completion:^(BOOL finished) {
+            [self.activityIndicatorOutlet stopAnimating];
+            
+        }];
     }
 }
 
