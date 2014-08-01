@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860CE0E3198BA94A0067FD1B /* ic_logout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0DE198BA94A0067FD1B /* ic_logout@2x.png */; };
+		860CE0E7198BB15B0067FD1B /* ic_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0E6198BB15B0067FD1B /* ic_location@2x.png */; };
+		860CE0EB198BB23B0067FD1B /* ic_cardView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0E8198BB23B0067FD1B /* ic_cardView@2x.png */; };
+		860CE0EC198BB23B0067FD1B /* ic_directory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0E9198BB23B0067FD1B /* ic_directory@2x.png */; };
+		860CE0ED198BB23B0067FD1B /* ic_holidays@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0EA198BB23B0067FD1B /* ic_holidays@2x.png */; };
+		860CE0EF198BB2A20067FD1B /* ic_aboutUs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0EE198BB2A20067FD1B /* ic_aboutUs@2x.png */; };
 		8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */; };
 		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
 		8646F574198B53410081BD9F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646F573198B53410081BD9F /* SignInViewController.m */; };
@@ -51,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		860CE0DE198BA94A0067FD1B /* ic_logout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_logout@2x.png"; sourceTree = "<group>"; };
+		860CE0E6198BB15B0067FD1B /* ic_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_location@2x.png"; sourceTree = "<group>"; };
+		860CE0E8198BB23B0067FD1B /* ic_cardView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cardView@2x.png"; sourceTree = "<group>"; };
+		860CE0E9198BB23B0067FD1B /* ic_directory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_directory@2x.png"; sourceTree = "<group>"; };
+		860CE0EA198BB23B0067FD1B /* ic_holidays@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_holidays@2x.png"; sourceTree = "<group>"; };
+		860CE0EE198BB2A20067FD1B /* ic_aboutUs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_aboutUs@2x.png"; sourceTree = "<group>"; };
 		8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-480h.png"; sourceTree = "<group>"; };
 		8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-568_h.png"; sourceTree = "<group>"; };
 		8646F572198B53410081BD9F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
@@ -207,6 +219,12 @@
 		86B74AED198B62180094C98C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				860CE0E8198BB23B0067FD1B /* ic_cardView@2x.png */,
+				860CE0EE198BB2A20067FD1B /* ic_aboutUs@2x.png */,
+				860CE0E9198BB23B0067FD1B /* ic_directory@2x.png */,
+				860CE0EA198BB23B0067FD1B /* ic_holidays@2x.png */,
+				860CE0E6198BB15B0067FD1B /* ic_location@2x.png */,
+				860CE0DE198BA94A0067FD1B /* ic_logout@2x.png */,
 				86B74AF6198B7BA30094C98C /* menu@2x.png */,
 				86B74AF4198B7B9F0094C98C /* menu.png */,
 				869FBFEE198B89B400A1D202 /* login_bg@2x.png */,
@@ -322,8 +340,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860CE0EF198BB2A20067FD1B /* ic_aboutUs@2x.png in Resources */,
 				86B74AF7198B7BA30094C98C /* menu@2x.png in Resources */,
 				8696BE291988EEA200AAA3C7 /* Images.xcassets in Resources */,
+				860CE0EC198BB23B0067FD1B /* ic_directory@2x.png in Resources */,
 				8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */,
 				8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */,
 				8696BE53198919D300AAA3C7 /* CenterImage.png in Resources */,
@@ -331,9 +351,13 @@
 				869FBFEF198B89B400A1D202 /* login_bg@2x.png in Resources */,
 				8696BE55198919D300AAA3C7 /* LeftImage.png in Resources */,
 				86B74AF5198B7B9F0094C98C /* menu.png in Resources */,
+				860CE0E7198BB15B0067FD1B /* ic_location@2x.png in Resources */,
 				8696BE54198919D300AAA3C7 /* RightImage.png in Resources */,
 				86B74AEC198B62130094C98C /* Logo-258X60.png in Resources */,
+				860CE0E3198BA94A0067FD1B /* ic_logout@2x.png in Resources */,
+				860CE0ED198BB23B0067FD1B /* ic_holidays@2x.png in Resources */,
 				8696BE241988EEA200AAA3C7 /* Main.storyboard in Resources */,
+				860CE0EB198BB23B0067FD1B /* ic_cardView@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
