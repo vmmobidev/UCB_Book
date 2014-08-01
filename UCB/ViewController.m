@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "SignInViewController.h"
 
-@interface ViewController () <UIScrollViewDelegate>
+@interface ViewController () <UIScrollViewDelegate, signInDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *backgroundImageHeightConst;
 @property (weak, nonatomic) IBOutlet UIButton *logInButton;
@@ -92,6 +93,20 @@
 - (IBAction)showLogInPage:(UIButton *)sender
 {
     
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.destinationViewController isKindOfClass:[SignInViewController class]])
+    {
+        SignInViewController *sigInVC = (SignInViewController *)segue.destinationViewController;
+        sigInVC.delegate = self;
+    }
+}
+
+- (void)loginSucessfull
+{
+    [self performSegueWithIdentifier:@"revealVCSegue" sender:self];
 }
 
 @end
