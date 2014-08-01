@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Postman.h"
 
-@interface SignInViewController : UIViewController
+@class SignInViewController;
+@protocol signInDelegate <NSObject>
+
+-(void)loginSucessfull;
+
+@end
+
+@interface SignInViewController : UIViewController <postmanDelegate>
+
+@property (weak, nonatomic) id <signInDelegate>delegate;
 
 @end
