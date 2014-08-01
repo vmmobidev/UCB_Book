@@ -46,27 +46,32 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvA-4h-laR">
-                                <rect key="frame" x="60" y="461" width="200" height="34"/>
+                                <rect key="frame" x="20" y="506" width="280" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.33762960720000001" green="0.43695006850000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Ec2-ai-RZp"/>
+                                    <constraint firstAttribute="width" constant="280" id="Ec2-ai-RZp"/>
                                     <constraint firstAttribute="height" constant="34" id="JVj-1N-aCE"/>
                                 </constraints>
                                 <state key="normal" title="Sign In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="showLogInPage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FLX-O8-hSP"/>
                                     <segue destination="7G8-HV-dpa" kind="modal" id="hWE-PD-61s"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hdh-VE-YxM">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="L57-cl-VlS" secondAttribute="trailing" id="7mB-qK-U0p"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="L57-cl-VlS" secondAttribute="bottom" id="916-lN-7CR"/>
                             <constraint firstItem="L57-cl-VlS" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="O7f-Zv-Kfj"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MvA-4h-laR" secondAttribute="bottom" constant="73" id="WKw-IG-2Cm"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MvA-4h-laR" secondAttribute="bottom" constant="28" id="WKw-IG-2Cm"/>
                             <constraint firstItem="L57-cl-VlS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="dcA-3n-17a"/>
                             <constraint firstAttribute="centerX" secondItem="MvA-4h-laR" secondAttribute="centerX" id="l2f-zF-deN"/>
                         </constraints>
@@ -74,6 +79,7 @@
                     <connections>
                         <outlet property="backgroundImageHeightConst" destination="hgf-B3-dYz" id="eyk-7C-BBD"/>
                         <outlet property="backgroundView" destination="iwR-ng-OU6" id="1QZ-4C-qgF"/>
+                        <outlet property="logInButton" destination="MvA-4h-laR" id="SrQ-jx-oHV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
