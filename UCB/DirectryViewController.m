@@ -54,16 +54,19 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 100;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DirectoryCell *cell = (DirectoryCell *) [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    
+
     if ([selectedCells containsObject:indexPath])
     {
         cell.displayMenu = YES;
+    }else
+    {
+        cell.displayMenu = NO;
     }
     
     return cell;
@@ -73,6 +76,8 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
+    DirectoryCell *selectedCell = (DirectoryCell *) [tableView cellForRowAtIndexPath:indexPath];
+    
     if (!selectedCells)
     {
         selectedCells = [[NSMutableArray alloc] init];
@@ -81,9 +86,11 @@
     if ([selectedCells containsObject:indexPath])
     {
         [selectedCells removeObject:indexPath];
+        selectedCell.displayMenu = NO;
     }else
     {
         [selectedCells addObject:indexPath];
+        selectedCell.displayMenu = YES;
     }
     
     [tableView beginUpdates];

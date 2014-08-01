@@ -35,6 +35,8 @@
 		86B74AF5198B7B9F0094C98C /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B74AF4198B7B9F0094C98C /* menu.png */; };
 		86B74AF7198B7BA30094C98C /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B74AF6198B7BA30094C98C /* menu@2x.png */; };
 		86B74AFB198B88BE0094C98C /* DirectoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74AFA198B88BE0094C98C /* DirectoryCell.m */; };
+		86B74AFF198BA22E0094C98C /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74AFE198BA22E0094C98C /* UserProfile.m */; };
+		86B74B02198BA4300094C98C /* WholeEmployeeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74B01198BA4300094C98C /* WholeEmployeeDetails.m */; };
 		DAE7933B3C0040E080D4D848 /* libPods-UCB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B963E477C07B419AA6578034 /* libPods-UCB.a */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,10 @@
 		86B74AF6198B7BA30094C98C /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		86B74AF9198B88BE0094C98C /* DirectoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryCell.h; sourceTree = "<group>"; };
 		86B74AFA198B88BE0094C98C /* DirectoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryCell.m; sourceTree = "<group>"; };
+		86B74AFD198BA22E0094C98C /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfile.h; sourceTree = "<group>"; };
+		86B74AFE198BA22E0094C98C /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfile.m; sourceTree = "<group>"; };
+		86B74B00198BA4300094C98C /* WholeEmployeeDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WholeEmployeeDetails.h; sourceTree = "<group>"; };
+		86B74B01198BA4300094C98C /* WholeEmployeeDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WholeEmployeeDetails.m; sourceTree = "<group>"; };
 		B963E477C07B419AA6578034 /* libPods-UCB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0ADE6B22CF42749C65A34D /* Pods-UCB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCB.xcconfig"; path = "Pods/Pods-UCB.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,8 +167,7 @@
 				86B74AF8198B87EA0094C98C /* Directory */,
 				86B74AF1198B78B70094C98C /* SlideOutMenuViewController.h */,
 				86B74AF2198B78B70094C98C /* SlideOutMenuViewController.m */,
-				869FBFEB198B75FF00A1D202 /* Postman.h */,
-				869FBFEC198B75FF00A1D202 /* Postman.m */,
+				86B74AFC198B9F300094C98C /* Models */,
 				86B74AED198B62180094C98C /* Images */,
 				8696BE281988EEA200AAA3C7 /* Images.xcassets */,
 				8696BE171988EEA200AAA3C7 /* Supporting Files */,
@@ -224,6 +229,19 @@
 				86B74AFA198B88BE0094C98C /* DirectoryCell.m */,
 			);
 			name = Directory;
+			sourceTree = "<group>";
+		};
+		86B74AFC198B9F300094C98C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				869FBFEB198B75FF00A1D202 /* Postman.h */,
+				869FBFEC198B75FF00A1D202 /* Postman.m */,
+				86B74AFD198BA22E0094C98C /* UserProfile.h */,
+				86B74AFE198BA22E0094C98C /* UserProfile.m */,
+				86B74B00198BA4300094C98C /* WholeEmployeeDetails.h */,
+				86B74B01198BA4300094C98C /* WholeEmployeeDetails.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +387,8 @@
 			files = (
 				869FBFED198B75FF00A1D202 /* Postman.m in Sources */,
 				8646F574198B53410081BD9F /* SignInViewController.m in Sources */,
+				86B74B02198BA4300094C98C /* WholeEmployeeDetails.m in Sources */,
+				86B74AFF198BA22E0094C98C /* UserProfile.m in Sources */,
 				8696BE271988EEA200AAA3C7 /* ViewController.m in Sources */,
 				8696BE211988EEA200AAA3C7 /* AppDelegate.m in Sources */,
 				86B74AF0198B69FB0094C98C /* DirectryViewController.m in Sources */,
