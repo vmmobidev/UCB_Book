@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SlideOutMenuViewController : UIViewController <UITableViewDataSource,UITabBarDelegate>
+@interface SlideOutMenuViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
 @end
