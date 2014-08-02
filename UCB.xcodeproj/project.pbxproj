@@ -63,6 +63,10 @@
 		8633FA59198CE4B800D77B8E /* Ukraine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA31198CE4B800D77B8E /* Ukraine.jpg */; };
 		8633FA5A198CE4B800D77B8E /* US.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA32198CE4B800D77B8E /* US.jpg */; };
 		86443129198D065800A10371 /* holidays.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 86443128198D056D00A10371 /* holidays.sqlite */; };
+		8644312E198D0D3400A10371 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644312D198D0D3400A10371 /* LocationViewController.m */; };
+		86443130198D0D4000A10371 /* ubc_location.js in Sources */ = {isa = PBXBuildFile; fileRef = 8644312F198D0D4000A10371 /* ubc_location.js */; };
+		86443131198D10BA00A10371 /* ubc_location.js in Resources */ = {isa = PBXBuildFile; fileRef = 8644312F198D0D4000A10371 /* ubc_location.js */; };
+		86443134198D17B500A10371 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 86443133198D17B500A10371 /* Location.m */; };
 		8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */; };
 		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
 		8646F574198B53410081BD9F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646F573198B53410081BD9F /* SignInViewController.m */; };
@@ -186,6 +190,11 @@
 		8633FA31198CE4B800D77B8E /* Ukraine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ukraine.jpg; sourceTree = "<group>"; };
 		8633FA32198CE4B800D77B8E /* US.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = US.jpg; sourceTree = "<group>"; };
 		86443128198D056D00A10371 /* holidays.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = holidays.sqlite; path = Flags/holidays.sqlite; sourceTree = "<group>"; };
+		8644312C198D0D3400A10371 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		8644312D198D0D3400A10371 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		8644312F198D0D4000A10371 /* ubc_location.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ubc_location.js; sourceTree = "<group>"; };
+		86443132198D17B500A10371 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		86443133198D17B500A10371 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-480h.png"; sourceTree = "<group>"; };
 		8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-568_h.png"; sourceTree = "<group>"; };
 		8646F572198B53410081BD9F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
@@ -368,6 +377,18 @@
 			path = Flags;
 			sourceTree = "<group>";
 		};
+		8644312B198D0CFF00A10371 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				8644312F198D0D4000A10371 /* ubc_location.js */,
+				8644312C198D0D3400A10371 /* LocationViewController.h */,
+				8644312D198D0D3400A10371 /* LocationViewController.m */,
+				86443132198D17B500A10371 /* Location.h */,
+				86443133198D17B500A10371 /* Location.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
 		8696BE041988EEA200AAA3C7 = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +446,7 @@
 				86B74AF8198B87EA0094C98C /* Directory */,
 				860CE0F0198BB51F0067FD1B /* CardView */,
 				861272E8198CB74E00B5A169 /* Holiday */,
+				8644312B198D0CFF00A10371 /* Location */,
 				86B74AF1198B78B70094C98C /* SlideOutMenuViewController.h */,
 				86B74AF2198B78B70094C98C /* SlideOutMenuViewController.m */,
 				86B74AFC198B9F300094C98C /* Models */,
@@ -597,6 +619,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86443131198D10BA00A10371 /* ubc_location.js in Resources */,
 				86443129198D065800A10371 /* holidays.sqlite in Resources */,
 				8633FA5A198CE4B800D77B8E /* US.jpg in Resources */,
 				8633FA50198CE4B800D77B8E /* Slovakia.jpg in Resources */,
@@ -716,9 +739,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8633FA08198CCDFF00D77B8E /* HolidayDatas.m in Sources */,
+				8644312E198D0D3400A10371 /* LocationViewController.m in Sources */,
 				8646F574198B53410081BD9F /* SignInViewController.m in Sources */,
 				8633FA05198CCCF500D77B8E /* Holiday.m in Sources */,
 				86B74B02198BA4300094C98C /* WholeEmployeeDetails.m in Sources */,
+				86443130198D0D4000A10371 /* ubc_location.js in Sources */,
+				86443134198D17B500A10371 /* Location.m in Sources */,
 				866456C0198CF04B00ABE5A4 /* CardViewCell.m in Sources */,
 				86B74AFF198BA22E0094C98C /* UserProfile.m in Sources */,
 				8696BE271988EEA200AAA3C7 /* ViewController.m in Sources */,

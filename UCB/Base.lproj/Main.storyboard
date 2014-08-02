@@ -363,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pu-qB-grj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="-65"/>
+            <point key="canvasLocation" x="1478" y="-1129"/>
         </scene>
         <!--Holiday View Controller-->
         <scene sceneID="RhD-HK-5vz">
@@ -437,7 +437,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e56-1b-9jH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1102" y="712"/>
+            <point key="canvasLocation" x="1486" y="-352"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="xgR-r7-nv9">
+            <objects>
+                <viewController id="Vqr-yy-awN" customClass="LocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tkT-5Z-wOf"/>
+                        <viewControllerLayoutGuide type="bottom" id="t11-Qn-4a3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Wg-bk-ei1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haR-M3-LU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496" y="636"/>
         </scene>
         <!--Holiday Details View Controller-->
         <scene sceneID="PLG-Gz-Bbq">
@@ -529,7 +547,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNH-ju-ZXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1583" y="712"/>
+            <point key="canvasLocation" x="1967" y="-352"/>
         </scene>
         <!--Card View Controller-->
         <scene sceneID="WUQ-kH-BcS">
@@ -783,7 +801,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VV8-Pv-08g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1630" y="-919"/>
+            <point key="canvasLocation" x="2014" y="-1983"/>
         </scene>
         <!--Slide Out Menu View Controller-->
         <scene sceneID="ODq-Mi-gpQ">
@@ -854,6 +872,7 @@
                         <segue destination="c4v-n9-MCN" kind="custom" identifier="slideOutCardViewSegue" customClass="SWRevealViewControllerSegue" id="QLC-zQ-qAW"/>
                         <segue destination="Hkn-Yb-q64" kind="custom" identifier="slideOutHolidaySegue" customClass="SWRevealViewControllerSegue" id="4fo-Qa-iBj"/>
                         <segue destination="RNh-vL-OsX" kind="custom" identifier="slideOutdirectorySegue" customClass="SWRevealViewControllerSegue" id="SRS-YY-HNs"/>
+                        <segue destination="Vqr-yy-awN" kind="custom" identifier="slideOutLocationSegue" customClass="SWRevealViewControllerSegue" id="yQ5-3z-Ygv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eP-v9-jcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
