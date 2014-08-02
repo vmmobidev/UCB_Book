@@ -36,7 +36,7 @@
     
     listImagesArr = @[@"ic_directory.png",@"ic_cardView.png",@"ic_holidays.png",@"ic_location.png",@"ic_aboutUs@2x.png",@"ic_logout@2x.png"];
     
-        menuStoryBordID = @[@"slideOutdirectorySegue", @"slideOutCardViewSegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue"];
+        menuStoryBordID = @[@"slideOutdirectorySegue", @"slideOutCardViewSegue",@"slideOutHolidaySegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue"];
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

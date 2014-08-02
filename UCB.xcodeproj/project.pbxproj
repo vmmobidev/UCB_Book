@@ -14,6 +14,9 @@
 		860CE0ED198BB23B0067FD1B /* ic_holidays@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0EA198BB23B0067FD1B /* ic_holidays@2x.png */; };
 		860CE0EF198BB2A20067FD1B /* ic_aboutUs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0EE198BB2A20067FD1B /* ic_aboutUs@2x.png */; };
 		860CE0F4198BB57B0067FD1B /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 860CE0F3198BB57B0067FD1B /* CardViewController.m */; };
+		861272EB198CB76900B5A169 /* HolidayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861272EA198CB76900B5A169 /* HolidayViewController.m */; };
+		861272ED198CB8F100B5A169 /* ind_flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 861272EC198CB8F100B5A169 /* ind_flag.png */; };
+		861272F0198CB97D00B5A169 /* HolidayDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */; };
 		8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */; };
 		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
 		8646F574198B53410081BD9F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646F573198B53410081BD9F /* SignInViewController.m */; };
@@ -66,6 +69,11 @@
 		860CE0EE198BB2A20067FD1B /* ic_aboutUs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_aboutUs@2x.png"; sourceTree = "<group>"; };
 		860CE0F2198BB57B0067FD1B /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		860CE0F3198BB57B0067FD1B /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		861272E9198CB76800B5A169 /* HolidayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayViewController.h; sourceTree = "<group>"; };
+		861272EA198CB76900B5A169 /* HolidayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayViewController.m; sourceTree = "<group>"; };
+		861272EC198CB8F100B5A169 /* ind_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ind_flag.png; sourceTree = "<group>"; };
+		861272EE198CB97D00B5A169 /* HolidayDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayDetailsViewController.h; sourceTree = "<group>"; };
+		861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayDetailsViewController.m; sourceTree = "<group>"; };
 		8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-480h.png"; sourceTree = "<group>"; };
 		8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-568_h.png"; sourceTree = "<group>"; };
 		8646F572198B53410081BD9F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
@@ -164,6 +172,17 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		861272E8198CB74E00B5A169 /* Holiday */ = {
+			isa = PBXGroup;
+			children = (
+				861272E9198CB76800B5A169 /* HolidayViewController.h */,
+				861272EA198CB76900B5A169 /* HolidayViewController.m */,
+				861272EE198CB97D00B5A169 /* HolidayDetailsViewController.h */,
+				861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */,
+			);
+			name = Holiday;
+			sourceTree = "<group>";
+		};
 		8696BE041988EEA200AAA3C7 = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +228,7 @@
 				860CE0F1198BB5410067FD1B /* NavigationDrawer */,
 				86B74AF8198B87EA0094C98C /* Directory */,
 				860CE0F0198BB51F0067FD1B /* CardView */,
+				861272E8198CB74E00B5A169 /* Holiday */,
 				860CE0F5198BB5830067FD1B /* Model */,
 				86B74AF1198B78B70094C98C /* SlideOutMenuViewController.h */,
 				86B74AF2198B78B70094C98C /* SlideOutMenuViewController.m */,
@@ -252,6 +272,7 @@
 		86B74AED198B62180094C98C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				861272EC198CB8F100B5A169 /* ind_flag.png */,
 				860CE0E8198BB23B0067FD1B /* ic_cardView@2x.png */,
 				860CE0EE198BB2A20067FD1B /* ic_aboutUs@2x.png */,
 				860CE0E9198BB23B0067FD1B /* ic_directory@2x.png */,
@@ -375,6 +396,7 @@
 			files = (
 				860CE0EF198BB2A20067FD1B /* ic_aboutUs@2x.png in Resources */,
 				86B74AF7198B7BA30094C98C /* menu@2x.png in Resources */,
+				861272ED198CB8F100B5A169 /* ind_flag.png in Resources */,
 				8696BE291988EEA200AAA3C7 /* Images.xcassets in Resources */,
 				860CE0EC198BB23B0067FD1B /* ic_directory@2x.png in Resources */,
 				8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */,
@@ -450,9 +472,11 @@
 				8696BE211988EEA200AAA3C7 /* AppDelegate.m in Sources */,
 				86B74AF0198B69FB0094C98C /* DirectryViewController.m in Sources */,
 				860CE0F4198BB57B0067FD1B /* CardViewController.m in Sources */,
+				861272F0198CB97D00B5A169 /* HolidayDetailsViewController.m in Sources */,
 				86B74AF3198B78B70094C98C /* SlideOutMenuViewController.m in Sources */,
 				8696BE1D1988EEA200AAA3C7 /* main.m in Sources */,
 				86B74AFB198B88BE0094C98C /* DirectoryCell.m in Sources */,
+				861272EB198CB76900B5A169 /* HolidayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
