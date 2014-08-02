@@ -10,7 +10,7 @@
 
 @interface SlideOutMenuViewController ()
 {
-    NSArray *menuList, *listImagesArr;
+    NSArray *menuList, *listImagesArr, *menuStoryBordID;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
@@ -35,12 +35,46 @@
     menuList = @[@"Directory",@"Card View",@"Holiday",@"Location",@"About Us",@"Logout"];
     
     listImagesArr = @[@"ic_directory.png",@"ic_cardView.png",@"ic_holidays.png",@"ic_location.png",@"ic_aboutUs@2x.png",@"ic_logout@2x.png"];
+    
+        menuStoryBordID = @[@"slideOutdirectorySegue", @"slideOutCardViewSegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue"];
 }
 
-- (void)didReceiveMemoryWarning
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSIndexPath *indexPath = [self.tableViewOutlet indexPathForSelectedRow];
+    NSLog(@"index path %@",indexPath);
+    
+    UINavigationController *destinationViewController = (UINavigationController*)segue.destinationViewController;
+    destinationViewController.title = [menuList objectAtIndex:indexPath.row];
+    
+    UIViewController *dvc = (UIViewController *) segue.destinationViewController;
+    UIButton *navigationDrawerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [navigationDrawerBtn  setImage:[UIImage imageNamed:@"menu.png"] forState:UIControlStateNormal];
+    navigationDrawerBtn.frame = CGRectMake(0, 0, 30, 18);
+    [navigationDrawerBtn addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithCustomView:navigationDrawerBtn];
+    dvc.navigationItem.leftBarButtonItem = revealButtonItem;
+
+    
+    
+//    if ([segue isKindOfClass:[SWRevealViewControllerSegueSetController class]])
+//    {
+//        SWRevealViewControllerSegue *revelSegue = (SWRevealViewControllerSegue *)segue;
+//        
+//        revelSegue.performBlock = ^( SWRevealViewControllerSegue* segue, UIViewController* svc, UIViewController* dvc )
+//        {
+//            SWRevealViewController *revelViewCOntroller = self.revealViewController;
+//            
+//            //            [dvc.view addGestureRecognizer: self.revealViewController.panGestureRecognizer];
+//            //            [dvc.view addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
+//            
+//
+//            
+//            UINavigationController *naviagtionController = [[UINavigationController alloc] initWithRootViewController:dvc];
+//            [revelViewCOntroller pushFrontViewController:naviagtionController animated:YES];
+//        };
+//    }
 }
 
 
@@ -65,7 +99,21 @@
     return cell;
 }
 
+#pragma mark
+#pragma mark UITabBarDelegate methods
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [self performSegueWithIdentifier:menuStoryBordID[indexPath.row] sender:tableView];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 /*
 #pragma mark - Navigation
 

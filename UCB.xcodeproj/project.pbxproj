@@ -13,6 +13,7 @@
 		860CE0EC198BB23B0067FD1B /* ic_directory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0E9198BB23B0067FD1B /* ic_directory@2x.png */; };
 		860CE0ED198BB23B0067FD1B /* ic_holidays@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0EA198BB23B0067FD1B /* ic_holidays@2x.png */; };
 		860CE0EF198BB2A20067FD1B /* ic_aboutUs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860CE0EE198BB2A20067FD1B /* ic_aboutUs@2x.png */; };
+		860CE0F4198BB57B0067FD1B /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 860CE0F3198BB57B0067FD1B /* CardViewController.m */; };
 		8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */; };
 		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
 		8646F574198B53410081BD9F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646F573198B53410081BD9F /* SignInViewController.m */; };
@@ -61,6 +62,8 @@
 		860CE0E9198BB23B0067FD1B /* ic_directory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_directory@2x.png"; sourceTree = "<group>"; };
 		860CE0EA198BB23B0067FD1B /* ic_holidays@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_holidays@2x.png"; sourceTree = "<group>"; };
 		860CE0EE198BB2A20067FD1B /* ic_aboutUs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_aboutUs@2x.png"; sourceTree = "<group>"; };
+		860CE0F2198BB57B0067FD1B /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		860CE0F3198BB57B0067FD1B /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-480h.png"; sourceTree = "<group>"; };
 		8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-568_h.png"; sourceTree = "<group>"; };
 		8646F572198B53410081BD9F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
@@ -128,6 +131,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		860CE0F0198BB51F0067FD1B /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				860CE0F2198BB57B0067FD1B /* CardViewController.h */,
+				860CE0F3198BB57B0067FD1B /* CardViewController.m */,
+			);
+			name = CardView;
+			sourceTree = "<group>";
+		};
+		860CE0F1198BB5410067FD1B /* NavigationDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				86B74AF1198B78B70094C98C /* SlideOutMenuViewController.h */,
+				86B74AF2198B78B70094C98C /* SlideOutMenuViewController.m */,
+			);
+			name = NavigationDrawer;
+			sourceTree = "<group>";
+		};
+		860CE0F5198BB5830067FD1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				869FBFEB198B75FF00A1D202 /* Postman.h */,
+				869FBFEC198B75FF00A1D202 /* Postman.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		8696BE041988EEA200AAA3C7 = {
 			isa = PBXGroup;
 			children = (
@@ -170,11 +200,10 @@
 				8696BE261988EEA200AAA3C7 /* ViewController.m */,
 				8646F572198B53410081BD9F /* SignInViewController.h */,
 				8646F573198B53410081BD9F /* SignInViewController.m */,
+				860CE0F1198BB5410067FD1B /* NavigationDrawer */,
 				86B74AF8198B87EA0094C98C /* Directory */,
-				86B74AF1198B78B70094C98C /* SlideOutMenuViewController.h */,
-				86B74AF2198B78B70094C98C /* SlideOutMenuViewController.m */,
-				869FBFEB198B75FF00A1D202 /* Postman.h */,
-				869FBFEC198B75FF00A1D202 /* Postman.m */,
+				860CE0F0198BB51F0067FD1B /* CardView */,
+				860CE0F5198BB5830067FD1B /* Model */,
 				86B74AED198B62180094C98C /* Images */,
 				8696BE281988EEA200AAA3C7 /* Images.xcassets */,
 				8696BE171988EEA200AAA3C7 /* Supporting Files */,
@@ -396,6 +425,7 @@
 				8696BE271988EEA200AAA3C7 /* ViewController.m in Sources */,
 				8696BE211988EEA200AAA3C7 /* AppDelegate.m in Sources */,
 				86B74AF0198B69FB0094C98C /* DirectryViewController.m in Sources */,
+				860CE0F4198BB57B0067FD1B /* CardViewController.m in Sources */,
 				86B74AF3198B78B70094C98C /* SlideOutMenuViewController.m in Sources */,
 				8696BE1D1988EEA200AAA3C7 /* main.m in Sources */,
 				86B74AFB198B88BE0094C98C /* DirectoryCell.m in Sources */,

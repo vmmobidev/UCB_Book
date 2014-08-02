@@ -339,7 +339,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pu-qB-grj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="615"/>
+            <point key="canvasLocation" x="2058" y="595"/>
+        </scene>
+        <!--Card View Controller-->
+        <scene sceneID="WUQ-kH-BcS">
+            <objects>
+                <viewController id="c4v-n9-MCN" customClass="CardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dCq-HX-HfU"/>
+                        <viewControllerLayoutGuide type="bottom" id="WsA-VK-1qR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nf9-4q-Ad0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jxZ-ME-Fca"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VV8-Pv-08g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2058" y="-258"/>
         </scene>
         <!--Slide Out Menu View Controller-->
         <scene sceneID="ODq-Mi-gpQ">
@@ -407,11 +426,13 @@
                     </view>
                     <connections>
                         <outlet property="tableViewOutlet" destination="Ka2-yG-9t4" id="T3H-fu-K3V"/>
+                        <segue destination="2qx-BV-XjW" kind="custom" identifier="slideOutCardViewSegue" customClass="SWRevealViewControllerSeguePushController" id="Ref-mJ-56s"/>
+                        <segue destination="dhB-9V-zgj" kind="custom" identifier="slideOutdirectorySegue" customClass="SWRevealViewControllerSeguePushController" id="gcE-en-Hkf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eP-v9-jcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="1292"/>
+            <point key="canvasLocation" x="750" y="-258"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zl6-V6-Npk">
@@ -442,12 +463,30 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="RNh-vL-OsX" kind="relationship" relationship="rootViewController" id="VFR-YP-RHA"/>
+                        <segue destination="RNh-vL-OsX" kind="relationship" relationship="rootViewController" id="H9z-qE-IPZ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l51-b7-nRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="615"/>
+            <point key="canvasLocation" x="1570" y="595"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5zb-Ss-25H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2qx-BV-XjW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GFU-DK-WMt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c4v-n9-MCN" kind="relationship" relationship="rootViewController" id="JJM-hi-5Fw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nut-Uy-dHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570" y="-258"/>
         </scene>
     </scenes>
     <resources>
@@ -461,4 +500,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="gcE-en-Hkf"/>
+    </inferredMetricsTieBreakers>
 </document>
