@@ -72,10 +72,17 @@
     NSMutableArray *firstTwoLevelEmployees = [[NSMutableArray alloc] init];
     if ((responseData != nil) || (listOfAllEmployees == nil))
     {
+        NSLog(@"listOfAllEmployees is nil otherwise responseData not equal to nil");
         listOfAllEmployees = [self employeeListForData:responseData];
     }
     
+    UserProfile *CEO_1 = [self userForID:8];
+    UserProfile *CEO_2 = [self userForID:10];
     
+    [firstTwoLevelEmployees addObjectsFromArray:@[CEO_1, CEO_2]];
+    
+    [firstTwoLevelEmployees addObjectsFromArray:[self directReporteesFor:CEO_1 InListOfEmployee:nil]];
+    [firstTwoLevelEmployees addObjectsFromArray:[self directReporteesFor:CEO_2 InListOfEmployee:nil]];
     
     return firstTwoLevelEmployees;
 }
@@ -98,6 +105,25 @@
         NSLog(@"Please call 'employeeListForData' method");
     }
     return user;
+}
+
+- (NSArray *)directReporteesFor:(UserProfile *)user InListOfEmployee:(NSArray *)collectionOfAllEmployees
+{
+    if (listOfAllEmployees == nil)
+    {
+        NSLog(@"listOfAllEmployees is equal to nil");
+        listOfAllEmployees = collectionOfAllEmployees;
+    }
+    
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    for (NSString *anReporteeID in user.directReportees)
+    {
+        NSInteger reporteeID = [anReporteeID integerValue];
+        [array addObject:[self userForID:reporteeID]];
+    }
+    
+    return array;
 }
 
 @end

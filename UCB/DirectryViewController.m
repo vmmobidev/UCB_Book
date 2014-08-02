@@ -128,7 +128,7 @@
 {
     NSLog(@"Sucess");
     WholeEmployeeDetails *wholeEmployeesList = [[WholeEmployeeDetails alloc] init];
-    arrayOfAllEmployees = [wholeEmployeesList employeeListForData:response];
+    arrayOfAllEmployees = [wholeEmployeesList firstTwoLevelOfEmployeesForData:response];
     
     [self.tableView reloadData];
 }

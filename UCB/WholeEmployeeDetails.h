@@ -12,7 +12,8 @@
 @interface WholeEmployeeDetails : NSObject
 
 - (NSArray *)employeeListForData:(NSData *)responseData;
-
-
+- (NSArray *)firstTwoLevelOfEmployeesForData:(NSData *)responseData;
+- (UserProfile *)userForID:(NSInteger)profileID;
+- (NSArray *)directReporteesFor:(UserProfile *)user InListOfEmployee:(NSArray *)collectionOfAllEmployees;
 
 @end
