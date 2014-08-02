@@ -11,8 +11,9 @@
 #import "Postman.h"
 #import "WholeEmployeeDetails.h"
 #import <MessageUI/MessageUI.h>
+#import "SWRevealViewController/SWRevealViewController.h"
 
-@interface DirectryViewController () <UITableViewDataSource, UITableViewDelegate, postmanDelegate, dirctoryCellDelegate, MFMessageComposeViewControllerDelegate>
+@interface DirectryViewController () <UITableViewDataSource, UITableViewDelegate, postmanDelegate, dirctoryCellDelegate, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
@@ -159,6 +160,66 @@
     }
 }
 
+- (void)emailToUser:(UserProfile *)toUser
+{
+    MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc]init];
+    mailComposer.mailComposeDelegate = self;
+    mailComposer.toRecipients = @[toUser.emailID];
+    [mailComposer setSubject:@""];
+    [mailComposer setMessageBody:@"" isHTML:NO];
+    [self presentViewController:mailComposer animated:YES completion:nil];
+}
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
+{
+    UIAlertView *alert;
+    switch (result) {
+		case MessageComposeResultCancelled:
+			NSLog(@"Cancelled");
+			break;
+		case MessageComposeResultFailed:
+			alert = [[UIAlertView alloc] initWithTitle:@"MyApp"
+                                               message:@"Unknown Error"
+                                              delegate:self
+                                     cancelButtonTitle:@"OK"
+                                     otherButtonTitles: nil];
+			[alert show];
+			break;
+		case MessageComposeResultSent:
+            
+			break;
+		default:
+			break;
+	}
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    UIAlertView *alert;
+    switch (result) {
+		case MFMailComposeResultCancelled:
+			NSLog(@"Cancelled");
+			break;
+		case MFMailComposeResultFailed:
+			alert = [[UIAlertView alloc] initWithTitle:@"MyApp"
+                                               message:@"Unknown Error"
+                                              delegate:self
+                                     cancelButtonTitle:@"OK"
+                                     otherButtonTitles: nil];
+			[alert show];
+			break;
+		case MFMailComposeResultSent:
+            
+			break;
+		default:
+			break;
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+}
+    
 /*
 #pragma mark - Navigation
 
@@ -169,5 +230,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end

@@ -77,7 +77,7 @@
 }
 - (IBAction)phoneUser:(UIButton *)sender
 {
-    if (!self.user.mobileNo )
+    if (self.user.mobileNo )
     {
         NSString *phoneNumber = [@"telprompt://" stringByAppendingString:self.user.mobileNo];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
@@ -90,21 +90,14 @@
     {
         [self.delegateOfCell messageToUser:self.user];
     }
-//    
-//    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
-//    
-//    if ([MFMessageComposeViewController canSendText])
-//    {
-//        messageController.body = @"";
-//		messageController.recipients = [NSArray arrayWithObjects:@"12345678", @"87654321", nil];
-//		messageController.messageComposeDelegate = self;
-////		[self presentModalViewController:messageController animated:YES];
-//    }
 }
 
 - (IBAction)emailUser:(id)sender
 {
-    
+    if ([self.delegateOfCell respondsToSelector:@selector(emailToUser:)])
+    {
+        [self.delegateOfCell emailToUser:self.user];
+    }
 }
 - (IBAction)showDetailedView:(UIButton *)sender
 {

@@ -13,6 +13,8 @@
 
 @optional
 - (void)messageToUser:(UserProfile *)toUser;
+- (void)emailToUser:(UserProfile *)toUser;
+
 @end
 
 @interface DirectoryCell : UITableViewCell
