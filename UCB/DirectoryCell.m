@@ -7,7 +7,6 @@
 //
 
 #import "DirectoryCell.h"
-#import <MessageUI/MessageUI.h>
 
 @interface DirectoryCell ()
 @property (weak, nonatomic) IBOutlet UILabel *userName;
@@ -76,9 +75,10 @@
     self.userName.text = [NSString stringWithFormat:@"%@ %@",user.firstName, user.lastName];
     self.employeePosition.text = user.designation;
 }
+
 - (IBAction)phoneUser:(UIButton *)sender
 {
-    if (!self.user.mobileNo )
+    if (self.user.mobileNo )
     {
         NSString *phoneNumber = [@"telprompt://" stringByAppendingString:self.user.mobileNo];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
@@ -87,28 +87,31 @@
 
 - (IBAction)messageUser:(UIButton *)sender
 {
-    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
-    
-    if ([MFMessageComposeViewController canSendText])
+    if ([self.delegateOfCell respondsToSelector:@selector(messageToUser:)])
     {
-        messageController.body = @"";
-		messageController.recipients = [NSArray arrayWithObjects:@"12345678", @"87654321", nil];
-		messageController.messageComposeDelegate = self;
-//		[self presentModalViewController:messageController animated:YES];
+        [self.delegateOfCell messageToUser:self.user];
     }
 }
 
 - (IBAction)emailUser:(id)sender
 {
-    
+    if ([self.delegateOfCell respondsToSelector:@selector(emailToUser:)])
+    {
+        [self.delegateOfCell emailToUser:self.user];
+    }
 }
+
 - (IBAction)showDetailedView:(UIButton *)sender
 {
     
 }
+
 - (IBAction)showCardView:(UIButton *)sender
 {
-    
+    if ([self.delegateOfCell respondsToSelector:@selector(showCardViewOfUser:)])
+    {
+        [self.delegateOfCell showCardViewOfUser:self.user];
+    }
 }
 
 @end

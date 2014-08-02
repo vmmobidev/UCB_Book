@@ -10,8 +10,11 @@
 #import "DirectoryCell.h"
 #import "Postman.h"
 #import "WholeEmployeeDetails.h"
+#import <MessageUI/MessageUI.h>
+#import "SWRevealViewController/SWRevealViewController.h"
+#import "CardViewController.h"
 
-@interface DirectryViewController () <UITableViewDataSource, UITableViewDelegate, postmanDelegate>
+@interface DirectryViewController () <UITableViewDataSource, UITableViewDelegate, postmanDelegate, dirctoryCellDelegate, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
@@ -21,6 +24,7 @@
     UIBarButtonItem *revealButtonItem;
     NSMutableArray *selectedCells;
     NSArray *arrayOfAllEmployees;
+    UserProfile *selectedUser;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -98,10 +102,12 @@
     {
         [selectedCells removeObject:indexPath];
         selectedCell.displayMenu = NO;
+        selectedCell.delegateOfCell = nil;
     }else
     {
         [selectedCells addObject:indexPath];
         selectedCell.displayMenu = YES;
+        selectedCell.delegateOfCell = self;
     }
     
     [tableView beginUpdates];
@@ -133,15 +139,108 @@
     [self.tableView reloadData];
 }
 
-/*
+#pragma mark - DirectoryCell delegate
+- (void)messageToUser:(UserProfile *)toUser
+{
+    if (toUser.mobileNo == nil)
+    {
+        return;
+    }
+    
+    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+    
+    if ([MFMessageComposeViewController canSendText])
+    {
+        messageController.body = @"";
+		messageController.recipients = [NSArray arrayWithObjects:toUser.mobileNo, nil];
+		messageController.messageComposeDelegate = self;
+        [self presentViewController:messageController
+                           animated:YES
+                         completion:^{
+                             
+                         }];
+    }
+}
+
+- (void)emailToUser:(UserProfile *)toUser
+{
+    MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc]init];
+    mailComposer.mailComposeDelegate = self;
+    mailComposer.toRecipients = @[toUser.emailID];
+    [mailComposer setSubject:@""];
+    [mailComposer setMessageBody:@"" isHTML:NO];
+    [self presentViewController:mailComposer animated:YES completion:nil];
+}
+
+- (void)showCardViewOfUser:(UserProfile *)ofUser
+{
+    selectedUser = ofUser;
+    [self performSegueWithIdentifier:@"directoryToCardVCSegue" sender:self];
+}
+
+#pragma mark - MFMessageComposeViewControllerDelegate delegate
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
+{
+    UIAlertView *alert;
+    switch (result) {
+		case MessageComposeResultCancelled:
+			NSLog(@"Cancelled");
+			break;
+		case MessageComposeResultFailed:
+			alert = [[UIAlertView alloc] initWithTitle:@"MyApp"
+                                               message:@"Unknown Error"
+                                              delegate:self
+                                     cancelButtonTitle:@"OK"
+                                     otherButtonTitles: nil];
+			[alert show];
+			break;
+		case MessageComposeResultSent:
+            
+			break;
+		default:
+			break;
+	}
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - MFMailComposeViewControllerDelegate delegate
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    UIAlertView *alert;
+    switch (result) {
+		case MFMailComposeResultCancelled:
+			NSLog(@"Cancelled");
+			break;
+		case MFMailComposeResultFailed:
+			alert = [[UIAlertView alloc] initWithTitle:@"MyApp"
+                                               message:@"Unknown Error"
+                                              delegate:self
+                                     cancelButtonTitle:@"OK"
+                                     otherButtonTitles: nil];
+			[alert show];
+			break;
+		case MFMailComposeResultSent:
+            
+			break;
+		default:
+			break;
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+}
+    
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"directoryToCardVCSegue"])
+    {
+        CardViewController *carVC = (CardViewController *)segue.destinationViewController;
+        carVC.userToBeShown = selectedUser;
+    }
 }
-*/
 
 @end
