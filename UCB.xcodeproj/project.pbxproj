@@ -17,6 +17,7 @@
 		861272EB198CB76900B5A169 /* HolidayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861272EA198CB76900B5A169 /* HolidayViewController.m */; };
 		861272ED198CB8F100B5A169 /* ind_flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 861272EC198CB8F100B5A169 /* ind_flag.png */; };
 		861272F0198CB97D00B5A169 /* HolidayDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */; };
+		8633F9FF198CC0C700D77B8E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633F9FE198CC0C700D77B8E /* SWRevealViewController.m */; };
 		8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */; };
 		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
 		8646F574198B53410081BD9F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646F573198B53410081BD9F /* SignInViewController.m */; };
@@ -28,7 +29,6 @@
 		867121D6198CB83800DFAC22 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867121D5198CB83800DFAC22 /* SystemConfiguration.framework */; };
 		867121D8198CB83F00DFAC22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867121D7198CB83F00DFAC22 /* Security.framework */; };
 		867121DA198CBA8C00DFAC22 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867121D9198CBA8C00DFAC22 /* MessageUI.framework */; };
-		867121E2198CBD5200DFAC22 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867121E1198CBD5200DFAC22 /* SWRevealViewController.m */; };
 		8696BE111988EEA200AAA3C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE101988EEA200AAA3C7 /* Foundation.framework */; };
 		8696BE131988EEA200AAA3C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE121988EEA200AAA3C7 /* CoreGraphics.framework */; };
 		8696BE151988EEA200AAA3C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE141988EEA200AAA3C7 /* UIKit.framework */; };
@@ -83,6 +83,8 @@
 		861272EC198CB8F100B5A169 /* ind_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ind_flag.png; sourceTree = "<group>"; };
 		861272EE198CB97D00B5A169 /* HolidayDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayDetailsViewController.h; sourceTree = "<group>"; };
 		861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayDetailsViewController.m; sourceTree = "<group>"; };
+		8633F9FD198CC0C700D77B8E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		8633F9FE198CC0C700D77B8E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-480h.png"; sourceTree = "<group>"; };
 		8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-568_h.png"; sourceTree = "<group>"; };
 		8646F572198B53410081BD9F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
@@ -95,8 +97,6 @@
 		867121D5198CB83800DFAC22 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		867121D7198CB83F00DFAC22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		867121D9198CBA8C00DFAC22 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		867121E0198CBD5200DFAC22 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		867121E1198CBD5200DFAC22 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8696BE0D1988EEA200AAA3C7 /* UCB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8696BE101988EEA200AAA3C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8696BE121988EEA200AAA3C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -205,6 +205,15 @@
 			name = Holiday;
 			sourceTree = "<group>";
 		};
+		8633F9FC198CC0C700D77B8E /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8633F9FD198CC0C700D77B8E /* SWRevealViewController.h */,
+				8633F9FE198CC0C700D77B8E /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 		8696BE041988EEA200AAA3C7 = {
 			isa = PBXGroup;
 			children = (
@@ -260,7 +269,7 @@
 				86B74AFC198B9F300094C98C /* Models */,
 				86B74AED198B62180094C98C /* Images */,
 				8696BE281988EEA200AAA3C7 /* Images.xcassets */,
-				867121DF198CBD5200DFAC22 /* SWRevealViewController */,
+				8633F9FC198CC0C700D77B8E /* SWRevealViewController */,
 				8696BE171988EEA200AAA3C7 /* Supporting Files */,
 			);
 			path = UCB;
@@ -507,6 +516,7 @@
 				8696BE271988EEA200AAA3C7 /* ViewController.m in Sources */,
 				8696BE211988EEA200AAA3C7 /* AppDelegate.m in Sources */,
 				86B74AF0198B69FB0094C98C /* DirectryViewController.m in Sources */,
+				8633F9FF198CC0C700D77B8E /* SWRevealViewController.m in Sources */,
 				860CE0F4198BB57B0067FD1B /* CardViewController.m in Sources */,
 				861272F0198CB97D00B5A169 /* HolidayDetailsViewController.m in Sources */,
 				86B74AF3198B78B70094C98C /* SlideOutMenuViewController.m in Sources */,
