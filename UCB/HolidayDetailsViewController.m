@@ -7,8 +7,16 @@
 //
 
 #import "HolidayDetailsViewController.h"
+#import "HolidayDatas.h"
+#import "Holiday.h"
 
 @interface HolidayDetailsViewController ()
+{
+    NSArray *arrOfHolidayDatas;
+    NSMutableArray *holidayNameArr,*dayArr,*dateArr;
+
+}
+@property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
 
 @end
 
@@ -27,6 +35,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    holidayNameArr = [[NSMutableArray alloc] init];
+    dayArr = [[NSMutableArray alloc] init];
+    dateArr = [[NSMutableArray alloc] init];
+
+    
+    arrOfHolidayDatas = [[HolidayDatas sharedInstance] getListOfHolidays];
+    
+    for (Holiday *holiday in arrOfHolidayDatas) {
+        if ([self.countryNameFromBackVC caseInsensitiveCompare:holiday.countryName]==NSOrderedSame)
+        {
+            [holidayNameArr addObject:holiday.holidayName];
+            [dateArr addObject:holiday.date];
+            [dayArr addObject:holiday.day];
+        }
+    }
+    
 }
 
 #pragma mark
@@ -34,7 +59,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [holidayNameArr count];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -42,9 +67,19 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 
     UILabel *lable = (UILabel *)[cell viewWithTag:100];
+    lable.text = holidayNameArr[indexPath.row];
     
-    UIImageView *imageView = (UIImageView *)[cell viewWithTag:200];
-    imageView.image = [UIImage imageNamed:@"ind_flag.png"];
+    UILabel *lableforDate = (UILabel *)[cell viewWithTag:200];
+    lableforDate.text = dateArr[indexPath.row];
+    
+
+    UILabel *lableforday = (UILabel *)[cell viewWithTag:300];
+    NSString *nameForCell = [[NSString alloc]init];
+    nameForCell = dayArr[ indexPath.row];
+    nameForCell =[nameForCell substringToIndex:3];
+    lableforday.text = nameForCell;
+    
+    
     
     return cell;
 }

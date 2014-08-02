@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface HolidayDetailsViewController : UIViewController
+{
+    
+}
+@property (strong,nonatomic)NSString *countryNameFromBackVC;
 
 @end
