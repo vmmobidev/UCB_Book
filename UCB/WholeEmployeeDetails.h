@@ -11,4 +11,8 @@
 
 @interface WholeEmployeeDetails : NSObject
 
+- (NSArray *)employeeListForData:(NSData *)responseData;
+
+
+
 @end

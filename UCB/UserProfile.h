@@ -20,9 +20,7 @@
 @property (strong, nonatomic) NSString *gender;
 @property (strong, nonatomic) NSString *employeeID;
 @property (strong, nonatomic) NSString *designation;
-
 @property (assign, nonatomic) NSInteger reportsTo;
-
 @property (strong, nonatomic) NSArray *directReportees;
 
 @end

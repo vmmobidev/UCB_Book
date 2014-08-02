@@ -69,4 +69,11 @@
     self.menuView.hidden = YES;
 }
 
+- (void)setUser:(UserProfile *)user
+{
+    _user = user;
+    self.userName.text = [NSString stringWithFormat:@"%@ %@",user.firstName, user.lastName];
+    self.employeePosition.text = user.designation;
+}
+
 @end
