@@ -54,7 +54,7 @@
 //    NSArray *imgNameArr =  [imgName componentsSeparatedByString:@"\r\n"];
     
     
-    dbPath = [[NSBundle mainBundle ] pathForResource:@"holidays" ofType:@"db"];
+    dbPath = [[NSBundle mainBundle ] pathForResource:@"holidays" ofType:@"sqlite"];
     NSMutableArray *holidayDataArr = [[NSMutableArray alloc] init];
     if (sqlite3_open([dbPath UTF8String], &holidaysDB)==SQLITE_OK) {
         NSString *query = @"SELECT * FROM UCBLocationNationalHoliday";

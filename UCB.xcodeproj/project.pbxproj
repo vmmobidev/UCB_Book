@@ -21,7 +21,6 @@
 		8633FA02198CC81D00D77B8E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8633FA01198CC81D00D77B8E /* libsqlite3.dylib */; };
 		8633FA05198CCCF500D77B8E /* Holiday.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633FA04198CCCF500D77B8E /* Holiday.m */; };
 		8633FA08198CCDFF00D77B8E /* HolidayDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633FA07198CCDFF00D77B8E /* HolidayDatas.m */; };
-		8633FA09198CE37D00D77B8E /* holidays.db in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA00198CC7FB00D77B8E /* holidays.db */; };
 		8633FA33198CE4B800D77B8E /* Australia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA0B198CE4B800D77B8E /* Australia.jpg */; };
 		8633FA34198CE4B800D77B8E /* Austria.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA0C198CE4B800D77B8E /* Austria.jpg */; };
 		8633FA35198CE4B800D77B8E /* Belgium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA0D198CE4B800D77B8E /* Belgium.jpg */; };
@@ -62,6 +61,7 @@
 		8633FA58198CE4B800D77B8E /* UK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA30198CE4B800D77B8E /* UK.jpg */; };
 		8633FA59198CE4B800D77B8E /* Ukraine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA31198CE4B800D77B8E /* Ukraine.jpg */; };
 		8633FA5A198CE4B800D77B8E /* US.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA32198CE4B800D77B8E /* US.jpg */; };
+		86443129198D065800A10371 /* holidays.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 86443128198D056D00A10371 /* holidays.sqlite */; };
 		8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */; };
 		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
 		8646F574198B53410081BD9F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646F573198B53410081BD9F /* SignInViewController.m */; };
@@ -132,7 +132,6 @@
 		861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayDetailsViewController.m; sourceTree = "<group>"; };
 		8633F9FD198CC0C700D77B8E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8633F9FE198CC0C700D77B8E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		8633FA00198CC7FB00D77B8E /* holidays.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = holidays.db; sourceTree = "<group>"; };
 		8633FA01198CC81D00D77B8E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		8633FA03198CCCF500D77B8E /* Holiday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Holiday.h; sourceTree = "<group>"; };
 		8633FA04198CCCF500D77B8E /* Holiday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Holiday.m; sourceTree = "<group>"; };
@@ -178,6 +177,7 @@
 		8633FA30198CE4B800D77B8E /* UK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UK.jpg; sourceTree = "<group>"; };
 		8633FA31198CE4B800D77B8E /* Ukraine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ukraine.jpg; sourceTree = "<group>"; };
 		8633FA32198CE4B800D77B8E /* US.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = US.jpg; sourceTree = "<group>"; };
+		86443128198D056D00A10371 /* holidays.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = holidays.sqlite; path = Flags/holidays.sqlite; sourceTree = "<group>"; };
 		8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-480h.png"; sourceTree = "<group>"; };
 		8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-568_h.png"; sourceTree = "<group>"; };
 		8646F572198B53410081BD9F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
@@ -289,7 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				8633FA0A198CE4B800D77B8E /* Flags Images */,
-				8633FA00198CC7FB00D77B8E /* holidays.db */,
+				86443128198D056D00A10371 /* holidays.sqlite */,
 				861272E9198CB76800B5A169 /* HolidayViewController.h */,
 				861272EA198CB76900B5A169 /* HolidayViewController.m */,
 				861272EE198CB97D00B5A169 /* HolidayDetailsViewController.h */,
@@ -581,10 +581,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86443129198D065800A10371 /* holidays.sqlite in Resources */,
 				8633FA5A198CE4B800D77B8E /* US.jpg in Resources */,
 				8633FA50198CE4B800D77B8E /* Slovakia.jpg in Resources */,
 				8633FA3B198CE4B800D77B8E /* Denmark.jpg in Resources */,
-				8633FA09198CE37D00D77B8E /* holidays.db in Resources */,
 				8633FA3D198CE4B800D77B8E /* Finland.jpg in Resources */,
 				860CE0EF198BB2A20067FD1B /* ic_aboutUs@2x.png in Resources */,
 				8633FA51198CE4B800D77B8E /* South-Africa.jpg in Resources */,

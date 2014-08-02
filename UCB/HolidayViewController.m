@@ -8,6 +8,7 @@
 
 #import "HolidayViewController.h"
 #import "HolidayDatas.h"
+#import "HolidayDetailsViewController.h"
 
 @interface HolidayViewController ()
 {
@@ -34,8 +35,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    arrOfHolidayDatas = [[HolidayDatas sharedInstance] getListOfHolidays];
-    NSLog(@"array of keywords = %i", arrOfHolidayDatas.count);
+ 
     
     NSString *pathCountryName  = [[NSBundle mainBundle] pathForResource:@"UCBLocationCountryList" ofType:@"txt"];
     NSString *countryName = [[NSString alloc] initWithContentsOfFile:pathCountryName
@@ -44,6 +44,14 @@
     countryNameArr =  [countryName componentsSeparatedByString:@"\r\n"];
 }
 
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = [self.tableViewOutlet indexPathForSelectedRow];
+    
+    HolidayDetailsViewController *holidayDetailVC = segue.destinationViewController;
+    holidayDetailVC.countryNameFromBackVC = countryNameArr[indexPath.row];
+}
 
 #pragma mark
 #pragma mark UITableViewDataSource methods
@@ -72,7 +80,6 @@
 #pragma mark UITabBarDelegate methods
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
