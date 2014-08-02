@@ -75,6 +75,7 @@
     self.userName.text = [NSString stringWithFormat:@"%@ %@",user.firstName, user.lastName];
     self.employeePosition.text = user.designation;
 }
+
 - (IBAction)phoneUser:(UIButton *)sender
 {
     if (self.user.mobileNo )
@@ -99,13 +100,18 @@
         [self.delegateOfCell emailToUser:self.user];
     }
 }
+
 - (IBAction)showDetailedView:(UIButton *)sender
 {
     
 }
+
 - (IBAction)showCardView:(UIButton *)sender
 {
-    
+    if ([self.delegateOfCell respondsToSelector:@selector(showCardViewOfUser:)])
+    {
+        [self.delegateOfCell showCardViewOfUser:self.user];
+    }
 }
 
 @end

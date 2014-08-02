@@ -12,6 +12,7 @@
 #import "WholeEmployeeDetails.h"
 #import <MessageUI/MessageUI.h>
 #import "SWRevealViewController/SWRevealViewController.h"
+#import "CardViewController.h"
 
 @interface DirectryViewController () <UITableViewDataSource, UITableViewDelegate, postmanDelegate, dirctoryCellDelegate, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
 
@@ -23,6 +24,7 @@
     UIBarButtonItem *revealButtonItem;
     NSMutableArray *selectedCells;
     NSArray *arrayOfAllEmployees;
+    UserProfile *selectedUser;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -170,6 +172,14 @@
     [self presentViewController:mailComposer animated:YES completion:nil];
 }
 
+- (void)showCardViewOfUser:(UserProfile *)ofUser
+{
+    selectedUser = ofUser;
+    [self performSegueWithIdentifier:@"directoryToCardVCSegue" sender:self];
+}
+
+#pragma mark - MFMessageComposeViewControllerDelegate delegate
+
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
 {
     UIAlertView *alert;
@@ -195,6 +205,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - MFMailComposeViewControllerDelegate delegate
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
     UIAlertView *alert;
@@ -220,14 +231,16 @@
 
 }
     
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"directoryToCardVCSegue"])
+    {
+        CardViewController *carVC = (CardViewController *)segue.destinationViewController;
+        carVC.userToBeShown = selectedUser;
+    }
 }
-*/
+
 @end

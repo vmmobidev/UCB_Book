@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-591" y="298"/>
+            <point key="canvasLocation" x="-683" y="-390"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="1aS-6Y-vjz">
@@ -206,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qg7-P7-08b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-48" y="-147"/>
+            <point key="canvasLocation" x="-140" y="-835"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="BQA-VE-Fwp">
@@ -220,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abE-yf-jnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-48" y="615"/>
+            <point key="canvasLocation" x="-140" y="-73"/>
         </scene>
         <!--Directry View Controller-->
         <scene sceneID="bM1-tB-U3v">
@@ -356,11 +356,12 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="rRe-fd-U4I" id="M0x-xr-2QM"/>
+                        <segue destination="c4v-n9-MCN" kind="push" identifier="directoryToCardVCSegue" id="LlM-6q-7WV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pu-qB-grj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="615"/>
+            <point key="canvasLocation" x="1094" y="-65"/>
         </scene>
         <!--Holiday View Controller-->
         <scene sceneID="RhD-HK-5vz">
@@ -434,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e56-1b-9jH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="1400"/>
+            <point key="canvasLocation" x="1102" y="712"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PLG-Gz-Bbq">
@@ -488,12 +489,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNH-ju-ZXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="1400"/>
+            <point key="canvasLocation" x="1583" y="712"/>
         </scene>
         <!--Card View Controller-->
         <scene sceneID="WUQ-kH-BcS">
             <objects>
-                <viewController id="c4v-n9-MCN" customClass="CardViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="c4v-n9-MCN" customClass="CardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dCq-HX-HfU"/>
                         <viewControllerLayoutGuide type="bottom" id="WsA-VK-1qR"/>
@@ -501,13 +502,55 @@
                     <view key="view" contentMode="scaleToFill" id="nf9-4q-Ad0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5P4-kW-ph0">
+                                <rect key="frame" x="77" y="446" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </stepper>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2l-u1-Y6x">
+                                <rect key="frame" x="0.0" y="65" width="320" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dFf-KS-9ea">
+                                        <rect key="frame" x="0.0" y="9" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0hC-v8-U2m">
+                                            <size key="itemSize" width="100" height="100"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ugo-OY-spN">
+                                                <rect key="frame" x="20" y="0.0" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0QE-yu-zTu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jxZ-ME-Fca"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VV8-Pv-08g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="-218"/>
+            <point key="canvasLocation" x="1629" y="-906"/>
         </scene>
         <!--Slide Out Menu View Controller-->
         <scene sceneID="ODq-Mi-gpQ">
@@ -582,7 +625,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eP-v9-jcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="634" y="-218"/>
+            <point key="canvasLocation" x="542" y="-906"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zl6-V6-Npk">
@@ -600,7 +643,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dyu-pL-xpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1001" y="298"/>
+            <point key="canvasLocation" x="-1093" y="-390"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QT4-Cb-HvE">
@@ -618,7 +661,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l51-b7-nRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="634" y="623"/>
+            <point key="canvasLocation" x="542" y="-65"/>
         </scene>
     </scenes>
     <resources>
@@ -639,6 +682,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="SRS-YY-HNs"/>
+        <segue reference="H9z-qE-IPZ"/>
+        <segue reference="QLC-zQ-qAW"/>
     </inferredMetricsTieBreakers>
 </document>
