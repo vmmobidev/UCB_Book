@@ -75,6 +75,9 @@
         listOfAllEmployees = [self employeeListForData:responseData];
     }
     
+    UserProfile *CEO_1 = [self userForID:8];
+    UserProfile *CEO_2 = [self userForID:10];
+    
     
     
     return firstTwoLevelEmployees;
@@ -99,5 +102,7 @@
     }
     return user;
 }
+
+- (NSArray *)directReporteesFor:(UserProfile *)user InListOfEmployee:(NSArray *)arrayOfAllEmployees
 
 @end
