@@ -10,4 +10,14 @@
 
 @implementation UserProfile
 
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        self.reportsTo = 0;
+    }
+    return self;
+}
+
 @end

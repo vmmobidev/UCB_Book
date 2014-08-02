@@ -14,6 +14,18 @@
     NSArray *listOfAllEmployees;
 }
 
+
++ (id)sharedInstance
+{
+    static WholeEmployeeDetails *wholeEmployeeDetails = Nil;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        wholeEmployeeDetails = [[WholeEmployeeDetails alloc] init];
+    });
+    return wholeEmployeeDetails;
+}
+
 - (NSArray *)employeeListForData:(NSData *)responseData
 {
     NSDictionary *serializedJSON;

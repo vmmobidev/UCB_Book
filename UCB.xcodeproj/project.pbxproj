@@ -66,6 +66,9 @@
 		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
 		8646F574198B53410081BD9F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646F573198B53410081BD9F /* SignInViewController.m */; };
 		866456B7198CE0C300ABE5A4 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 866456B6198CE0C300ABE5A4 /* Postman.m */; };
+		866456BA198CEF4B00ABE5A4 /* ic_avatar_person_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */; };
+		866456BD198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 866456BC198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png */; };
+		866456C0198CF04B00ABE5A4 /* CardViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 866456BF198CF04B00ABE5A4 /* CardViewCell.m */; };
 		867121C2198CA98200DFAC22 /* ic_social_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 867121C1198CA98200DFAC22 /* ic_social_chat.png */; };
 		867121C4198CA99D00DFAC22 /* ic_func_card_down_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 867121C3198CA99D00DFAC22 /* ic_func_card_down_1.png */; };
 		867121D2198CAEBC00DFAC22 /* ic_device_access_call_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 867121CF198CAEBC00DFAC22 /* ic_device_access_call_large@2x.png */; };
@@ -181,6 +184,10 @@
 		8646F573198B53410081BD9F /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		866456B5198CE0C300ABE5A4 /* Postman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postman.h; sourceTree = "<group>"; };
 		866456B6198CE0C300ABE5A4 /* Postman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postman.m; sourceTree = "<group>"; };
+		866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_avatar_person_large.png; sourceTree = "<group>"; };
+		866456BC198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_avatar_person_collectionView@2x.png"; sourceTree = "<group>"; };
+		866456BE198CF04B00ABE5A4 /* CardViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewCell.h; sourceTree = "<group>"; };
+		866456BF198CF04B00ABE5A4 /* CardViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewCell.m; sourceTree = "<group>"; };
 		867121C1198CA98200DFAC22 /* ic_social_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_social_chat.png; sourceTree = "<group>"; };
 		867121C3198CA99D00DFAC22 /* ic_func_card_down_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_func_card_down_1.png; sourceTree = "<group>"; };
 		867121CF198CAEBC00DFAC22 /* ic_device_access_call_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_device_access_call_large@2x.png"; sourceTree = "<group>"; };
@@ -263,6 +270,8 @@
 			children = (
 				860CE0F2198BB57B0067FD1B /* CardViewController.h */,
 				860CE0F3198BB57B0067FD1B /* CardViewController.m */,
+				866456BE198CF04B00ABE5A4 /* CardViewCell.h */,
+				866456BF198CF04B00ABE5A4 /* CardViewCell.m */,
 			);
 			name = CardView;
 			sourceTree = "<group>";
@@ -443,6 +452,8 @@
 		86B74AED198B62180094C98C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */,
+				866456BC198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png */,
 				861272EC198CB8F100B5A169 /* ind_flag.png */,
 				860CE0E8198BB23B0067FD1B /* ic_cardView@2x.png */,
 				860CE0EE198BB2A20067FD1B /* ic_aboutUs@2x.png */,
@@ -600,6 +611,7 @@
 				8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */,
 				8633FA3F198CE4B800D77B8E /* Germany.jpg in Resources */,
 				8633FA4C198CE4B800D77B8E /* Poland.jpg in Resources */,
+				866456BD198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png in Resources */,
 				8633FA4F198CE4B800D77B8E /* Russia.jpg in Resources */,
 				8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */,
 				8696BE53198919D300AAA3C7 /* CenterImage.png in Resources */,
@@ -615,6 +627,7 @@
 				8633FA36198CE4B800D77B8E /* Brazil.jpg in Resources */,
 				8633FA3A198CE4B800D77B8E /* Czech.jpg in Resources */,
 				867121D2198CAEBC00DFAC22 /* ic_device_access_call_large@2x.png in Resources */,
+				866456BA198CEF4B00ABE5A4 /* ic_avatar_person_large.png in Resources */,
 				860CE0E7198BB15B0067FD1B /* ic_location@2x.png in Resources */,
 				8633FA4E198CE4B800D77B8E /* Romania.jpg in Resources */,
 				8633FA3E198CE4B800D77B8E /* France.jpg in Resources */,
@@ -687,10 +700,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8633FA08198CCDFF00D77B8E /* HolidayDatas.m in Sources */,
-				869FBFED198B75FF00A1D202 /* Postman.m in Sources */,
 				8646F574198B53410081BD9F /* SignInViewController.m in Sources */,
 				8633FA05198CCCF500D77B8E /* Holiday.m in Sources */,
 				86B74B02198BA4300094C98C /* WholeEmployeeDetails.m in Sources */,
+				866456C0198CF04B00ABE5A4 /* CardViewCell.m in Sources */,
 				86B74AFF198BA22E0094C98C /* UserProfile.m in Sources */,
 				8696BE271988EEA200AAA3C7 /* ViewController.m in Sources */,
 				866456B7198CE0C300ABE5A4 /* Postman.m in Sources */,

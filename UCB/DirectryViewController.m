@@ -133,7 +133,7 @@
 - (void)postman:(Postman *)postman gotSuccess:(NSData *)response
 {
     NSLog(@"Sucess");
-    WholeEmployeeDetails *wholeEmployeesList = [[WholeEmployeeDetails alloc] init];
+    WholeEmployeeDetails *wholeEmployeesList = [WholeEmployeeDetails sharedInstance];
     arrayOfAllEmployees = [wholeEmployeesList firstTwoLevelOfEmployeesForData:response];
     
     [self.tableView reloadData];
