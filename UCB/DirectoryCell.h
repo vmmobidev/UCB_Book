@@ -9,9 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "UserProfile.h"
 
+@protocol dirctoryCellDelegate <NSObject>
+
+@optional
+- (void)messageToUser:(UserProfile *)toUser;
+@end
+
 @interface DirectoryCell : UITableViewCell
 
 @property (assign, nonatomic) BOOL displayMenu;
 @property (assign, nonatomic) UserProfile *user;
+@property (weak, nonatomic) id<dirctoryCellDelegate> delegateOfCell;
 
 @end

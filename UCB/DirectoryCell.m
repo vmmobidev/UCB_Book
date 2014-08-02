@@ -7,7 +7,6 @@
 //
 
 #import "DirectoryCell.h"
-#import <MessageUI/MessageUI.h>
 
 @interface DirectoryCell ()
 @property (weak, nonatomic) IBOutlet UILabel *userName;
@@ -87,15 +86,20 @@
 
 - (IBAction)messageUser:(UIButton *)sender
 {
-    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
-    
-    if ([MFMessageComposeViewController canSendText])
+    if ([self.delegateOfCell respondsToSelector:@selector(messageToUser:)])
     {
-        messageController.body = @"";
-		messageController.recipients = [NSArray arrayWithObjects:@"12345678", @"87654321", nil];
-		messageController.messageComposeDelegate = self;
-//		[self presentModalViewController:messageController animated:YES];
+        [self.delegateOfCell messageToUser:self.user];
     }
+//    
+//    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+//    
+//    if ([MFMessageComposeViewController canSendText])
+//    {
+//        messageController.body = @"";
+//		messageController.recipients = [NSArray arrayWithObjects:@"12345678", @"87654321", nil];
+//		messageController.messageComposeDelegate = self;
+////		[self presentModalViewController:messageController animated:YES];
+//    }
 }
 
 - (IBAction)emailUser:(id)sender

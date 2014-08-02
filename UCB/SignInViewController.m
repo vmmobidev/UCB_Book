@@ -45,8 +45,6 @@
     [self.view endEditing:YES];
 }
 
-
-
 - (IBAction)signInBtnAction:(id)sender {
     
     [self.view endEditing:YES];
@@ -115,7 +113,6 @@
             if ([self.delegate respondsToSelector:@selector(loginSucessfull)])
             {
                 [self.delegate loginSucessfull];
-                
             }
         }];
         

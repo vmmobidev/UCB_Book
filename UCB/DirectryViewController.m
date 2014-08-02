@@ -10,8 +10,9 @@
 #import "DirectoryCell.h"
 #import "Postman.h"
 #import "WholeEmployeeDetails.h"
+#import <MessageUI/MessageUI.h>
 
-@interface DirectryViewController () <UITableViewDataSource, UITableViewDelegate, postmanDelegate>
+@interface DirectryViewController () <UITableViewDataSource, UITableViewDelegate, postmanDelegate, dirctoryCellDelegate, MFMessageComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
@@ -98,10 +99,12 @@
     {
         [selectedCells removeObject:indexPath];
         selectedCell.displayMenu = NO;
+        selectedCell.delegateOfCell = nil;
     }else
     {
         [selectedCells addObject:indexPath];
         selectedCell.displayMenu = YES;
+        selectedCell.delegateOfCell = self;
     }
     
     [tableView beginUpdates];
@@ -131,6 +134,29 @@
     arrayOfAllEmployees = [wholeEmployeesList firstTwoLevelOfEmployeesForData:response];
     
     [self.tableView reloadData];
+}
+
+#pragma mark - DirectoryCell delegate
+- (void)messageToUser:(UserProfile *)toUser
+{
+    if (toUser.mobileNo == nil)
+    {
+        return;
+    }
+    
+    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+    
+    if ([MFMessageComposeViewController canSendText])
+    {
+        messageController.body = @"";
+		messageController.recipients = [NSArray arrayWithObjects:toUser.mobileNo, nil];
+		messageController.messageComposeDelegate = self;
+        [self presentViewController:messageController
+                           animated:YES
+                         completion:^{
+                             
+                         }];
+    }
 }
 
 /*
