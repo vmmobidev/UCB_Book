@@ -7,8 +7,13 @@
 //
 
 #import "HolidayViewController.h"
+#import "HolidayDatas.h"
 
 @interface HolidayViewController ()
+{
+    NSArray *arrOfHolidayDatas;
+    NSArray *countryNameArr;
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
 @end
@@ -28,6 +33,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    arrOfHolidayDatas = [[HolidayDatas sharedInstance] getListOfHolidays];
+    NSLog(@"array of keywords = %i", arrOfHolidayDatas.count);
+    
+    NSString *pathCountryName  = [[NSBundle mainBundle] pathForResource:@"UCBLocationCountryList" ofType:@"txt"];
+    NSString *countryName = [[NSString alloc] initWithContentsOfFile:pathCountryName
+                                                        encoding:NSUTF8StringEncoding
+                                                           error:nil];
+    countryNameArr =  [countryName componentsSeparatedByString:@"\r\n"];
 }
 
 
@@ -36,19 +50,19 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [countryNameArr count];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
-    imageView.image = [UIImage imageNamed:@"ind_flag.png"];
+    
+    imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", countryNameArr[indexPath.row]]];
 
     
     UILabel *lable = (UILabel *)[cell viewWithTag:200];
-//    lable.text = @"Bangalore, KA, India";
+    lable.text = countryNameArr[indexPath.row];;
     
     
     return cell;
