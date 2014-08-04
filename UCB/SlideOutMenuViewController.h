@@ -10,4 +10,6 @@
 
 @interface SlideOutMenuViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
+@property (assign, nonatomic) NSInteger currentFrontVCIndex;
+
 @end
