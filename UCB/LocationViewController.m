@@ -7,9 +7,14 @@
 //
 
 #import "LocationViewController.h"
+#import "MapViewController.h"
 #import "Location.h"
 
 @interface LocationViewController ()
+{
+    NSMutableArray  *allLocationdata;
+    
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
 @end
@@ -30,6 +35,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    allLocationdata = [[NSMutableArray alloc] init];
+    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"ubc_location" ofType:@"js"];
     
     NSString *string = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
@@ -39,14 +46,59 @@
     
     NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&err];
     
-    NSArray *locationDataArr = jsonData[@"ucblocation"];
-    Location *location = [[Location alloc] init];
+    NSArray *locationData = jsonData[@"ucblocation"];
     
-    for (NSDictionary *anlocation in locationDataArr) {
+    for (NSDictionary *anlocation in locationData) {
+        Location *location = [[Location alloc] init];
         location.country = anlocation [@"country"];
-        NSLog(@"%@",location.country);
+        location.companyName = anlocation [@"companyName"];
+        location.address = anlocation [@"address"];
+        location.telephone = anlocation [@"telephone"];
+        location.fax = anlocation [@"fax"];
+        location.email = anlocation [@"email"];
+        location.webSite = anlocation [@"website"];
+        location.latLong = anlocation [@"latAndLong"];
+
+        [allLocationdata addObject:location];
+        
     }
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = [self.tableViewOutlet indexPathForSelectedRow];
+    
+    MapViewController *mapVC = segue.destinationViewController;
+    Location *aLocation = allLocationdata[indexPath.row];
+    mapVC.locationSelectedData = aLocation;
+    
+}
+
+#pragma mark
+#pragma mark UITableViewDataSource methods
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [allLocationdata count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    UILabel *lable = (UILabel *)[cell viewWithTag:100];
+    Location *aLocation = allLocationdata[indexPath.row];
+    lable.text = aLocation.country;
+    return cell;
+}
+
+#pragma mark
+#pragma mark UITabBarDelegate methods
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
