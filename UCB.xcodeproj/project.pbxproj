@@ -154,6 +154,8 @@
 		8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */; };
 		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
 		8646F574198B53410081BD9F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646F573198B53410081BD9F /* SignInViewController.m */; };
+		8654C9D5198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8654C9D3198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png */; };
+		8654C9D6198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8654C9D4198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png */; };
 		866456B7198CE0C300ABE5A4 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 866456B6198CE0C300ABE5A4 /* Postman.m */; };
 		866456BA198CEF4B00ABE5A4 /* ic_avatar_person_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */; };
 		866456BD198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 866456BC198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png */; };
@@ -378,6 +380,8 @@
 		8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-568_h.png"; sourceTree = "<group>"; };
 		8646F572198B53410081BD9F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		8646F573198B53410081BD9F /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		8654C9D3198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-loginScreen-640x1136@2x.png"; sourceTree = "<group>"; };
+		8654C9D4198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-loginScreen640x960@2x.png"; sourceTree = "<group>"; };
 		866456B5198CE0C300ABE5A4 /* Postman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postman.h; sourceTree = "<group>"; };
 		866456B6198CE0C300ABE5A4 /* Postman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postman.m; sourceTree = "<group>"; };
 		866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_avatar_person_large.png; sourceTree = "<group>"; };
@@ -784,6 +788,8 @@
 		86B74AED198B62180094C98C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8654C9D3198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png */,
+				8654C9D4198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png */,
 				8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */,
 				8689E94B198F5F380019AA08 /* pin_map.png */,
 				866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */,
@@ -968,6 +974,7 @@
 				8633FA4D198CE4B800D77B8E /* Portugal.jpg in Resources */,
 				861272ED198CB8F100B5A169 /* ind_flag.png in Resources */,
 				8643C67D198F6ACC000B7BA7 /* alexandre.jpg in Resources */,
+				8654C9D6198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png in Resources */,
 				8643C689198F6ACC000B7BA7 /* bill.jpg in Resources */,
 				8643C6C5198F6ACC000B7BA7 /* sebastien.jpg in Resources */,
 				8643C699198F6ACC000B7BA7 /* fabien.jpg in Resources */,
@@ -1050,6 +1057,7 @@
 				8643C698198F6ACC000B7BA7 /* eric.jpg in Resources */,
 				8643C6A7198F6ACC000B7BA7 /* jochum.jpg in Resources */,
 				8643C694198F6ACC000B7BA7 /* dirk.jpg in Resources */,
+				8654C9D5198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png in Resources */,
 				8643C6C7198F6ACC000B7BA7 /* srinivasa.jpg in Resources */,
 				8643C6BE198F6ACC000B7BA7 /* pascal.jpg in Resources */,
 				860CE0E3198BA94A0067FD1B /* ic_logout@2x.png in Resources */,

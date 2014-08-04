@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ekw-sB-h5j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ekw-sB-h5j">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -108,10 +108,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-d0-l7e">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCB-loginScreen-640x1136.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-d0-l7e">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view alpha="0.49999999999999983" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Vf-LI-TBb" userLabel="AlphaView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authentication fail Pleace check user name and password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="inH-e1-4cg">
                                 <rect key="frame" x="48" y="61" width="230" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -125,7 +130,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXM-dd-oqJ">
-                                <rect key="frame" x="53" y="226" width="215" height="34"/>
+                                <rect key="frame" x="53" y="242" width="215" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.084549056760000005" green="0.18375748310000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -139,8 +144,8 @@
                                     <action selector="signInBtnAction:" destination="7G8-HV-dpa" eventType="touchUpInside" id="MYz-7n-bYs"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="user name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xaz-Ns-20f">
-                                <rect key="frame" x="53" y="131" width="215" height="22"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xaz-Ns-20f">
+                                <rect key="frame" x="53" y="131" width="215" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="215" id="xvf-Uw-4IY"/>
@@ -151,8 +156,8 @@
                                     <outlet property="delegate" destination="7G8-HV-dpa" id="tjb-Hs-RTM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ssy-az-32S">
-                                <rect key="frame" x="53" y="174" width="215" height="22"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ssy-az-32S">
+                                <rect key="frame" x="53" y="174" width="215" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="215" id="tL9-hg-UiD"/>
@@ -164,23 +169,18 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjl-mx-jcI">
-                                <rect key="frame" x="132" y="275" width="56" height="34"/>
+                                <rect key="frame" x="132" y="291" width="56" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel">
-                                    <color key="titleColor" red="0.72941176470000002" green="0.30196078430000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="cancel:" destination="7G8-HV-dpa" eventType="touchUpInside" id="W37-Hy-TsK"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Vf-LI-TBb" userLabel="AlphaView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="wc7-fM-03z">
-                                <rect key="frame" x="142" y="287" width="37" height="37"/>
+                                <rect key="frame" x="142" y="303" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="dGj-kq-fhe"/>
@@ -192,14 +192,14 @@
                             <constraint firstAttribute="centerX" secondItem="gjl-mx-jcI" secondAttribute="centerX" id="4np-ek-Uug"/>
                             <constraint firstAttribute="centerX" secondItem="wc7-fM-03z" secondAttribute="centerX" id="614-BJ-8Aw"/>
                             <constraint firstItem="QQU-AH-DHB" firstAttribute="top" secondItem="5Vf-LI-TBb" secondAttribute="bottom" id="6K2-jh-bsT"/>
-                            <constraint firstItem="ssy-az-32S" firstAttribute="top" secondItem="xaz-Ns-20f" secondAttribute="bottom" constant="21" id="AmB-NY-wbM"/>
+                            <constraint firstItem="ssy-az-32S" firstAttribute="top" secondItem="xaz-Ns-20f" secondAttribute="bottom" constant="13" id="AmB-NY-wbM"/>
                             <constraint firstAttribute="trailing" secondItem="5Vf-LI-TBb" secondAttribute="trailing" id="F0m-PW-BLz"/>
                             <constraint firstItem="xaz-Ns-20f" firstAttribute="top" secondItem="wFp-9M-Bcg" secondAttribute="bottom" constant="111" id="GBk-Hy-DBg"/>
                             <constraint firstAttribute="centerX" secondItem="lXM-dd-oqJ" secondAttribute="centerX" id="PH5-n9-0Wa"/>
                             <constraint firstItem="ZHG-d0-l7e" firstAttribute="leading" secondItem="sp0-rd-Fg5" secondAttribute="leading" id="PoI-fO-izj"/>
                             <constraint firstItem="gjl-mx-jcI" firstAttribute="top" secondItem="lXM-dd-oqJ" secondAttribute="bottom" constant="15" id="Pw0-as-JbE"/>
                             <constraint firstAttribute="centerX" secondItem="ssy-az-32S" secondAttribute="centerX" id="Q6C-hZ-7k1"/>
-                            <constraint firstItem="lXM-dd-oqJ" firstAttribute="top" secondItem="ssy-az-32S" secondAttribute="bottom" constant="30" id="SST-OC-EVQ"/>
+                            <constraint firstItem="lXM-dd-oqJ" firstAttribute="top" secondItem="ssy-az-32S" secondAttribute="bottom" constant="38" id="SST-OC-EVQ"/>
                             <constraint firstItem="QQU-AH-DHB" firstAttribute="top" secondItem="ZHG-d0-l7e" secondAttribute="bottom" id="Tid-j2-0s6"/>
                             <constraint firstItem="5Vf-LI-TBb" firstAttribute="leading" secondItem="sp0-rd-Fg5" secondAttribute="leading" id="Yy4-6U-rHY"/>
                             <constraint firstAttribute="centerX" secondItem="inH-e1-4cg" secondAttribute="centerX" constant="-3" id="cxa-OI-52U"/>
@@ -215,6 +215,7 @@
                         <outlet property="activityIndicatorOutlet" destination="wc7-fM-03z" id="5sI-x2-UlL"/>
                         <outlet property="alphaView" destination="5Vf-LI-TBb" id="Y9I-IG-apR"/>
                         <outlet property="authenticationFailLable" destination="inH-e1-4cg" id="Cxr-zR-Mh9"/>
+                        <outlet property="backgrounImageView" destination="ZHG-d0-l7e" id="Vqz-uW-yEQ"/>
                         <outlet property="passwordTxtFld" destination="ssy-az-32S" id="Ud8-Zx-EMz"/>
                         <outlet property="userNameTxtFld" destination="xaz-Ns-20f" id="mi3-jk-f9h"/>
                     </connections>
@@ -1526,6 +1527,7 @@
     </scenes>
     <resources>
         <image name="UCB-Raw-Image-568_h.png" width="1381" height="568"/>
+        <image name="UCB-loginScreen-640x1136.png" width="320" height="568"/>
         <image name="history.png" width="32" height="32"/>
         <image name="ic_avatar_person_collectionView.png" width="45" height="45"/>
         <image name="ic_avatar_person_large.png" width="100" height="100"/>
@@ -1536,7 +1538,6 @@
         <image name="ic_social_chat.png" width="40" height="40"/>
         <image name="ic_ucb_logo_option_01.png" width="221" height="40"/>
         <image name="ind_flag.png" width="64" height="43"/>
-        <image name="login_bg.png" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
