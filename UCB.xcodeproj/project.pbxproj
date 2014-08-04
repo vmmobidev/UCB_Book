@@ -84,6 +84,9 @@
 		867121D8198CB83F00DFAC22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867121D7198CB83F00DFAC22 /* Security.framework */; };
 		867121DA198CBA8C00DFAC22 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867121D9198CBA8C00DFAC22 /* MessageUI.framework */; };
 		8689E94C198F5F380019AA08 /* pin_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 8689E94B198F5F380019AA08 /* pin_map.png */; };
+		8689E94F198F66960019AA08 /* MapDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8689E94E198F66960019AA08 /* MapDetailsViewController.m */; };
+		8689E951198F85F20019AA08 /* ic_ucb_logo_option_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */; };
+		8689E953198F8CD10019AA08 /* aboutUs.html in Resources */ = {isa = PBXBuildFile; fileRef = 8689E952198F8CD10019AA08 /* aboutUs.html */; };
 		8696BE111988EEA200AAA3C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE101988EEA200AAA3C7 /* Foundation.framework */; };
 		8696BE131988EEA200AAA3C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE121988EEA200AAA3C7 /* CoreGraphics.framework */; };
 		8696BE151988EEA200AAA3C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE141988EEA200AAA3C7 /* UIKit.framework */; };
@@ -224,6 +227,10 @@
 		867121D7198CB83F00DFAC22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		867121D9198CBA8C00DFAC22 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		8689E94B198F5F380019AA08 /* pin_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_map.png; sourceTree = "<group>"; };
+		8689E94D198F66960019AA08 /* MapDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDetailsViewController.h; sourceTree = "<group>"; };
+		8689E94E198F66960019AA08 /* MapDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDetailsViewController.m; sourceTree = "<group>"; };
+		8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_ucb_logo_option_01.png; sourceTree = "<group>"; };
+		8689E952198F8CD10019AA08 /* aboutUs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = aboutUs.html; sourceTree = "<group>"; };
 		8696BE0D1988EEA200AAA3C7 /* UCB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8696BE101988EEA200AAA3C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8696BE121988EEA200AAA3C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -395,6 +402,7 @@
 		8643C626198F5F2D000B7BA7 /* AboutUS */ = {
 			isa = PBXGroup;
 			children = (
+				8689E952198F8CD10019AA08 /* aboutUs.html */,
 				8643C623198F5F2A000B7BA7 /* AboutViewController.h */,
 				8643C624198F5F2A000B7BA7 /* AboutViewController.m */,
 			);
@@ -409,6 +417,8 @@
 				8644312D198D0D3400A10371 /* LocationViewController.m */,
 				86AAC117198F45EF0089D33B /* MapViewController.h */,
 				86AAC118198F45EF0089D33B /* MapViewController.m */,
+				8689E94D198F66960019AA08 /* MapDetailsViewController.h */,
+				8689E94E198F66960019AA08 /* MapDetailsViewController.m */,
 				86443132198D17B500A10371 /* Location.h */,
 				86443133198D17B500A10371 /* Location.m */,
 			);
@@ -518,6 +528,7 @@
 		86B74AED198B62180094C98C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */,
 				8689E94B198F5F380019AA08 /* pin_map.png */,
 				866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */,
 				866456BC198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png */,
@@ -666,6 +677,7 @@
 				8633FA49198CE4B800D77B8E /* Netherlands.jpg in Resources */,
 				8633FA37198CE4B800D77B8E /* Bulgaria.jpg in Resources */,
 				8633FA47198CE4B800D77B8E /* Kazakhstan.jpg in Resources */,
+				8689E953198F8CD10019AA08 /* aboutUs.html in Resources */,
 				8633FA45198CE4B800D77B8E /* Italy.jpg in Resources */,
 				8633FA4A198CE4B800D77B8E /* New-zealand.jpg in Resources */,
 				8633FA55198CE4B800D77B8E /* Switzerland.jpg in Resources */,
@@ -684,6 +696,7 @@
 				8633FA3F198CE4B800D77B8E /* Germany.jpg in Resources */,
 				8633FA4C198CE4B800D77B8E /* Poland.jpg in Resources */,
 				866456BD198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png in Resources */,
+				8689E951198F85F20019AA08 /* ic_ucb_logo_option_01.png in Resources */,
 				8633FA4F198CE4B800D77B8E /* Russia.jpg in Resources */,
 				8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */,
 				8696BE53198919D300AAA3C7 /* CenterImage.png in Resources */,
@@ -771,6 +784,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8689E94F198F66960019AA08 /* MapDetailsViewController.m in Sources */,
 				8633FA08198CCDFF00D77B8E /* HolidayDatas.m in Sources */,
 				8644312E198D0D3400A10371 /* LocationViewController.m in Sources */,
 				8646F574198B53410081BD9F /* SignInViewController.m in Sources */,
@@ -875,7 +889,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -907,7 +921,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -918,7 +932,7 @@
 			baseConfigurationReference = FC0ADE6B22CF42749C65A34D /* Pods-UCB.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UCB",
@@ -937,7 +951,7 @@
 			baseConfigurationReference = FC0ADE6B22CF42749C65A34D /* Pods-UCB.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UCB",

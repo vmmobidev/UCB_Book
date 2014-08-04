@@ -12,7 +12,7 @@
 #import <MessageUI/MessageUI.h>
 #import "SlideOutMenuViewController.h"
 
-@interface CardViewController () <UICollectionViewDataSource, UICollectionViewDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
+@interface CardViewController () <UICollectionViewDataSource, UICollectionViewDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate,SWRevealViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *reportsToCollectionView;
 @property (weak, nonatomic) IBOutlet UICollectionView *directReporteesCollectionView;
 @property (strong, nonatomic) IBOutlet UIView *topView;
@@ -40,6 +40,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.revealViewController.delegate = self;
+
     
     UIButton *navigationDrawerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [navigationDrawerBtn  setImage:[UIImage imageNamed:@"menu.png"] forState:UIControlStateNormal];
@@ -72,6 +75,22 @@
 {
     [super viewWillAppear:animated];
     [self updateViewForChanges];
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didMoveToPosition:(FrontViewPosition)position
+{
+    if (position == FrontViewPositionRight)
+    {
+        [self.view endEditing:YES];
+        UIView *disableViewForSW = [[UIView alloc] initWithFrame:self.view.bounds];
+        disableViewForSW.backgroundColor = [UIColor clearColor];
+        disableViewForSW.tag = 1010;
+        [self.view addSubview:disableViewForSW];
+    }else if (position == FrontViewPositionLeft)
+    {
+        UIView *disableViewForSW = [self.view viewWithTag:1010];
+        [disableViewForSW removeFromSuperview];
+    }
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section

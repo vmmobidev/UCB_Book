@@ -39,6 +39,8 @@
     holidayNameArr = [[NSMutableArray alloc] init];
     dayArr = [[NSMutableArray alloc] init];
     dateArr = [[NSMutableArray alloc] init];
+    
+    
 
     
     arrOfHolidayDatas = [[HolidayDatas sharedInstance] getListOfHolidays];
@@ -65,6 +67,15 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    
+    UIView *calanderView = (UIView *)[cell viewWithTag:1000];
+    calanderView.layer.cornerRadius = 5;
+    calanderView.layer.masksToBounds=YES;
+
+//    calanderView.layer.shadowColor  = [UIColor blackColor].CGColor;
+//    calanderView.layer.shadowRadius = 2;
+//    calanderView.layer.shadowOffset = CGSizeMake(1, 1);
+//    calanderView.layer.shadowOpacity = .5;
 
     UILabel *lable = (UILabel *)[cell viewWithTag:100];
     lable.text = holidayNameArr[indexPath.row];

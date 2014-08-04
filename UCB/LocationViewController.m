@@ -10,7 +10,7 @@
 #import "MapViewController.h"
 #import "Location.h"
 
-@interface LocationViewController ()
+@interface LocationViewController () <SWRevealViewControllerDelegate>
 {
     NSMutableArray  *allLocationdata;
     
@@ -34,6 +34,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.revealViewController.delegate = self;
+
     
     allLocationdata = [[NSMutableArray alloc] init];
     
@@ -61,6 +64,22 @@
 
         [allLocationdata addObject:location];
         
+    }
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didMoveToPosition:(FrontViewPosition)position
+{
+    if (position == FrontViewPositionRight)
+    {
+        [self.view endEditing:YES];
+        UIView *disableViewForSW = [[UIView alloc] initWithFrame:self.view.bounds];
+        disableViewForSW.backgroundColor = [UIColor clearColor];
+        disableViewForSW.tag = 1010;
+        [self.view addSubview:disableViewForSW];
+    }else if (position == FrontViewPositionLeft)
+    {
+        UIView *disableViewForSW = [self.view viewWithTag:1010];
+        [disableViewForSW removeFromSuperview];
     }
 }
 

@@ -10,7 +10,7 @@
 #import "HolidayDatas.h"
 #import "HolidayDetailsViewController.h"
 
-@interface HolidayViewController ()
+@interface HolidayViewController ()<SWRevealViewControllerDelegate>
 {
     NSArray *arrOfHolidayDatas;
     NSArray *countryNameArr;
@@ -35,7 +35,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
- 
+    self.revealViewController.delegate = self;
+
     
     NSString *pathCountryName  = [[NSBundle mainBundle] pathForResource:@"UCBLocationCountryList" ofType:@"txt"];
     NSString *countryName = [[NSString alloc] initWithContentsOfFile:pathCountryName
@@ -51,6 +52,22 @@
     
     HolidayDetailsViewController *holidayDetailVC = segue.destinationViewController;
     holidayDetailVC.countryNameFromBackVC = countryNameArr[indexPath.row];
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didMoveToPosition:(FrontViewPosition)position
+{
+    if (position == FrontViewPositionRight)
+    {
+        [self.view endEditing:YES];
+        UIView *disableViewForSW = [[UIView alloc] initWithFrame:self.view.bounds];
+        disableViewForSW.backgroundColor = [UIColor clearColor];
+        disableViewForSW.tag = 1010;
+        [self.view addSubview:disableViewForSW];
+    }else if (position == FrontViewPositionLeft)
+    {
+        UIView *disableViewForSW = [self.view viewWithTag:1010];
+        [disableViewForSW removeFromSuperview];
+    }
 }
 
 #pragma mark

@@ -15,7 +15,7 @@
 #import "CardViewController.h"
 #import "DetailsViewController.h"
 
-@interface DirectryViewController () <UITableViewDataSource, UITableViewDelegate, postmanDelegate, dirctoryCellDelegate, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
+@interface DirectryViewController () <UITableViewDataSource, UITableViewDelegate, postmanDelegate, dirctoryCellDelegate, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate,SWRevealViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
@@ -42,6 +42,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.revealViewController.delegate = self;
+
     
     UIButton *navigationDrawerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [navigationDrawerBtn  setImage:[UIImage imageNamed:@"menu.png"] forState:UIControlStateNormal];
@@ -191,6 +194,23 @@
     selectedUser = ofUser;
     [self performSegueWithIdentifier:@"directoryViewToDetailsVCSegue" sender:self];
 }
+
+- (void)revealController:(SWRevealViewController *)revealController didMoveToPosition:(FrontViewPosition)position
+{
+    if (position == FrontViewPositionRight)
+    {
+        [self.view endEditing:YES];
+        UIView *disableViewForSW = [[UIView alloc] initWithFrame:self.view.bounds];
+        disableViewForSW.backgroundColor = [UIColor clearColor];
+        disableViewForSW.tag = 1010;
+        [self.view addSubview:disableViewForSW];
+    }else if (position == FrontViewPositionLeft)
+    {
+        UIView *disableViewForSW = [self.view viewWithTag:1010];
+        [disableViewForSW removeFromSuperview];
+    }
+}
+
 #pragma mark - MFMessageComposeViewControllerDelegate delegate
 
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result

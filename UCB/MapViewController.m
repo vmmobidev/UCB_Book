@@ -8,11 +8,16 @@
 
 #import "MapViewController.h"
 #import "Location.h"
+#import "MapDetailsViewController.h"
 
-#define METERS_PER_MILE 2000.344
+#define METERS_PER_MILE 3000.344
 
 
 @interface MapViewController ()
+{
+    CLLocationCoordinate2D zoomLocation;
+
+}
 @property (weak, nonatomic) IBOutlet MKMapView *mapViewOutLet;
 
 @end
@@ -38,7 +43,6 @@
     float latitude = [latLongArr[0] floatValue];
     float longitude = [latLongArr[1] floatValue];
     
-    CLLocationCoordinate2D zoomLocation;
     zoomLocation.latitude = latitude;
     zoomLocation.longitude= longitude;
     
@@ -59,10 +63,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
     
 }
 
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+
 {
     static NSString *identifier = @"Pin";
     MKAnnotationView *annotationView = (MKAnnotationView *)[_mapViewOutLet dequeueReusableAnnotationViewWithIdentifier:identifier];
@@ -77,7 +83,13 @@
 
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+    [self performSegueWithIdentifier:@"mapDetails_seque" sender:self];
+}
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    MapDetailsViewController *mapDetails = segue.destinationViewController;
+    mapDetails.detailsOfMap = self.locationSelectedData;
+    
 }
 - (void)didReceiveMemoryWarning
 {

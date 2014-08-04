@@ -8,7 +8,9 @@
 
 #import "AboutViewController.h"
 
-@interface AboutViewController ()
+
+@interface AboutViewController () <SWRevealViewControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *webViewOutlet;
 
 @end
 
@@ -30,12 +32,46 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIButton *navigationDrawerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [navigationDrawerBtn  setImage:[UIImage imageNamed:@"menu.png"] forState:UIControlStateNormal];
-    navigationDrawerBtn.frame = CGRectMake(0, 0, 30, 18);
-    [navigationDrawerBtn addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
-    revealButtonItem = [[UIBarButtonItem alloc] initWithCustomView:navigationDrawerBtn];
-    self.navigationItem.leftBarButtonItem = revealButtonItem;
+    
+    
+    self.revealViewController.delegate = self;
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+	//Load the index.html file.
+	NSBundle* bundle     = [NSBundle mainBundle];
+	NSString* filePath   = [bundle pathForResource:@"aboutUs" ofType:@"html"];
+	[self.webViewOutlet loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:filePath]]];
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didMoveToPosition:(FrontViewPosition)position
+{
+    if (position == FrontViewPositionRight)
+    {
+        [self.view endEditing:YES];
+        UIView *disableViewForSW = [[UIView alloc] initWithFrame:self.view.bounds];
+        disableViewForSW.backgroundColor = [UIColor clearColor];
+        disableViewForSW.tag = 1010;
+        [self.view addSubview:disableViewForSW];
+    }else if (position == FrontViewPositionLeft)
+    {
+        UIView *disableViewForSW = [self.view viewWithTag:1010];
+        [disableViewForSW removeFromSuperview];
+    }
+}
+
+-(BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request
+navigationType:(UIWebViewNavigationType)navigationType
+{
+    NSURL* url = request.URL;
+	if ((![[url absoluteString] isEqualToString:@"about:blank"]) &&
+	    (![[url scheme        ] isEqualToString:@"file"       ]) )
+	{
+		[[UIApplication sharedApplication] openURL:url];
+		return false;
+	}
+	return true;
 }
 
 - (void)didReceiveMemoryWarning
