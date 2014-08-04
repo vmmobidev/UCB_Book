@@ -3,7 +3,6 @@ platform :ios, "6.0"
 
 target "UCB" do
 pod "AFNetworking", "~> 2.0"
-pod 'Parse', '~> 1.2'
 end
 
 target "UCBTests" do
