@@ -15,6 +15,9 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *reportsToCollectionView;
 @property (weak, nonatomic) IBOutlet UICollectionView *directReporteesCollectionView;
 @property (strong, nonatomic) IBOutlet UIView *topView;
+@property (weak, nonatomic) IBOutlet UILabel *nameOfUser;
+@property (weak, nonatomic) IBOutlet UILabel *designationLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *middleViewTopConst;
 @end
 
 @implementation CardViewController
@@ -53,7 +56,13 @@
 //        userToReportArray = @[userToReports];
 //    }
     
+    if (self.userToBeShown == nil)
+    {
+        self.userToBeShown = [[WholeEmployeeDetails sharedInstance] userForID:10];
+    }
+    
     [self updateViewForUser:self.userToBeShown];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -124,19 +133,19 @@
     if ([userToReportArray count] == 0)
     {
         [self.topView removeFromSuperview];
+        self.middleViewTopConst.constant = 0;
     }else
     {
         if (self.topView.superview == nil)
         {
             [self.view addSubview:self.topView];
+            self.middleViewTopConst.constant = 114;
         }
     }
     
     [UIView animateWithDuration:.3
                      animations:^{
-                         
                          [self.view layoutIfNeeded];
-                         
                      }];
 }
 
@@ -152,6 +161,9 @@
     {
         userToReportArray = nil;
     }
+    
+    self.nameOfUser.text = [NSString stringWithFormat:@"%@ %@ %@", self.userToBeShown.firstName,self.userToBeShown.middleName, self.userToBeShown.lastName];
+    self.designationLabel.text = self.userToBeShown.designation;
     
     [self.directReporteesCollectionView reloadData];
     [self.reportsToCollectionView reloadData];
