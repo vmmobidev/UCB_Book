@@ -37,7 +37,6 @@
 {
     
     self.title = self.locationSelectedData.country;
-    self.mapViewOutLet.delegate = self;
     NSString *latLongString = self.locationSelectedData.latLong ;
     NSArray *latLongArr = [latLongString componentsSeparatedByString:@","];
     float latitude = [latLongArr[0] floatValue];
@@ -45,24 +44,23 @@
     
     zoomLocation.latitude = latitude;
     zoomLocation.longitude= longitude;
-    
-    // 2
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
-    
-    // 3
-    [self.mapViewOutLet setRegion:viewRegion animated:YES];
+        [self.mapViewOutLet setRegion:viewRegion animated:YES];
 
     MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
     annotation.coordinate = zoomLocation;
     annotation.title = self.locationSelectedData.companyName;
     [self.mapViewOutLet addAnnotation:annotation];
-    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    self.mapViewOutLet.delegate = self;
+
+
+
 
     
 }

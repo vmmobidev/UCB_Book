@@ -36,6 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = self.countryNameFromBackVC;
+    
     holidayNameArr = [[NSMutableArray alloc] init];
     dayArr = [[NSMutableArray alloc] init];
     dateArr = [[NSMutableArray alloc] init];

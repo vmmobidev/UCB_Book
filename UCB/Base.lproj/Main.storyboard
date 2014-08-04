@@ -650,7 +650,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz9-fr-CvF">
-                                                    <rect key="frame" x="47" y="6" width="42" height="21"/>
+                                                    <rect key="frame" x="27" y="6" width="42" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.050980392159999999" green="0.3411764706" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -659,7 +659,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="Qz9-fr-CvF" secondAttribute="centerY" id="GCe-hW-IT8"/>
-                                                <constraint firstItem="Qz9-fr-CvF" firstAttribute="leading" secondItem="jY2-0i-3VR" secondAttribute="leading" constant="47" id="Q64-aM-nrw"/>
+                                                <constraint firstItem="Qz9-fr-CvF" firstAttribute="leading" secondItem="jY2-0i-3VR" secondAttribute="leading" constant="27" id="Q64-aM-nrw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -762,7 +762,6 @@
         <!--Map Details View Controller-->
         <scene sceneID="uO0-hg-uCh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aQ5-Wu-33B" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="8jz-nk-pG5" customClass="MapDetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cXk-Fs-7gP"/>
@@ -839,9 +838,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxC-Xq-Q22">
-                                <rect key="frame" x="40" y="272" width="69" height="36"/>
+                                <rect key="frame" x="40" y="272" width="60" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="website">
                                     <color key="titleColor" red="0.084549056760000005" green="0.18375748310000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -886,6 +885,7 @@
                         <outlet property="website" destination="UxC-Xq-Q22" id="lmC-iI-aez"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQ5-Wu-33B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2359" y="418"/>
         </scene>
