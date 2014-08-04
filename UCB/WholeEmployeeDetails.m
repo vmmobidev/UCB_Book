@@ -157,7 +157,7 @@
 {
     if (listOfAllEmployees == nil)
     {
-        NSLog(@"listOfAllEmployees is equal to nil");
+//        NSLog(@"listOfAllEmployees is equal to nil");
         listOfAllEmployees = collectionOfAllEmployees;
     }
     
@@ -167,7 +167,7 @@
     {
 //        NSInteger reporteeID = [anReporteeID integerValue];
         [array addObject:[self userForID:anReporteeID]];
-        NSLog(@"USER.empoyee id = %@", anReporteeID);
+//        NSLog(@"USER.empoyee id = %@", anReporteeID);
 
     }
     

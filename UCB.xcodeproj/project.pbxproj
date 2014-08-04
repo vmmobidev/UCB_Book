@@ -166,6 +166,13 @@
 		867121D6198CB83800DFAC22 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867121D5198CB83800DFAC22 /* SystemConfiguration.framework */; };
 		867121D8198CB83F00DFAC22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867121D7198CB83F00DFAC22 /* Security.framework */; };
 		867121DA198CBA8C00DFAC22 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867121D9198CBA8C00DFAC22 /* MessageUI.framework */; };
+		867F6E91198FBA090011018D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867F6E90198FBA090011018D /* Parse.framework */; };
+		867F6E92198FBA270011018D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15EE198D15CC00837F51 /* AudioToolbox.framework */; };
+		867F6E93198FBA2D0011018D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F0198D15D600837F51 /* CFNetwork.framework */; };
+		867F6E94198FBA370011018D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F2198D15E000837F51 /* CoreLocation.framework */; };
+		867F6E95198FBA3E0011018D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F4198D15EC00837F51 /* libz.dylib */; };
+		867F6E96198FBA450011018D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F6198D15F600837F51 /* MobileCoreServices.framework */; };
+		867F6E97198FBA4D0011018D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F8198D15FE00837F51 /* StoreKit.framework */; };
 		8689E94C198F5F380019AA08 /* pin_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 8689E94B198F5F380019AA08 /* pin_map.png */; };
 		8689E94F198F66960019AA08 /* MapDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8689E94E198F66960019AA08 /* MapDetailsViewController.m */; };
 		8689E951198F85F20019AA08 /* ic_ucb_logo_option_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */; };
@@ -392,6 +399,7 @@
 		867121D5198CB83800DFAC22 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		867121D7198CB83F00DFAC22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		867121D9198CBA8C00DFAC22 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		867F6E90198FBA090011018D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		8689E94B198F5F380019AA08 /* pin_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_map.png; sourceTree = "<group>"; };
 		8689E94D198F66960019AA08 /* MapDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDetailsViewController.h; sourceTree = "<group>"; };
 		8689E94E198F66960019AA08 /* MapDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDetailsViewController.m; sourceTree = "<group>"; };
@@ -445,12 +453,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867F6E97198FBA4D0011018D /* StoreKit.framework in Frameworks */,
+				867F6E96198FBA450011018D /* MobileCoreServices.framework in Frameworks */,
+				867F6E95198FBA3E0011018D /* libz.dylib in Frameworks */,
+				867F6E94198FBA370011018D /* CoreLocation.framework in Frameworks */,
+				867F6E93198FBA2D0011018D /* CFNetwork.framework in Frameworks */,
+				867F6E92198FBA270011018D /* AudioToolbox.framework in Frameworks */,
 				86AAC11B198F579C0089D33B /* MapKit.framework in Frameworks */,
 				862D15FB198D163F00837F51 /* QuartzCore.framework in Frameworks */,
 				8633FA02198CC81D00D77B8E /* libsqlite3.dylib in Frameworks */,
 				867121DA198CBA8C00DFAC22 /* MessageUI.framework in Frameworks */,
 				867121D8198CB83F00DFAC22 /* Security.framework in Frameworks */,
 				867121D6198CB83800DFAC22 /* SystemConfiguration.framework in Frameworks */,
+				867F6E91198FBA090011018D /* Parse.framework in Frameworks */,
 				8696BE131988EEA200AAA3C7 /* CoreGraphics.framework in Frameworks */,
 				8696BE151988EEA200AAA3C7 /* UIKit.framework in Frameworks */,
 				8696BE111988EEA200AAA3C7 /* Foundation.framework in Frameworks */,
@@ -746,6 +761,7 @@
 				86B74AFC198B9F300094C98C /* Models */,
 				86B74AED198B62180094C98C /* Images */,
 				8696BE281988EEA200AAA3C7 /* Images.xcassets */,
+				867F6E90198FBA090011018D /* Parse.framework */,
 				8633F9FC198CC0C700D77B8E /* SWRevealViewController */,
 				8696BE171988EEA200AAA3C7 /* Supporting Files */,
 			);
