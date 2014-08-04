@@ -15,6 +15,8 @@
 - (void)messageToUser:(UserProfile *)toUser;
 - (void)emailToUser:(UserProfile *)toUser;
 - (void)showCardViewOfUser:(UserProfile *)ofUser;
+- (void)showDetailsViewOfUser:(UserProfile *)ofUser;
+
 @end
 
 @interface DirectoryCell : UITableViewCell

@@ -7,10 +7,12 @@
 //
 
 #import "SlideOutMenuViewController.h"
+#import "AppDelegate.h"
 
 @interface SlideOutMenuViewController ()
 {
     NSArray *menuList, *listImagesArr, *menuStoryBordID;
+    NSInteger currentFrontVCIndex;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
@@ -37,6 +39,7 @@
     listImagesArr = @[@"ic_directory.png",@"ic_cardView.png",@"ic_holidays.png",@"ic_location.png",@"ic_aboutUs@2x.png",@"ic_logout@2x.png"];
     
         menuStoryBordID = @[@"slideOutdirectorySegue", @"slideOutCardViewSegue",@"slideOutHolidaySegue",@"slideOutLocationSegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue"];
+    currentFrontVCIndex = 0;
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -73,7 +76,6 @@
     }
 }
 
-
 #pragma mark
 #pragma mark UITableViewDataSource methods
 
@@ -98,11 +100,26 @@
 #pragma mark
 #pragma mark UITabBarDelegate methods
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    [self performSegueWithIdentifier:menuStoryBordID[indexPath.row] sender:tableView];
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 5)
+    {
+        AppDelegate *appDel = [UIApplication sharedApplication].delegate;
+        UINavigationController *navCon = (UINavigationController *) appDel.window.rootViewController;
+//        UIViewController *rootViewC = navCon.viewControllers[0];
+        [navCon popToRootViewControllerAnimated:YES];
+        return;
+    }
+    if (currentFrontVCIndex != indexPath.row)
+    {
+        [self performSegueWithIdentifier:menuStoryBordID[indexPath.row] sender:tableView];
+    }else
+    {
+        [self.revealViewController revealToggleAnimated:YES];
+    }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    currentFrontVCIndex = indexPath.row;
 }
 
 - (void)didReceiveMemoryWarning
@@ -110,15 +127,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
