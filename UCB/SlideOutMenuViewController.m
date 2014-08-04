@@ -37,7 +37,7 @@
     
     listImagesArr = @[@"ic_directory.png",@"ic_cardView.png",@"ic_holidays.png",@"ic_location.png",@"ic_aboutUs@2x.png",@"ic_logout@2x.png"];
     
-        menuStoryBordID = @[@"slideOutdirectorySegue", @"slideOutCardViewSegue",@"slideOutHolidaySegue",@"slideOutLocationSegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue"];
+        menuStoryBordID = @[@"slideOutdirectorySegue", @"slideOutCardViewSegue",@"slideOutHolidaySegue",@"slideOutLocationSegue",@"slideOutAboutSegue",@"slideOutdirectorySegue"];
     self.currentFrontVCIndex = 0;
 }
 

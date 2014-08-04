@@ -64,6 +64,7 @@
 		8633FA5A198CE4B800D77B8E /* US.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA32198CE4B800D77B8E /* US.jpg */; };
 		8643C61F198F43B8000B7BA7 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8643C61E198F43B8000B7BA7 /* DetailsViewController.m */; };
 		8643C622198F4669000B7BA7 /* DirectReporteesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8643C621198F4669000B7BA7 /* DirectReporteesViewController.m */; };
+		8643C625198F5F2A000B7BA7 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8643C624198F5F2A000B7BA7 /* AboutViewController.m */; };
 		86443129198D065800A10371 /* holidays.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 86443128198D056D00A10371 /* holidays.sqlite */; };
 		8644312E198D0D3400A10371 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644312D198D0D3400A10371 /* LocationViewController.m */; };
 		86443134198D17B500A10371 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 86443133198D17B500A10371 /* Location.m */; };
@@ -195,6 +196,8 @@
 		8643C61E198F43B8000B7BA7 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		8643C620198F4669000B7BA7 /* DirectReporteesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectReporteesViewController.h; sourceTree = "<group>"; };
 		8643C621198F4669000B7BA7 /* DirectReporteesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectReporteesViewController.m; sourceTree = "<group>"; };
+		8643C623198F5F2A000B7BA7 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		8643C624198F5F2A000B7BA7 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		86443128198D056D00A10371 /* holidays.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = holidays.sqlite; path = Flags/holidays.sqlite; sourceTree = "<group>"; };
 		8644312C198D0D3400A10371 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		8644312D198D0D3400A10371 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
@@ -387,6 +390,15 @@
 			path = Flags;
 			sourceTree = "<group>";
 		};
+		8643C626198F5F2D000B7BA7 /* AboutUS */ = {
+			isa = PBXGroup;
+			children = (
+				8643C623198F5F2A000B7BA7 /* AboutViewController.h */,
+				8643C624198F5F2A000B7BA7 /* AboutViewController.m */,
+			);
+			name = AboutUS;
+			sourceTree = "<group>";
+		};
 		8644312B198D0CFF00A10371 /* Location */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +472,7 @@
 				860CE0F0198BB51F0067FD1B /* CardView */,
 				861272E8198CB74E00B5A169 /* Holiday */,
 				8644312B198D0CFF00A10371 /* Location */,
+				8643C626198F5F2D000B7BA7 /* AboutUS */,
 				86B74AF1198B78B70094C98C /* SlideOutMenuViewController.h */,
 				86B74AF2198B78B70094C98C /* SlideOutMenuViewController.m */,
 				86B74AFC198B9F300094C98C /* Models */,
@@ -776,6 +789,7 @@
 				8696BE1D1988EEA200AAA3C7 /* main.m in Sources */,
 				86B74AFB198B88BE0094C98C /* DirectoryCell.m in Sources */,
 				861272EB198CB76900B5A169 /* HolidayViewController.m in Sources */,
+				8643C625198F5F2A000B7BA7 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
