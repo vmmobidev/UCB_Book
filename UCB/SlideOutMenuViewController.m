@@ -12,7 +12,6 @@
 @interface SlideOutMenuViewController ()
 {
     NSArray *menuList, *listImagesArr, *menuStoryBordID;
-    NSInteger currentFrontVCIndex;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
@@ -39,7 +38,7 @@
     listImagesArr = @[@"ic_directory.png",@"ic_cardView.png",@"ic_holidays.png",@"ic_location.png",@"ic_aboutUs@2x.png",@"ic_logout@2x.png"];
     
         menuStoryBordID = @[@"slideOutdirectorySegue", @"slideOutCardViewSegue",@"slideOutHolidaySegue",@"slideOutLocationSegue",@"slideOutdirectorySegue",@"slideOutdirectorySegue"];
-    currentFrontVCIndex = 0;
+    self.currentFrontVCIndex = 0;
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -110,7 +109,7 @@
         [navCon popToRootViewControllerAnimated:YES];
         return;
     }
-    if (currentFrontVCIndex != indexPath.row)
+    if (self.currentFrontVCIndex != indexPath.row)
     {
         [self performSegueWithIdentifier:menuStoryBordID[indexPath.row] sender:tableView];
     }else
@@ -119,7 +118,7 @@
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    currentFrontVCIndex = indexPath.row;
+    self.currentFrontVCIndex = indexPath.row;
 }
 
 - (void)didReceiveMemoryWarning

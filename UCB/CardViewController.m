@@ -10,6 +10,7 @@
 #import "WholeEmployeeDetails.h"
 #import "CardViewCell.h"
 #import <MessageUI/MessageUI.h>
+#import "SlideOutMenuViewController.h"
 
 @interface CardViewController () <UICollectionViewDataSource, UICollectionViewDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *reportsToCollectionView;
@@ -63,6 +64,8 @@
     
     [self updateViewForUser:self.userToBeShown];
     
+    SlideOutMenuViewController *slideVC = (SlideOutMenuViewController *) self.revealViewController.rearViewController;
+    slideVC.currentFrontVCIndex = 1;
 }
 
 - (void)viewWillAppear:(BOOL)animated
