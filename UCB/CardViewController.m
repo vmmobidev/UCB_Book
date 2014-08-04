@@ -25,6 +25,7 @@
 {
     NSArray *directReportees;
     NSArray *userToReportArray;
+    UserProfile *selectedUser;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -59,9 +60,10 @@
     
     if (self.userToBeShown == nil)
     {
-        self.userToBeShown = [[WholeEmployeeDetails sharedInstance] userForID:10];
+        self.userToBeShown = [[WholeEmployeeDetails sharedInstance] userForID:@"U044070"];
     }
     
+    NSLog(@"update for user reports to %@", self.userToBeShown.reportsTo);
     [self updateViewForUser:self.userToBeShown];
     
     SlideOutMenuViewController *slideVC = (SlideOutMenuViewController *) self.revealViewController.rearViewController;
@@ -104,19 +106,19 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UserProfile *selectedUser;
     if ([collectionView isEqual:self.directReporteesCollectionView])
     {
-        selectedUser = directReportees[indexPath.item];
+        NSLog(@"update for user reports to %@", self.userToBeShown.reportsTo);
+         self.userToBeShown = directReportees[indexPath.item];
         
+        NSLog(@"update for user reports to %@", self.userToBeShown.reportsTo);
+
     }else if ([collectionView isEqual:self.reportsToCollectionView])
     {
-        selectedUser = userToReportArray[indexPath.item];
+         self.userToBeShown = userToReportArray[indexPath.item];
     }
     
-    self.userToBeShown = selectedUser;
-    
-    [self updateViewForUser:selectedUser];
+    [self updateViewForUser:self.userToBeShown];
 }
 
 - (void)didReceiveMemoryWarning
@@ -125,11 +127,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setUserToBeShown:(UserProfile *)userToBeShown
-{
-    _userToBeShown = userToBeShown;
-    NSLog(@"user to be shown is %@",userToBeShown.firstName);
-}
+//- (void)setUserToBeShown:(UserProfile *)userToBeShown
+//{
+//    _userToBeShown = userToBeShown;
+//    NSLog(@"user to be shown is %@",userToBeShown.firstName);
+//}
 
 - (void)updateViewForChanges
 {
@@ -154,9 +156,16 @@
 
 - (void)updateViewForUser:(UserProfile *)toUser
 {
+    NSLog(@"update for user reports to %@", toUser.reportsTo);
+
     directReportees = [[WholeEmployeeDetails sharedInstance] directReporteesFor:toUser InListOfEmployee:nil];
+
+    for (UserProfile *aReportee in directReportees)
+    {
+        aReportee.reportsTo = toUser.employeeID;
+    }
     
-    if (toUser.reportsTo != 0)
+    if (toUser.reportsTo != nil)
     {
         UserProfile *userToReports = [[WholeEmployeeDetails sharedInstance] userForID:toUser.reportsTo];
         userToReportArray = @[userToReports];
@@ -165,8 +174,8 @@
         userToReportArray = nil;
     }
     
-    self.nameOfUser.text = [NSString stringWithFormat:@"%@ %@ %@", self.userToBeShown.firstName,self.userToBeShown.middleName, self.userToBeShown.lastName];
-    self.designationLabel.text = self.userToBeShown.designation;
+    self.nameOfUser.text = [NSString stringWithFormat:@"%@ %@", self.userToBeShown.firstName, self.userToBeShown.lastName];
+    self.designationLabel.text = self.userToBeShown.title;
     
     [self.directReporteesCollectionView reloadData];
     [self.reportsToCollectionView reloadData];

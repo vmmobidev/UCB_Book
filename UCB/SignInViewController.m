@@ -95,17 +95,12 @@
 
         
     }];
-    //    NSString *string = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
-    //    NSLog(@"====== %@",string);
     
     NSDictionary *JSONResponse = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:Nil];
     NSDictionary *aaDataDict = JSONResponse[@"aaData"];
     
     if ([aaDataDict[@"Success"] boolValue])
     {
-        
-
-
         [self.activityIndicatorOutlet stopAnimating];
 
         NSLog(@"Authentication successful");
@@ -132,7 +127,11 @@
 
 -(void)postman:(Postman *)postman gotFailure:(NSError *)error
 {
-    
+    [UIView animateWithDuration:.5 animations:^{
+        self.alphaView.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.alphaView.hidden = YES;
+    }];
 }
 
 - (void)didReceiveMemoryWarning

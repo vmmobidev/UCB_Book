@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *roundView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImage;
 
 @end
 
@@ -34,11 +35,16 @@
 
 - (void)setUser:(UserProfile *)user
 {
-    self.nameLabel.text = [NSString stringWithFormat:@"%@ %@ %@", user.firstName, user.middleName, user.lastName];
+    self.nameLabel.text = [NSString stringWithFormat:@"%@ %@", user.firstName, user.lastName];
     self.roundView.layer.cornerRadius = 30;
     self.roundView.layer.borderColor = [UIColor redColor].CGColor;
     self.roundView.layer.borderWidth = 1;
     self.roundView.layer.masksToBounds = YES;
+    
+    self.profileImage.image = [UIImage imageNamed:user.photoImage];
+    self.profileImage.layer.cornerRadius = 45/2;
+    self.profileImage.layer.masksToBounds = YES;
+
 }
 
 /*

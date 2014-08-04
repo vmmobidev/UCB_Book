@@ -11,5 +11,6 @@
 @interface DirectReporteesViewController : UIViewController
 
 @property (strong, nonatomic) NSArray *listOfDirectReportees;
+@property (strong, nonatomic) NSString *employeeIDReportTo;
 
 @end

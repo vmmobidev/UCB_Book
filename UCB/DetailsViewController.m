@@ -47,8 +47,8 @@
 {
     if (self.user != nil)
     {
-        self.nameOfUser.text = [NSString stringWithFormat:@"%@ %@ %@", self.user.firstName, self.user.middleName, self.user.lastName];
-        self.designationLabel.text = self.user.designation;
+        self.nameOfUser.text = [NSString stringWithFormat:@"%@ %@", self.user.firstName, self.user.lastName];
+        self.designationLabel.text = self.user.title;
         self.emailIDLabel.text = self.user.emailID;
         self.mobileNoLabel.text = self.user.mobileNo;
         self.noOfReporteesLabel.text = [NSString stringWithFormat:@"%i",[directReportees count]];
@@ -70,6 +70,7 @@
     {
         DirectReporteesViewController *directVC = (DirectReporteesViewController *)segue.destinationViewController;
         directVC.listOfDirectReportees = directReportees;
+        directVC.employeeIDReportTo = self.user.employeeID;
     }
 }
 

@@ -15,7 +15,7 @@
 
 - (NSArray *)employeeListForData:(NSData *)responseData;
 - (NSArray *)firstTwoLevelOfEmployeesForData:(NSData *)responseData;
-- (UserProfile *)userForID:(NSInteger)profileID;
+- (UserProfile *)userForID:(NSString *)employeeID;
 - (NSArray *)directReporteesFor:(UserProfile *)user InListOfEmployee:(NSArray *)collectionOfAllEmployees;
 
 
