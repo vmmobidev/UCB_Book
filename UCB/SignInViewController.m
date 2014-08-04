@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorOutlet;
 @property (weak, nonatomic) IBOutlet UIView *alphaView;
 @property (weak, nonatomic) IBOutlet UILabel *authenticationFailLable;
+@property (weak, nonatomic) IBOutlet UIImageView *backgrounImageView;
 
 @end
 
@@ -32,12 +33,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.userNameTxtFld.text = @"surajm@vmokshagroup.com";
-    self.passwordTxtFld.text = @"Power@1234";
+    self.userNameTxtFld.text = @"Herman.DePrins@ucb.com";
+    self.passwordTxtFld.text = @"herman";
+    
+    
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismisskeyBoard)];
     [self.view addGestureRecognizer:tap];
 
+    if ([UIScreen mainScreen].bounds.size.height != 568)
+    {
+        self.backgrounImageView.image = [UIImage imageNamed:@"UCB-loginScreen640x960@2x.png"];
+    }
     
 }
 -(void)dismisskeyBoard
@@ -48,20 +55,26 @@
 - (IBAction)signInBtnAction:(id)sender {
     
     [self.view endEditing:YES];
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self.delegate loginSucessfull];
 
-    NSString *parameterString = [NSString stringWithFormat:@"{\"request\":{\"Username\":\"%@\",\"Password\":\"%@\"}}",self.userNameTxtFld.text,self.passwordTxtFld.text];
-    
-    Postman *postman = [[Postman alloc] init];
-    postman.delegate = self;
-    [postman  post:@"http://vzoneapps.ripple-io.in/Account/Authenticate" withParameters:parameterString];
-    
-    [UIView animateWithDuration:.3 animations:^{
-        self.alphaView.alpha = .4;
-    } completion:^(BOOL finished) {
-        [self.activityIndicatorOutlet startAnimating];
-        self.alphaView.hidden = NO;
-        
     }];
+
+
+//    NSString *parameterString = [NSString stringWithFormat:@"{\"request\":{\"Username\":\"%@\",\"Password\":\"%@\"}}",self.userNameTxtFld.text,self.passwordTxtFld.text];
+//    
+//    Postman *postman = [[Postman alloc] init];
+//    postman.delegate = self;
+//    [postman  post:@"http://vzoneapps.ripple-io.in/Account/Authenticate" withParameters:parameterString];
+//    
+//    [UIView animateWithDuration:.3 animations:^{
+//        self.alphaView.alpha = .4;
+//    } completion:^(BOOL finished) {
+//        [self.activityIndicatorOutlet startAnimating];
+//        self.alphaView.hidden = NO;
+//        
+//    }];
 }
 - (IBAction)cancel:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
