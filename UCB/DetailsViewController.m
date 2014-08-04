@@ -53,6 +53,7 @@
         self.emailIDLabel.text = self.user.emailID;
         self.mobileNoLabel.text = self.user.mobileNo;
         self.noOfReporteesLabel.text = [NSString stringWithFormat:@"%i",[directReportees count]];
+        self.currentUserImageView.image = [UIImage imageNamed:self.user.photoImage];
     }
 }
 
