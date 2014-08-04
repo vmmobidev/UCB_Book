@@ -13,9 +13,9 @@
             buildForRunning = "YES"
             buildForTesting = "YES">
             <BuildableReference
-               BlueprintName = "Pods-UCB-AFNetworking"
-               BlueprintIdentifier = "F977D27EAEB2473391D7B377"
-               BuildableName = "libPods-UCB-AFNetworking.a"
+               BlueprintName = "Pods-UCB-MBProgressHUD"
+               BlueprintIdentifier = "2318426AC9C640E692CEABF6"
+               BuildableName = "libPods-UCB-MBProgressHUD.a"
                BuildableIdentifier = "primary"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

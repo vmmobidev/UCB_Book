@@ -103,7 +103,10 @@
 
 - (IBAction)showDetailedView:(UIButton *)sender
 {
-    
+    if ([self.delegateOfCell respondsToSelector:@selector(showDetailsViewOfUser:)])
+    {
+        [self.delegateOfCell showDetailsViewOfUser:self.user];
+    }
 }
 
 - (IBAction)showCardView:(UIButton *)sender
