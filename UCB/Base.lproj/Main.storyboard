@@ -665,7 +665,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haR-M3-LU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1496" y="636"/>
+            <point key="canvasLocation" x="1478" y="412"/>
         </scene>
         <!--Holiday Details View Controller-->
         <scene sceneID="PLG-Gz-Bbq">
