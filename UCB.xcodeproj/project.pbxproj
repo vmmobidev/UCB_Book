@@ -64,8 +64,6 @@
 		8633FA5A198CE4B800D77B8E /* US.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA32198CE4B800D77B8E /* US.jpg */; };
 		86443129198D065800A10371 /* holidays.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 86443128198D056D00A10371 /* holidays.sqlite */; };
 		8644312E198D0D3400A10371 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644312D198D0D3400A10371 /* LocationViewController.m */; };
-		86443130198D0D4000A10371 /* ubc_location.js in Sources */ = {isa = PBXBuildFile; fileRef = 8644312F198D0D4000A10371 /* ubc_location.js */; };
-		86443131198D10BA00A10371 /* ubc_location.js in Resources */ = {isa = PBXBuildFile; fileRef = 8644312F198D0D4000A10371 /* ubc_location.js */; };
 		86443134198D17B500A10371 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 86443133198D17B500A10371 /* Location.m */; };
 		8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */; };
 		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
@@ -619,7 +617,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86443131198D10BA00A10371 /* ubc_location.js in Resources */,
 				86443129198D065800A10371 /* holidays.sqlite in Resources */,
 				8633FA5A198CE4B800D77B8E /* US.jpg in Resources */,
 				8633FA50198CE4B800D77B8E /* Slovakia.jpg in Resources */,
@@ -743,7 +740,6 @@
 				8646F574198B53410081BD9F /* SignInViewController.m in Sources */,
 				8633FA05198CCCF500D77B8E /* Holiday.m in Sources */,
 				86B74B02198BA4300094C98C /* WholeEmployeeDetails.m in Sources */,
-				86443130198D0D4000A10371 /* ubc_location.js in Sources */,
 				86443134198D17B500A10371 /* Location.m in Sources */,
 				866456C0198CF04B00ABE5A4 /* CardViewCell.m in Sources */,
 				86B74AFF198BA22E0094C98C /* UserProfile.m in Sources */,

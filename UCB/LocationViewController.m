@@ -11,6 +11,7 @@
 
 @interface LocationViewController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
 @end
 
 @implementation LocationViewController
@@ -39,19 +40,12 @@
     NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&err];
     
     NSArray *locationDataArr = jsonData[@"ucblocation"];
-    Location *locat = [[Location alloc] init];
+    Location *location = [[Location alloc] init];
     
     for (NSDictionary *anlocation in locationDataArr) {
-        locat.country = anlocation [@"country"];
-        NSLog(@"%@",locat.country);
+        location.country = anlocation [@"country"];
+        NSLog(@"%@",location.country);
     }
-    
-    
-    
- 
-
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
