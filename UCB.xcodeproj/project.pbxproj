@@ -954,6 +954,7 @@
 				8643C6A6198F6ACC000B7BA7 /* jiri.jpg in Resources */,
 				8633FA47198CE4B800D77B8E /* Kazakhstan.jpg in Resources */,
 				8689E953198F8CD10019AA08 /* aboutUs.html in Resources */,
+				8643C69F198F6ACC000B7BA7 /* herman.jpg in Resources */,
 				8633FA45198CE4B800D77B8E /* Italy.jpg in Resources */,
 				8633FA4A198CE4B800D77B8E /* New-zealand.jpg in Resources */,
 				8643C692198F6ACC000B7BA7 /* david_wilson.jpg in Resources */,
