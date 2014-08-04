@@ -36,6 +36,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    for (UserProfile *aRepoetee in self.listOfDirectReportees)
+    {
+        aRepoetee.reportsTo = self.employeeIDReportTo;
+    }
 }
 
 - (void)didReceiveMemoryWarning

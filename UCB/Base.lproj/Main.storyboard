@@ -179,7 +179,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="wc7-fM-03z">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="wc7-fM-03z">
                                 <rect key="frame" x="142" y="287" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -422,6 +422,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="b3G-Eh-8av"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OJy-IR-fjI" secondAttribute="trailing" constant="10" id="dcd-jm-7T9"/>
                                     <constraint firstAttribute="bottom" secondItem="OJy-IR-fjI" secondAttribute="bottom" constant="37" id="u8P-zr-rnA"/>
                                 </constraints>
                             </view>
@@ -521,6 +522,7 @@
                             <constraint firstItem="dzb-F9-0Wa" firstAttribute="leading" secondItem="bXv-uD-7LV" secondAttribute="trailing" constant="8" id="OvO-WU-ro0"/>
                             <constraint firstAttribute="trailing" secondItem="Yk9-gK-zkg" secondAttribute="trailing" constant="17" id="SXc-2O-FE1"/>
                             <constraint firstItem="cne-mM-VVg" firstAttribute="baseline" secondItem="6Sr-bW-K7P" secondAttribute="baseline" id="Sq7-pR-HWR"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dzb-F9-0Wa" secondAttribute="trailing" constant="10" id="Xvs-Co-tIW"/>
                             <constraint firstItem="jNR-B3-Eg9" firstAttribute="top" secondItem="IKm-IM-4Ah" secondAttribute="bottom" constant="204" id="brh-Ho-bmO"/>
                             <constraint firstItem="bXv-uD-7LV" firstAttribute="top" secondItem="atT-aM-MW5" secondAttribute="bottom" constant="-105" id="gnu-uj-jzU"/>
                             <constraint firstAttribute="trailing" secondItem="MJi-oM-tdd" secondAttribute="trailing" constant="17" id="hov-bn-kFm"/>
@@ -1025,22 +1027,37 @@
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfW-23-3WY" userLabel="RoundView">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AfW-23-3WY" userLabel="RoundView">
                                                             <rect key="frame" x="20" y="1" width="60" height="60"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_avatar_person_collectionView.png" translatesAutoresizingMaskIntoConstraints="NO" id="0QE-yu-zTu">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar_person_collectionView.png" translatesAutoresizingMaskIntoConstraints="NO" id="0QE-yu-zTu">
                                                                     <rect key="frame" x="8" y="7" width="45" height="45"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="45" id="bSk-jl-Ggd"/>
+                                                                        <constraint firstAttribute="height" constant="45" id="x4z-IB-Jvh"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="0QE-yu-zTu" firstAttribute="top" secondItem="AfW-23-3WY" secondAttribute="top" constant="7" id="0eE-44-ncH"/>
+                                                                <constraint firstItem="0QE-yu-zTu" firstAttribute="leading" secondItem="AfW-23-3WY" secondAttribute="leading" constant="8" id="p7o-Rz-kDI"/>
+                                                                <constraint firstAttribute="height" constant="60" id="pt6-3n-GmN"/>
+                                                            </constraints>
                                                         </view>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="AfW-23-3WY" secondAttribute="trailing" constant="20" id="3tk-D9-vn2"/>
+                                                    <constraint firstItem="AfW-23-3WY" firstAttribute="top" secondItem="Ugo-OY-spN" secondAttribute="top" constant="1" id="9r8-OU-lpB"/>
+                                                    <constraint firstItem="AfW-23-3WY" firstAttribute="leading" secondItem="Ugo-OY-spN" secondAttribute="leading" constant="20" id="dUj-fd-7hC"/>
+                                                </constraints>
                                                 <connections>
                                                     <outlet property="nameLabel" destination="qUG-Vv-vBb" id="C9T-3T-cgz"/>
+                                                    <outlet property="profileImage" destination="0QE-yu-zTu" id="Opj-RZ-062"/>
                                                     <outlet property="roundView" destination="AfW-23-3WY" id="fWG-J2-H34"/>
                                                 </connections>
                                             </collectionViewCell>
@@ -1099,22 +1116,37 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20J-PB-bCM" userLabel="RoundView">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20J-PB-bCM" userLabel="RoundView">
                                                     <rect key="frame" x="20" y="1" width="60" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_avatar_person_collectionView.png" translatesAutoresizingMaskIntoConstraints="NO" id="T12-0c-Lta">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar_person_collectionView.png" translatesAutoresizingMaskIntoConstraints="NO" id="T12-0c-Lta">
                                                             <rect key="frame" x="8" y="7" width="45" height="45"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="45" id="6Ar-q6-b3X"/>
+                                                                <constraint firstAttribute="height" constant="45" id="O4n-zD-8ik"/>
+                                                            </constraints>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="T12-0c-Lta" firstAttribute="top" secondItem="20J-PB-bCM" secondAttribute="top" constant="7" id="P2F-f3-KTz"/>
+                                                        <constraint firstItem="T12-0c-Lta" firstAttribute="leading" secondItem="20J-PB-bCM" secondAttribute="leading" constant="8" id="TJu-qX-OiK"/>
+                                                        <constraint firstAttribute="height" constant="60" id="tIE-q0-xIy"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="20J-PB-bCM" secondAttribute="trailing" constant="20" id="6R9-qO-VAt"/>
+                                            <constraint firstItem="20J-PB-bCM" firstAttribute="leading" secondItem="87h-vs-8mg" secondAttribute="leading" constant="20" id="Md3-ca-w2p"/>
+                                            <constraint firstItem="20J-PB-bCM" firstAttribute="top" secondItem="87h-vs-8mg" secondAttribute="top" constant="1" id="qcR-f7-1eV"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="nameLabel" destination="r61-R6-Vmt" id="CAE-y0-niA"/>
+                                            <outlet property="profileImage" destination="T12-0c-Lta" id="q5B-eX-dc5"/>
                                             <outlet property="roundView" destination="20J-PB-bCM" id="Gw3-7y-3Y7"/>
                                         </connections>
                                     </collectionViewCell>

@@ -73,7 +73,7 @@
 {
     _user = user;
     self.userName.text = [NSString stringWithFormat:@"%@ %@",user.firstName, user.lastName];
-    self.employeePosition.text = user.designation;
+    self.employeePosition.text = user.title;
 }
 
 - (IBAction)phoneUser:(UIButton *)sender

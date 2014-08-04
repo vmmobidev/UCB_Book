@@ -56,10 +56,19 @@
     HUD = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
 	HUD.dimBackground = YES;
 
-    Postman *postman = [[Postman alloc] init];
-    postman.delegate = self;
+//    Postman *postman = [[Postman alloc] init];
+//    postman.delegate = self;
+//    
+//    [postman get:@"http://vzoneapps.ripple-io.in/Employees"];
     
-    [postman get:@"http://vzoneapps.ripple-io.in/Employees"];
+    NSString *JSONFIlePAth = [[NSBundle mainBundle] pathForResource:@"UCBEmployeeData" ofType:@"js"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:JSONFIlePAth];
+    
+    WholeEmployeeDetails *wholeEmployeesList = [WholeEmployeeDetails sharedInstance];
+    arrayOfAllEmployees = [wholeEmployeesList firstTwoLevelOfEmployeesForData:jsonData];
+    
+    [self.tableView reloadData];
+    [HUD hide:YES];
 }
 
 - (void)didReceiveMemoryWarning

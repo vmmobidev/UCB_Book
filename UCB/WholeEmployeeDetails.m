@@ -33,7 +33,7 @@
                                                      options:kNilOptions
                                                        error:Nil];
     
-    NSArray *arrayOfAllEmployees = serializedJSON[@"aaData"][@"Employees"];
+    NSArray *arrayOfAllEmployees = serializedJSON[@"UCBEmployee"][@"UCBEmployeeData"];
     NSMutableArray *tempStorage = [[NSMutableArray alloc] init];
     
     for (NSDictionary *anEmployee in arrayOfAllEmployees)
@@ -43,6 +43,26 @@
     
     listOfAllEmployees = tempStorage;
     
+//    for (UserProfile *aUser in listOfAllEmployees)
+//    {
+//        for (NSString *reportee in aUser.directReportees)
+//        {
+//            BOOL found = NO;
+//            for (UserProfile *userP in listOfAllEmployees)
+//            {
+//                if ([userP.employeeID isEqualToString:reportee])
+//                {
+//                    found = YES;
+//                }
+//            }
+//            
+//            if (!found)
+//            {
+//                NSLog(@"not found %@", reportee);
+//            }
+//        }
+//    }
+    
     return listOfAllEmployees;
 }
 
@@ -50,20 +70,34 @@
 {
     UserProfile *employeeDetails = [[UserProfile alloc] init];
 
-    employeeDetails.profileID = [VALUE_FOR(employeeDictionary[@"ID"]) intValue];
+//    employeeDetails.profileID = [VALUE_FOR(employeeDictionary[@"ID"]) intValue];
+//    employeeDetails.middleName = VALUE_FOR(employeeDictionary[@"MiddleName"]);
+//    employeeDetails.gender = VALUE_FOR(employeeDictionary[@"Gender"]);
+//    employeeDetails.designation = VALUE_FOR(employeeDictionary[@"Designation"]);
+
     employeeDetails.firstName = VALUE_FOR(employeeDictionary[@"FirstName"]);
-    employeeDetails.middleName = VALUE_FOR(employeeDictionary[@"MiddleName"]);
     employeeDetails.lastName = VALUE_FOR(employeeDictionary[@"LastName"]);
+    employeeDetails.country = VALUE_FOR(employeeDictionary[@"Country"]);
+    employeeDetails.title = VALUE_FOR(employeeDictionary[@"Title"]);
+    employeeDetails.company = VALUE_FOR(employeeDictionary[@"Company"]);
+    employeeDetails.department = VALUE_FOR(employeeDictionary[@"Department"]);
+
     employeeDetails.emailID = VALUE_FOR(employeeDictionary[@"Email"]);
     employeeDetails.phoneNo = VALUE_FOR(employeeDictionary[@"Phone"]);
     employeeDetails.mobileNo = VALUE_FOR(employeeDictionary[@"Mobile"]);
-    employeeDetails.gender = VALUE_FOR(employeeDictionary[@"Gender"]);
     employeeDetails.employeeID = VALUE_FOR(employeeDictionary[@"EmployeeID"]);
-    employeeDetails.designation = VALUE_FOR(employeeDictionary[@"Designation"]);
 
-    employeeDetails.reportsTo = [VALUE_FOR(employeeDictionary[@"fkReportsTo"]) intValue];
+    if (employeeDictionary[@"ReportingManagerId"] != [NSNull null])
+    {
+        employeeDetails.reportsTo = employeeDictionary[@"ReportingManagerId"];
+        NSLog(@"employee reports to %@", employeeDetails.reportsTo);
+    }else
+        employeeDetails.reportsTo = nil;
     
-    employeeDetails.directReportees = [self giveDirectRepoteesFor:employeeDictionary[@"DirectReportees"]];
+    
+    employeeDetails.photoImage = VALUE_FOR(employeeDictionary[@"Photo"]);
+
+    employeeDetails.directReportees = [self giveDirectRepoteesFor:employeeDictionary[@"Reportees"]];
     return employeeDetails;
 }
 
@@ -88,26 +122,26 @@
         listOfAllEmployees = [self employeeListForData:responseData];
     }
     
-    UserProfile *CEO_1 = [self userForID:8];
-    UserProfile *CEO_2 = [self userForID:10];
+    UserProfile *CEO_1 = [self userForID:@"U044070"];
+//    UserProfile *CEO_2 = [self userForID:10];
     
-    [firstTwoLevelEmployees addObjectsFromArray:@[CEO_1, CEO_2]];
+    [firstTwoLevelEmployees addObjectsFromArray:@[CEO_1]];
     
     [firstTwoLevelEmployees addObjectsFromArray:[self directReporteesFor:CEO_1 InListOfEmployee:nil]];
-    [firstTwoLevelEmployees addObjectsFromArray:[self directReporteesFor:CEO_2 InListOfEmployee:nil]];
+//    [firstTwoLevelEmployees addObjectsFromArray:[self directReporteesFor:CEO_2 InListOfEmployee:nil]];
     
     return firstTwoLevelEmployees;
 }
 
-- (UserProfile *)userForID:(NSInteger)profileID
+- (UserProfile *)userForID:(NSString *)employeeID
 {
-    UserProfile *user;
+    UserProfile *user = nil;
     
     if (listOfAllEmployees != nil)
     {
         for (user in listOfAllEmployees)
         {
-            if (user.profileID == profileID)
+            if ([user.employeeID isEqualToString:employeeID])
             {
                 break;
             }
@@ -131,8 +165,10 @@
     
     for (NSString *anReporteeID in user.directReportees)
     {
-        NSInteger reporteeID = [anReporteeID integerValue];
-        [array addObject:[self userForID:reporteeID]];
+//        NSInteger reporteeID = [anReporteeID integerValue];
+        [array addObject:[self userForID:anReporteeID]];
+        NSLog(@"USER.empoyee id = %@", anReporteeID);
+
     }
     
     return array;
