@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameOfUser;
 @property (weak, nonatomic) IBOutlet UILabel *designationLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *middleViewTopConst;
+@property (weak, nonatomic) IBOutlet UIImageView *currentEmployeeImageView;
 @end
 
 @implementation CardViewController
@@ -195,6 +196,8 @@
     
     self.nameOfUser.text = [NSString stringWithFormat:@"%@ %@", self.userToBeShown.firstName, self.userToBeShown.lastName];
     self.designationLabel.text = self.userToBeShown.title;
+    
+    self.currentEmployeeImageView.image = [UIImage imageNamed:toUser.photoImage];
     
     [self.directReporteesCollectionView reloadData];
     [self.reportsToCollectionView reloadData];

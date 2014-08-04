@@ -371,7 +371,7 @@
                             "Mobile": "+32-499-614 809",
                             "Fax": "Not Available",
                             "Email": "Dolores.Seoane@ucb.com",
-                            "Photo": "Not Available",
+                            "Photo": "avatar.jpg",
                             "ReportingManagerId": "U000906",
                             "Reportees": null
                             },
@@ -439,7 +439,7 @@
                             "Mobile": "+32-475-273543",
                             "Fax": "+32-2-386 3244",
                             "Email": "Xavier.Cullus@ucb.com",
-                            "Photo": "xavier.jpg",
+                            "Photo": "avatar.jpg",
                             "ReportingManagerId": "U030154",
                             "Reportees": null
                             },
@@ -581,7 +581,7 @@
                             },
                             {
                             "EmployeeID": "U015999",
-                            "FirstName": "U015999",
+                            "FirstName": "Olivier",
                             "LastName": "Hustin",
                             "Country": "USA",
                             "Title": "AD Global IT Product Registration",
@@ -592,7 +592,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Olivier.Hustin@ucb.com",
-                            "Photo": "olivier.jpg",
+                            "Photo": "olivier_hustin.jpg",
                             "ReportingManagerId": "U046049",
                             "Reportees": null
                             },
@@ -1068,7 +1068,7 @@
                             "Mobile": "Not Available",
                             "Fax": "+81-3-6864 7378",
                             "Email": "Tomoaki.Ikeda@ucb.com",
-                            "Photo": "masanori.jpg",
+                            "Photo": "avatar.jpg",
                             "ReportingManagerId": "U014193",
                             "Reportees": null
                             },
@@ -1255,7 +1255,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Ami.Watanuki@ucb.com",
-                            "Photo": "kenichi.jpg",
+                            "Photo": "avatar.jpg",
                             "ReportingManagerId": "U014193",
                             "Reportees": null
                             },
@@ -1765,7 +1765,7 @@
                             "Mobile": "+91-984-5405372",
                             "Fax": "+91-80-4047 4101",
                             "Email": "Ajay.Venkatesh@ucb.com",
-                            "Photo": "ajay",
+                            "Photo": "ajay.jpg",
                             "ReportingManagerId": "U015935",
                             "Reportees": null
                             },
@@ -1816,7 +1816,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "David.Jiang@ucb.com",
-                            "Photo": "david_jiangjpg",
+                            "Photo": "david_jiang.jpg",
                             "ReportingManagerId": "U033639",
                             "Reportees": null
                             },

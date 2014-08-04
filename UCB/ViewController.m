@@ -51,7 +51,7 @@
                                                    userInfo:nil
                                                     repeats:YES];
     
-    currentPageNo = 0;
+    currentPageNo = 2;
     [self setScrollView:self.scrollView toPageNo:currentPageNo animated:NO];
 }
 

@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *emailIDLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mobileNoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *noOfReporteesLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *currentUserImageView;
 
 @end
 
