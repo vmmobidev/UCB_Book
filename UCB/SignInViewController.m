@@ -43,7 +43,9 @@
 
     if ([UIScreen mainScreen].bounds.size.height != 568)
     {
-        self.backgrounImageView.image = [UIImage imageNamed:@"UCB-loginScreen640x960@2x.jpg"];
+        self.backgrounImageView.image = [UIImage imageNamed:@"UCB-loginScreen640x960@2x.png"];
+        
+        
     }
     
 }

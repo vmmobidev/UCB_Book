@@ -17,6 +17,8 @@
 		861272EB198CB76900B5A169 /* HolidayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861272EA198CB76900B5A169 /* HolidayViewController.m */; };
 		861272ED198CB8F100B5A169 /* ind_flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 861272EC198CB8F100B5A169 /* ind_flag.png */; };
 		861272F0198CB97D00B5A169 /* HolidayDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */; };
+		86236ED219908DB000A631D1 /* txtFldImg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86236ED119908DB000A631D1 /* txtFldImg@2x.png */; };
+		86236ED61990998600A631D1 /* pin_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 86236ED51990998600A631D1 /* pin_map.png */; };
 		862D15FB198D163F00837F51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15FA198D163F00837F51 /* QuartzCore.framework */; };
 		8633F9FF198CC0C700D77B8E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633F9FE198CC0C700D77B8E /* SWRevealViewController.m */; };
 		8633FA02198CC81D00D77B8E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8633FA01198CC81D00D77B8E /* libsqlite3.dylib */; };
@@ -175,7 +177,6 @@
 		867F6E95198FBA3E0011018D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F4198D15EC00837F51 /* libz.dylib */; };
 		867F6E96198FBA450011018D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F6198D15F600837F51 /* MobileCoreServices.framework */; };
 		867F6E97198FBA4D0011018D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F8198D15FE00837F51 /* StoreKit.framework */; };
-		8689E94C198F5F380019AA08 /* pin_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 8689E94B198F5F380019AA08 /* pin_map.png */; };
 		8689E94F198F66960019AA08 /* MapDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8689E94E198F66960019AA08 /* MapDetailsViewController.m */; };
 		8689E951198F85F20019AA08 /* ic_ucb_logo_option_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */; };
 		8689E953198F8CD10019AA08 /* aboutUs.html in Resources */ = {isa = PBXBuildFile; fileRef = 8689E952198F8CD10019AA08 /* aboutUs.html */; };
@@ -230,6 +231,8 @@
 		861272EC198CB8F100B5A169 /* ind_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ind_flag.png; sourceTree = "<group>"; };
 		861272EE198CB97D00B5A169 /* HolidayDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayDetailsViewController.h; sourceTree = "<group>"; };
 		861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayDetailsViewController.m; sourceTree = "<group>"; };
+		86236ED119908DB000A631D1 /* txtFldImg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "txtFldImg@2x.png"; sourceTree = "<group>"; };
+		86236ED51990998600A631D1 /* pin_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_map.png; sourceTree = "<group>"; };
 		862D15EE198D15CC00837F51 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		862D15F0198D15D600837F51 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		862D15F2198D15E000837F51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -399,7 +402,6 @@
 		867121D7198CB83F00DFAC22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		867121D9198CBA8C00DFAC22 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		867F6E90198FBA090011018D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		8689E94B198F5F380019AA08 /* pin_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_map.png; sourceTree = "<group>"; };
 		8689E94D198F66960019AA08 /* MapDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDetailsViewController.h; sourceTree = "<group>"; };
 		8689E94E198F66960019AA08 /* MapDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDetailsViewController.m; sourceTree = "<group>"; };
 		8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_ucb_logo_option_01.png; sourceTree = "<group>"; };
@@ -795,8 +797,9 @@
 		86B74AED198B62180094C98C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				86236ED51990998600A631D1 /* pin_map.png */,
+				86236ED119908DB000A631D1 /* txtFldImg@2x.png */,
 				8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */,
-				8689E94B198F5F380019AA08 /* pin_map.png */,
 				866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */,
 				866456BC198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png */,
 				861272EC198CB8F100B5A169 /* ind_flag.png */,
@@ -946,6 +949,7 @@
 				860CE0EF198BB2A20067FD1B /* ic_aboutUs@2x.png in Resources */,
 				8633FA51198CE4B800D77B8E /* South-Africa.jpg in Resources */,
 				8633FA38198CE4B800D77B8E /* Canada.jpg in Resources */,
+				86236ED61990998600A631D1 /* pin_map.png in Resources */,
 				8633FA57198CE4B800D77B8E /* UCBLocationCountryList.txt in Resources */,
 				8643C69B198F6ACC000B7BA7 /* frederic.jpg in Resources */,
 				8643C6BF198F6ACC000B7BA7 /* philippe.jpg in Resources */,
@@ -965,6 +969,7 @@
 				8689E953198F8CD10019AA08 /* aboutUs.html in Resources */,
 				8643C69F198F6ACC000B7BA7 /* herman.jpg in Resources */,
 				8633FA45198CE4B800D77B8E /* Italy.jpg in Resources */,
+				86236ED219908DB000A631D1 /* txtFldImg@2x.png in Resources */,
 				8633FA4A198CE4B800D77B8E /* New-zealand.jpg in Resources */,
 				8643C692198F6ACC000B7BA7 /* david_wilson.jpg in Resources */,
 				86502275199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg in Resources */,
@@ -995,7 +1000,6 @@
 				8633FA53198CE4B800D77B8E /* Spain.jpg in Resources */,
 				867121C2198CA98200DFAC22 /* ic_social_chat.png in Resources */,
 				8643C68C198F6ACC000B7BA7 /* catherine.jpg in Resources */,
-				8689E94C198F5F380019AA08 /* pin_map.png in Resources */,
 				860CE0EC198BB23B0067FD1B /* ic_directory@2x.png in Resources */,
 				8643C6C0198F6ACC000B7BA7 /* pieter.jpg in Resources */,
 				8643C681198F6ACC000B7BA7 /* andriy.jpg in Resources */,
