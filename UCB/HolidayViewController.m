@@ -43,6 +43,9 @@
                                                         encoding:NSUTF8StringEncoding
                                                            error:nil];
     countryNameArr =  [countryName componentsSeparatedByString:@"\r\n"];
+    
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    [self.view addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
 }
 
 

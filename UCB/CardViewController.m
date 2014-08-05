@@ -72,6 +72,9 @@
     
     SlideOutMenuViewController *slideVC = (SlideOutMenuViewController *) self.revealViewController.rearViewController;
     slideVC.currentFrontVCIndex = 1;
+    
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    [self.view addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
 }
 
 - (void)viewWillAppear:(BOOL)animated

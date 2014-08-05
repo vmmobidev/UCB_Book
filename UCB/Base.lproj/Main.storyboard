@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ekw-sB-h5j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ekw-sB-h5j">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCB-Raw-Image-568_h.png" translatesAutoresizingMaskIntoConstraints="NO" id="iwR-ng-OU6">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCB-Raw-Image-568_h.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iwR-ng-OU6">
                                                 <rect key="frame" x="-51" y="0.0" width="1381" height="568"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </imageView>
@@ -108,7 +108,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCB-loginScreen-640x1136.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-d0-l7e">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCB-loginScreen-640x1136.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-d0-l7e">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -319,7 +319,7 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3As-RN-Nhx">
-                                                            <rect key="frame" x="262" y="-3" width="37" height="37"/>
+                                                            <rect key="frame" x="262" y="-5" width="40" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" image="ic_func_card_down_1.png">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1336,16 +1336,74 @@
                                     <outlet property="delegate" destination="pjr-jb-Ghr" id="aeC-XZ-kMk"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0s-2l-23e">
+                                <rect key="frame" x="0.0" y="527" width="320" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="mFu-lC-9c4"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPushView:" destination="pjr-jb-Ghr" eventType="touchUpInside" id="tB0-5v-vC1"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ghj-X3-gOt" userLabel="Push screen">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-Rm-0b8">
+                                        <rect key="frame" x="20" y="75" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="pjr-jb-Ghr" id="GZf-K4-EAX"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAc-CR-eHA">
+                                        <rect key="frame" x="109" y="127" width="103" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendPush:" destination="pjr-jb-Ghr" eventType="touchUpInside" id="BWa-N9-k8a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYv-tI-aSs">
+                                        <rect key="frame" x="109" y="207" width="103" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hide">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hidePushView:" destination="pjr-jb-Ghr" eventType="touchUpInside" id="oQL-uk-5vi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ghj-X3-gOt" firstAttribute="top" secondItem="KQQ-i7-vOz" secondAttribute="top" id="2Nw-Ab-Skp"/>
                             <constraint firstItem="Ka2-yG-9t4" firstAttribute="top" secondItem="KQQ-i7-vOz" secondAttribute="top" constant="20" id="Jfd-TU-qhq"/>
                             <constraint firstItem="Ka2-yG-9t4" firstAttribute="leading" secondItem="KQQ-i7-vOz" secondAttribute="leading" id="KpU-3g-YRq"/>
                             <constraint firstAttribute="trailing" secondItem="Ka2-yG-9t4" secondAttribute="trailing" id="MbY-T3-tLm"/>
+                            <constraint firstItem="z0s-2l-23e" firstAttribute="leading" secondItem="KQQ-i7-vOz" secondAttribute="leading" id="NMv-eh-YQc"/>
+                            <constraint firstAttribute="trailing" secondItem="z0s-2l-23e" secondAttribute="trailing" id="YJu-Oc-Dcu"/>
+                            <constraint firstItem="hP1-8n-ieg" firstAttribute="top" secondItem="Ghj-X3-gOt" secondAttribute="bottom" constant="1" id="Yag-Cq-O6X"/>
                             <constraint firstItem="hP1-8n-ieg" firstAttribute="top" secondItem="Ka2-yG-9t4" secondAttribute="bottom" id="ZY8-gL-xwq"/>
+                            <constraint firstAttribute="trailing" secondItem="Ghj-X3-gOt" secondAttribute="trailing" id="aM1-G7-OGG"/>
+                            <constraint firstItem="Ghj-X3-gOt" firstAttribute="leading" secondItem="KQQ-i7-vOz" secondAttribute="leading" id="gSN-GY-wjf"/>
+                            <constraint firstItem="hP1-8n-ieg" firstAttribute="top" secondItem="z0s-2l-23e" secondAttribute="bottom" constant="2" id="vej-PA-yg8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="pushTextField" destination="ejS-Rm-0b8" id="6Ro-pT-fg4"/>
+                        <outlet property="pushView" destination="Ghj-X3-gOt" id="Lcj-hG-eic"/>
                         <outlet property="tableViewOutlet" destination="Ka2-yG-9t4" id="T3H-fu-K3V"/>
                         <segue destination="c4v-n9-MCN" kind="custom" identifier="slideOutCardViewSegue" customClass="SWRevealViewControllerSegue" id="QLC-zQ-qAW"/>
                         <segue destination="Hkn-Yb-q64" kind="custom" identifier="slideOutHolidaySegue" customClass="SWRevealViewControllerSegue" id="4fo-Qa-iBj"/>
@@ -1475,7 +1533,7 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpI-CM-Kaq">
-                                                            <rect key="frame" x="262" y="-3" width="37" height="37"/>
+                                                            <rect key="frame" x="262" y="-4" width="40" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" image="ic_func_card_down_1.png">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1537,8 +1595,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="UCB-Raw-Image-568_h.png" width="1381" height="568"/>
-        <image name="UCB-loginScreen-640x1136.png" width="320" height="568"/>
+        <image name="UCB-Raw-Image-568_h.jpg" width="1381" height="568"/>
+        <image name="UCB-loginScreen-640x1136.jpg" width="320" height="568"/>
         <image name="history.png" width="32" height="32"/>
         <image name="ic_avatar_person_collectionView.png" width="45" height="45"/>
         <image name="ic_avatar_person_large.png" width="100" height="100"/>
@@ -1557,7 +1615,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="SRS-YY-HNs"/>
-        <segue reference="VM0-pH-yyN"/>
         <segue reference="LlM-6q-7WV"/>
+        <segue reference="VM0-pH-yyN"/>
     </inferredMetricsTieBreakers>
 </document>

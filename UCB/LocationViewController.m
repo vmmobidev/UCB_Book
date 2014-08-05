@@ -40,7 +40,7 @@
     
     allLocationdata = [[NSMutableArray alloc] init];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"ubc_location" ofType:@"js"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"ubc_location" ofType:@"txt"];
     
     NSString *string = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
@@ -65,6 +65,9 @@
         [allLocationdata addObject:location];
         
     }
+    
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    [self.view addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
 }
 
 - (void)revealController:(SWRevealViewController *)revealController didMoveToPosition:(FrontViewPosition)position

@@ -69,6 +69,9 @@
     
     [self.tableView reloadData];
     [HUD hide:YES];
+    
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    [self.view addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning

@@ -14,8 +14,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [Parse setApplicationId:@"ACQOQDyUsdgruC4k1OctioA8XXt8haSNWaJjTK24"
-                  clientKey:@"5BDbC40AqGxQJFICuRSzxMfT2vxgWDIBGYkNWOxn"];
+    [Parse setApplicationId:@"ACQOQDyUsdgruC4k1OctioA8XXt8haSNWaJjTK24" clientKey:@"5BDbC40AqGxQJFICuRSzxMfT2vxgWDIBGYkNWOxn"];
 
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
      UIRemoteNotificationTypeAlert|
@@ -55,6 +54,7 @@
 {
     // Store the deviceToken in the current installation and save it to Parse.
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation addUniqueObject:@"Pushing" forKey:@"channels"];
     [currentInstallation setDeviceTokenFromData:deviceToken];
     [currentInstallation saveInBackground];
 }

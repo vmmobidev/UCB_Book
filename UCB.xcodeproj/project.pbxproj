@@ -151,11 +151,11 @@
 		86443129198D065800A10371 /* holidays.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 86443128198D056D00A10371 /* holidays.sqlite */; };
 		8644312E198D0D3400A10371 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8644312D198D0D3400A10371 /* LocationViewController.m */; };
 		86443134198D17B500A10371 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 86443133198D17B500A10371 /* Location.m */; };
-		8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */; };
-		8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */; };
 		8646F574198B53410081BD9F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646F573198B53410081BD9F /* SignInViewController.m */; };
-		8654C9D5198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8654C9D3198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png */; };
-		8654C9D6198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8654C9D4198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png */; };
+		865022721990880F00891CD7 /* UCB-Raw-Image-568_h.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 865022711990880F00891CD7 /* UCB-Raw-Image-568_h.jpg */; };
+		86502275199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86502273199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg */; };
+		86502276199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86502274199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg */; };
+		8650227719908A7A00891CD7 /* ubc_location.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8644312F198D0D4000A10371 /* ubc_location.txt */; };
 		866456B7198CE0C300ABE5A4 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 866456B6198CE0C300ABE5A4 /* Postman.m */; };
 		866456BA198CEF4B00ABE5A4 /* ic_avatar_person_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */; };
 		866456BD198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 866456BC198CEF9A00ABE5A4 /* ic_avatar_person_collectionView@2x.png */; };
@@ -193,10 +193,6 @@
 		8696BE321988EEA200AAA3C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8696BE141988EEA200AAA3C7 /* UIKit.framework */; };
 		8696BE3A1988EEA200AAA3C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8696BE381988EEA200AAA3C7 /* InfoPlist.strings */; };
 		8696BE3C1988EEA200AAA3C7 /* UCBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8696BE3B1988EEA200AAA3C7 /* UCBTests.m */; };
-		8696BE53198919D300AAA3C7 /* CenterImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8696BE50198919D300AAA3C7 /* CenterImage.png */; };
-		8696BE54198919D300AAA3C7 /* RightImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8696BE51198919D300AAA3C7 /* RightImage.png */; };
-		8696BE55198919D300AAA3C7 /* LeftImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8696BE52198919D300AAA3C7 /* LeftImage.png */; };
-		869FBFEF198B89B400A1D202 /* login_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 869FBFEE198B89B400A1D202 /* login_bg@2x.png */; };
 		86AAC119198F45EF0089D33B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AAC118198F45EF0089D33B /* MapViewController.m */; };
 		86AAC11B198F579C0089D33B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AAC11A198F579C0089D33B /* MapKit.framework */; };
 		86B74AEC198B62130094C98C /* Logo-258X60.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B74AEB198B62130094C98C /* Logo-258X60.png */; };
@@ -380,15 +376,14 @@
 		86443128198D056D00A10371 /* holidays.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = holidays.sqlite; path = Flags/holidays.sqlite; sourceTree = "<group>"; };
 		8644312C198D0D3400A10371 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		8644312D198D0D3400A10371 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
-		8644312F198D0D4000A10371 /* ubc_location.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ubc_location.js; sourceTree = "<group>"; };
+		8644312F198D0D4000A10371 /* ubc_location.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ubc_location.txt; sourceTree = "<group>"; };
 		86443132198D17B500A10371 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		86443133198D17B500A10371 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
-		8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-480h.png"; sourceTree = "<group>"; };
-		8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image-568_h.png"; sourceTree = "<group>"; };
 		8646F572198B53410081BD9F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		8646F573198B53410081BD9F /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
-		8654C9D3198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-loginScreen-640x1136@2x.png"; sourceTree = "<group>"; };
-		8654C9D4198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-loginScreen640x960@2x.png"; sourceTree = "<group>"; };
+		865022711990880F00891CD7 /* UCB-Raw-Image-568_h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UCB-Raw-Image-568_h.jpg"; sourceTree = "<group>"; };
+		86502273199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UCB-loginScreen-640x1136@2x.jpg"; sourceTree = "<group>"; };
+		86502274199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UCB-loginScreen640x960@2x.jpg"; sourceTree = "<group>"; };
 		866456B5198CE0C300ABE5A4 /* Postman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postman.h; sourceTree = "<group>"; };
 		866456B6198CE0C300ABE5A4 /* Postman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postman.m; sourceTree = "<group>"; };
 		866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_avatar_person_large.png; sourceTree = "<group>"; };
@@ -428,10 +423,6 @@
 		8696BE371988EEA200AAA3C7 /* UCBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UCBTests-Info.plist"; sourceTree = "<group>"; };
 		8696BE391988EEA200AAA3C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8696BE3B1988EEA200AAA3C7 /* UCBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCBTests.m; sourceTree = "<group>"; };
-		8696BE50198919D300AAA3C7 /* CenterImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterImage.png; sourceTree = "<group>"; };
-		8696BE51198919D300AAA3C7 /* RightImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightImage.png; sourceTree = "<group>"; };
-		8696BE52198919D300AAA3C7 /* LeftImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftImage.png; sourceTree = "<group>"; };
-		869FBFEE198B89B400A1D202 /* login_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_bg@2x.png"; sourceTree = "<group>"; };
 		86AAC117198F45EF0089D33B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		86AAC118198F45EF0089D33B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		86AAC11A198F579C0089D33B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -687,7 +678,7 @@
 		8644312B198D0CFF00A10371 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				8644312F198D0D4000A10371 /* ubc_location.js */,
+				8644312F198D0D4000A10371 /* ubc_location.txt */,
 				8644312C198D0D3400A10371 /* LocationViewController.h */,
 				8644312D198D0D3400A10371 /* LocationViewController.m */,
 				86AAC117198F45EF0089D33B /* MapViewController.h */,
@@ -804,8 +795,6 @@
 		86B74AED198B62180094C98C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8654C9D3198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png */,
-				8654C9D4198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png */,
 				8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */,
 				8689E94B198F5F380019AA08 /* pin_map.png */,
 				866456B8198CEF4B00ABE5A4 /* ic_avatar_person_large.png */,
@@ -824,13 +813,10 @@
 				867121D1198CAEBC00DFAC22 /* ic_func_textmsg_primary_large@2x.png */,
 				86B74AF6198B7BA30094C98C /* menu@2x.png */,
 				86B74AF4198B7B9F0094C98C /* menu.png */,
-				869FBFEE198B89B400A1D202 /* login_bg@2x.png */,
 				86B74AEB198B62130094C98C /* Logo-258X60.png */,
-				8646F56E198B4DB50081BD9F /* UCB-Raw-Image-480h.png */,
-				8646F56F198B4DB50081BD9F /* UCB-Raw-Image-568_h.png */,
-				8696BE50198919D300AAA3C7 /* CenterImage.png */,
-				8696BE51198919D300AAA3C7 /* RightImage.png */,
-				8696BE52198919D300AAA3C7 /* LeftImage.png */,
+				865022711990880F00891CD7 /* UCB-Raw-Image-568_h.jpg */,
+				86502273199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg */,
+				86502274199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -942,6 +928,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8650227719908A7A00891CD7 /* ubc_location.txt in Resources */,
 				8643C6CE198F6AEC000B7BA7 /* UCBEmployeeData.js in Resources */,
 				86443129198D065800A10371 /* holidays.sqlite in Resources */,
 				8643C68B198F6ACC000B7BA7 /* burkhard.jpg in Resources */,
@@ -980,6 +967,7 @@
 				8633FA45198CE4B800D77B8E /* Italy.jpg in Resources */,
 				8633FA4A198CE4B800D77B8E /* New-zealand.jpg in Resources */,
 				8643C692198F6ACC000B7BA7 /* david_wilson.jpg in Resources */,
+				86502275199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg in Resources */,
 				8643C693198F6ACC000B7BA7 /* didier.jpg in Resources */,
 				8643C682198F6ACC000B7BA7 /* anjali.jpg in Resources */,
 				8643C680198F6ACC000B7BA7 /* andries.jpg in Resources */,
@@ -990,7 +978,6 @@
 				8633FA4D198CE4B800D77B8E /* Portugal.jpg in Resources */,
 				861272ED198CB8F100B5A169 /* ind_flag.png in Resources */,
 				8643C67D198F6ACC000B7BA7 /* alexandre.jpg in Resources */,
-				8654C9D6198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png in Resources */,
 				8643C689198F6ACC000B7BA7 /* bill.jpg in Resources */,
 				8643C6C5198F6ACC000B7BA7 /* sebastien.jpg in Resources */,
 				8643C699198F6ACC000B7BA7 /* fabien.jpg in Resources */,
@@ -1010,7 +997,6 @@
 				8643C68C198F6ACC000B7BA7 /* catherine.jpg in Resources */,
 				8689E94C198F5F380019AA08 /* pin_map.png in Resources */,
 				860CE0EC198BB23B0067FD1B /* ic_directory@2x.png in Resources */,
-				8646F570198B4DB50081BD9F /* UCB-Raw-Image-480h.png in Resources */,
 				8643C6C0198F6ACC000B7BA7 /* pieter.jpg in Resources */,
 				8643C681198F6ACC000B7BA7 /* andriy.jpg in Resources */,
 				8633FA3F198CE4B800D77B8E /* Germany.jpg in Resources */,
@@ -1021,8 +1007,6 @@
 				8633FA4F198CE4B800D77B8E /* Russia.jpg in Resources */,
 				8643C6C2198F6ACC000B7BA7 /* ronny.jpg in Resources */,
 				8643C6A9198F6ACC000B7BA7 /* jugnu.jpg in Resources */,
-				8646F571198B4DB50081BD9F /* UCB-Raw-Image-568_h.png in Resources */,
-				8696BE53198919D300AAA3C7 /* CenterImage.png in Resources */,
 				8643C6A2198F6ACC000B7BA7 /* hiromi.jpg in Resources */,
 				8633FA58198CE4B800D77B8E /* UK.jpg in Resources */,
 				8633FA40198CE4B800D77B8E /* Greece.jpg in Resources */,
@@ -1030,19 +1014,19 @@
 				8643C68E198F6ACC000B7BA7 /* corey.jpg in Resources */,
 				8643C6AB198F6ACC000B7BA7 /* koen.jpg in Resources */,
 				8643C6A1198F6ACC000B7BA7 /* hiroki.jpg in Resources */,
-				869FBFEF198B89B400A1D202 /* login_bg@2x.png in Resources */,
 				8643C6AC198F6ACC000B7BA7 /* kris.jpg in Resources */,
 				8633FA54198CE4B800D77B8E /* Sweden.jpg in Resources */,
 				8633FA43198CE4B800D77B8E /* Ireland.jpg in Resources */,
-				8696BE55198919D300AAA3C7 /* LeftImage.png in Resources */,
 				8633FA42198CE4B800D77B8E /* India.jpg in Resources */,
 				86B74AF5198B7B9F0094C98C /* menu.png in Resources */,
 				8643C67C198F6ACC000B7BA7 /* akiyoshi.jpg in Resources */,
 				8633FA36198CE4B800D77B8E /* Brazil.jpg in Resources */,
 				8633FA3A198CE4B800D77B8E /* Czech.jpg in Resources */,
 				8643C69E198F6ACC000B7BA7 /* haluk.jpg in Resources */,
+				86502276199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg in Resources */,
 				8643C6BD198F6ACC000B7BA7 /* osamu.jpg in Resources */,
 				867121D2198CAEBC00DFAC22 /* ic_device_access_call_large@2x.png in Resources */,
+				865022721990880F00891CD7 /* UCB-Raw-Image-568_h.jpg in Resources */,
 				8643C6CC198F6ACC000B7BA7 /* walter.jpg in Resources */,
 				8643C6AE198F6ACC000B7BA7 /* maciej.jpg in Resources */,
 				8643C685198F6ACC000B7BA7 /* antimo.jpg in Resources */,
@@ -1061,7 +1045,6 @@
 				8633FA4B198CE4B800D77B8E /* Norway.jpg in Resources */,
 				8643C6B9198F6ACC000B7BA7 /* olivier_deschamps.jpg in Resources */,
 				8633FA34198CE4B800D77B8E /* Austria.jpg in Resources */,
-				8696BE54198919D300AAA3C7 /* RightImage.png in Resources */,
 				8643C684198F6ACC000B7BA7 /* annick.jpg in Resources */,
 				8643C68A198F6ACC000B7BA7 /* brian.jpg in Resources */,
 				86B74AEC198B62130094C98C /* Logo-258X60.png in Resources */,
@@ -1073,7 +1056,6 @@
 				8643C698198F6ACC000B7BA7 /* eric.jpg in Resources */,
 				8643C6A7198F6ACC000B7BA7 /* jochum.jpg in Resources */,
 				8643C694198F6ACC000B7BA7 /* dirk.jpg in Resources */,
-				8654C9D5198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png in Resources */,
 				8643C6C7198F6ACC000B7BA7 /* srinivasa.jpg in Resources */,
 				8643C6BE198F6ACC000B7BA7 /* pascal.jpg in Resources */,
 				860CE0E3198BA94A0067FD1B /* ic_logout@2x.png in Resources */,
