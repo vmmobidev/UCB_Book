@@ -639,29 +639,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="33" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HcJ-Xl-4YM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HcJ-Xl-4YM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="34" id="UrU-RY-z9Y">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="34"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="44" id="UrU-RY-z9Y">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UrU-RY-z9Y" id="jY2-0i-3VR">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="33"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz9-fr-CvF">
-                                                    <rect key="frame" x="27" y="6" width="42" height="21"/>
+                                                    <rect key="frame" x="55" y="11" width="42" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.050980392159999999" green="0.3411764706" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="UhO-6a-6Vy">
+                                                    <rect key="frame" x="17" y="7" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="Evz-TN-RGs"/>
+                                                        <constraint firstAttribute="height" constant="30" id="uUC-wP-p8P"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="Qz9-fr-CvF" secondAttribute="centerY" id="GCe-hW-IT8"/>
-                                                <constraint firstItem="Qz9-fr-CvF" firstAttribute="leading" secondItem="jY2-0i-3VR" secondAttribute="leading" constant="27" id="Q64-aM-nrw"/>
+                                                <constraint firstItem="Qz9-fr-CvF" firstAttribute="leading" secondItem="jY2-0i-3VR" secondAttribute="leading" constant="55" id="Q64-aM-nrw"/>
+                                                <constraint firstAttribute="centerY" secondItem="UhO-6a-6Vy" secondAttribute="centerY" id="XX6-Gx-bqU"/>
+                                                <constraint firstItem="UhO-6a-6Vy" firstAttribute="leading" secondItem="jY2-0i-3VR" secondAttribute="leading" constant="17" id="j5g-nI-Jx9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -704,17 +714,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u0Q-96-iyl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0Q-96-iyl">
+                                <rect key="frame" x="0.0" y="133" width="320" height="435"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="t2K-Bp-fc0" id="h46-iH-MAq"/>
                                 </connections>
                             </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-258X60.png" translatesAutoresizingMaskIntoConstraints="NO" id="26u-6u-1VS">
+                                <rect key="frame" x="31" y="69" width="258" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="W1B-sG-1ZB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="u0Q-96-iyl" secondAttribute="trailing" id="G7h-bm-iXh"/>
+                            <constraint firstItem="u0Q-96-iyl" firstAttribute="leading" secondItem="Ogu-g7-1Pm" secondAttribute="leading" id="NA0-IP-Kbd"/>
+                            <constraint firstItem="tbg-hm-KS7" firstAttribute="top" secondItem="u0Q-96-iyl" secondAttribute="bottom" id="NgS-Ya-S1t"/>
+                            <constraint firstItem="26u-6u-1VS" firstAttribute="top" secondItem="fc5-Ww-Rzp" secondAttribute="bottom" constant="5" id="dEi-TY-QVY"/>
+                            <constraint firstAttribute="trailing" secondItem="26u-6u-1VS" secondAttribute="trailing" constant="31" id="gP5-7L-880"/>
+                            <constraint firstItem="u0Q-96-iyl" firstAttribute="top" secondItem="26u-6u-1VS" secondAttribute="bottom" constant="4" id="rnl-4m-ras"/>
+                            <constraint firstItem="26u-6u-1VS" firstAttribute="leading" secondItem="Ogu-g7-1Pm" secondAttribute="leading" constant="31" id="v02-mW-AYa"/>
+                        </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="webViewOutlet" destination="u0Q-96-iyl" id="Glj-uP-EQw"/>
                     </connections>
@@ -1595,6 +1622,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Logo-258X60.png" width="258" height="60"/>
         <image name="UCB-Raw-Image-568_h.jpg" width="1381" height="568"/>
         <image name="UCB-loginScreen-640x1136.jpg" width="320" height="568"/>
         <image name="history.png" width="32" height="32"/>
@@ -1607,6 +1635,7 @@
         <image name="ic_social_chat.png" width="40" height="40"/>
         <image name="ic_ucb_logo_option_01.png" width="221" height="40"/>
         <image name="ind_flag.png" width="64" height="43"/>
+        <image name="pin_map.png" width="30" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1615,7 +1644,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="SRS-YY-HNs"/>
-        <segue reference="LlM-6q-7WV"/>
+        <segue reference="QLC-zQ-qAW"/>
         <segue reference="VM0-pH-yyN"/>
     </inferredMetricsTieBreakers>
 </document>
