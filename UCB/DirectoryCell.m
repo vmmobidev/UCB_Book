@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *userName;
 @property (weak, nonatomic) IBOutlet UILabel *employeePosition;
 @property (weak, nonatomic) IBOutlet UIView *menuView;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 
 @end
 
@@ -62,11 +63,13 @@
 - (void)unhideMenu
 {
     self.menuView.hidden = NO;
+//    self.profileImageView.frame = CGRectMake(6, 3, 40, 40);
 }
 
 - (void)hideMenu
 {
     self.menuView.hidden = YES;
+//    self.imageView.frame = CGRectMake(6, 3, 40, 40);
 }
 
 - (void)setUser:(UserProfile *)user
@@ -74,6 +77,7 @@
     _user = user;
     self.userName.text = [NSString stringWithFormat:@"%@ %@",user.firstName, user.lastName];
     self.employeePosition.text = user.title;
+    self.profileImageView.image = [UIImage imageNamed:user.photoImage];
 }
 
 - (IBAction)phoneUser:(UIButton *)sender

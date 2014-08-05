@@ -72,6 +72,7 @@
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     [self.view addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
+    self.title = @"Directory";
 }
 
 - (void)didReceiveMemoryWarning
