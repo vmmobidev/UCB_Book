@@ -17,6 +17,7 @@
 		861272EB198CB76900B5A169 /* HolidayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861272EA198CB76900B5A169 /* HolidayViewController.m */; };
 		861272ED198CB8F100B5A169 /* ind_flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 861272EC198CB8F100B5A169 /* ind_flag.png */; };
 		861272F0198CB97D00B5A169 /* HolidayDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */; };
+		86236ED219908DB000A631D1 /* txtFldImg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86236ED119908DB000A631D1 /* txtFldImg@2x.png */; };
 		862D15FB198D163F00837F51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15FA198D163F00837F51 /* QuartzCore.framework */; };
 		8633F9FF198CC0C700D77B8E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633F9FE198CC0C700D77B8E /* SWRevealViewController.m */; };
 		8633FA02198CC81D00D77B8E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8633FA01198CC81D00D77B8E /* libsqlite3.dylib */; };
@@ -227,6 +228,7 @@
 		861272EC198CB8F100B5A169 /* ind_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ind_flag.png; sourceTree = "<group>"; };
 		861272EE198CB97D00B5A169 /* HolidayDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayDetailsViewController.h; sourceTree = "<group>"; };
 		861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayDetailsViewController.m; sourceTree = "<group>"; };
+		86236ED119908DB000A631D1 /* txtFldImg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "txtFldImg@2x.png"; sourceTree = "<group>"; };
 		862D15EE198D15CC00837F51 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		862D15F0198D15D600837F51 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		862D15F2198D15E000837F51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -788,6 +790,7 @@
 		86B74AED198B62180094C98C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				86236ED119908DB000A631D1 /* txtFldImg@2x.png */,
 				8654C9D3198FB83E00C04FF8 /* UCB-loginScreen-640x1136@2x.png */,
 				8654C9D4198FB83E00C04FF8 /* UCB-loginScreen640x960@2x.png */,
 				8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */,
@@ -962,6 +965,7 @@
 				8689E953198F8CD10019AA08 /* aboutUs.html in Resources */,
 				8643C69F198F6ACC000B7BA7 /* herman.jpg in Resources */,
 				8633FA45198CE4B800D77B8E /* Italy.jpg in Resources */,
+				86236ED219908DB000A631D1 /* txtFldImg@2x.png in Resources */,
 				8633FA4A198CE4B800D77B8E /* New-zealand.jpg in Resources */,
 				8643C692198F6ACC000B7BA7 /* david_wilson.jpg in Resources */,
 				8643C693198F6ACC000B7BA7 /* didier.jpg in Resources */,

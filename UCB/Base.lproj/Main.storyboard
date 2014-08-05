@@ -144,10 +144,11 @@
                                     <action selector="signInBtnAction:" destination="7G8-HV-dpa" eventType="touchUpInside" id="MYz-7n-bYs"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xaz-Ns-20f">
-                                <rect key="frame" x="53" y="131" width="215" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  User name" minimumFontSize="17" background="txtFldImg.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xaz-Ns-20f">
+                                <rect key="frame" x="53" y="131" width="215" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="pJR-DG-dNi"/>
                                     <constraint firstAttribute="width" constant="215" id="xvf-Uw-4IY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -156,10 +157,12 @@
                                     <outlet property="delegate" destination="7G8-HV-dpa" id="tjb-Hs-RTM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ssy-az-32S">
-                                <rect key="frame" x="53" y="174" width="215" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  Password" minimumFontSize="17" background="txtFldImg.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ssy-az-32S">
+                                <rect key="frame" x="53" y="174" width="215" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="D1q-kR-4pw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="jXg-Fp-1v3"/>
                                     <constraint firstAttribute="width" constant="215" id="tL9-hg-UiD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -192,14 +195,14 @@
                             <constraint firstAttribute="centerX" secondItem="gjl-mx-jcI" secondAttribute="centerX" id="4np-ek-Uug"/>
                             <constraint firstAttribute="centerX" secondItem="wc7-fM-03z" secondAttribute="centerX" id="614-BJ-8Aw"/>
                             <constraint firstItem="QQU-AH-DHB" firstAttribute="top" secondItem="5Vf-LI-TBb" secondAttribute="bottom" id="6K2-jh-bsT"/>
-                            <constraint firstItem="ssy-az-32S" firstAttribute="top" secondItem="xaz-Ns-20f" secondAttribute="bottom" constant="13" id="AmB-NY-wbM"/>
+                            <constraint firstItem="ssy-az-32S" firstAttribute="top" secondItem="xaz-Ns-20f" secondAttribute="bottom" constant="9" id="AmB-NY-wbM"/>
                             <constraint firstAttribute="trailing" secondItem="5Vf-LI-TBb" secondAttribute="trailing" id="F0m-PW-BLz"/>
                             <constraint firstItem="xaz-Ns-20f" firstAttribute="top" secondItem="wFp-9M-Bcg" secondAttribute="bottom" constant="111" id="GBk-Hy-DBg"/>
                             <constraint firstAttribute="centerX" secondItem="lXM-dd-oqJ" secondAttribute="centerX" id="PH5-n9-0Wa"/>
                             <constraint firstItem="ZHG-d0-l7e" firstAttribute="leading" secondItem="sp0-rd-Fg5" secondAttribute="leading" id="PoI-fO-izj"/>
                             <constraint firstItem="gjl-mx-jcI" firstAttribute="top" secondItem="lXM-dd-oqJ" secondAttribute="bottom" constant="15" id="Pw0-as-JbE"/>
                             <constraint firstAttribute="centerX" secondItem="ssy-az-32S" secondAttribute="centerX" id="Q6C-hZ-7k1"/>
-                            <constraint firstItem="lXM-dd-oqJ" firstAttribute="top" secondItem="ssy-az-32S" secondAttribute="bottom" constant="38" id="SST-OC-EVQ"/>
+                            <constraint firstItem="lXM-dd-oqJ" firstAttribute="top" secondItem="ssy-az-32S" secondAttribute="bottom" constant="34" id="SST-OC-EVQ"/>
                             <constraint firstItem="QQU-AH-DHB" firstAttribute="top" secondItem="ZHG-d0-l7e" secondAttribute="bottom" id="Tid-j2-0s6"/>
                             <constraint firstItem="5Vf-LI-TBb" firstAttribute="leading" secondItem="sp0-rd-Fg5" secondAttribute="leading" id="Yy4-6U-rHY"/>
                             <constraint firstAttribute="centerX" secondItem="inH-e1-4cg" secondAttribute="centerX" constant="-3" id="cxa-OI-52U"/>
@@ -1538,6 +1541,7 @@
         <image name="ic_social_chat.png" width="40" height="40"/>
         <image name="ic_ucb_logo_option_01.png" width="221" height="40"/>
         <image name="ind_flag.png" width="64" height="43"/>
+        <image name="txtFldImg.png" width="215" height="34"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
