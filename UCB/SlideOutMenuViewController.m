@@ -8,13 +8,16 @@
 
 #import "SlideOutMenuViewController.h"
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
-@interface SlideOutMenuViewController ()
+@interface SlideOutMenuViewController () <UITextFieldDelegate>
 {
     NSArray *menuList, *listImagesArr, *menuStoryBordID;
 }
 
+@property (weak, nonatomic) IBOutlet UITextField *pushTextField;
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
+@property (weak, nonatomic) IBOutlet UIView *pushView;
 @end
 
 @implementation SlideOutMenuViewController
@@ -125,6 +128,28 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)showPushView:(id)sender
+{
+    self.pushView.hidden = NO;
+    [self.view endEditing:YES];
+
+}
+
+- (IBAction)hidePushView:(id)sender
+{
+    self.pushView.hidden = YES;
+    [self.view endEditing:YES];
+}
+
+- (IBAction)sendPush:(id)sender
+{
+    PFPush *push = [[PFPush alloc] init];
+    [push setChannel:@"Pushing"];
+    [push setMessage:self.pushTextField.text];
+    [push sendPushInBackground];
+    
+    [self.view endEditing:YES];
 }
 
 @end

@@ -39,6 +39,8 @@
     self.logInButton.layer.cornerRadius = 8.0f;
     
     self.navigationController.navigationBarHidden = YES;
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,7 +53,7 @@
                                                    userInfo:nil
                                                     repeats:YES];
     
-    currentPageNo = 2;
+    currentPageNo = 0;
     [self setScrollView:self.scrollView toPageNo:currentPageNo animated:NO];
 }
 

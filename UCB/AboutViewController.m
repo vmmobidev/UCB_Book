@@ -35,6 +35,9 @@
     
     
     self.revealViewController.delegate = self;
+    
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    [self.view addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
 }
 
 - (void) viewWillAppear:(BOOL)animated
