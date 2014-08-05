@@ -705,7 +705,7 @@
         <!--About View Controller-->
         <scene sceneID="mWl-A8-f0I">
             <objects>
-                <viewController id="t2K-Bp-fc0" customClass="AboutViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="t2K-Bp-fc0" customClass="AboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fc5-Ww-Rzp"/>
                         <viewControllerLayoutGuide type="bottom" id="tbg-hm-KS7"/>
