@@ -33,7 +33,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.userNameTxtFld.text = @"Herman.DePrins@ucb.com";
+    self.userNameTxtFld.text = @"khan.gulerasool@ucb.com";
     self.passwordTxtFld.text = @"herman";
     
     

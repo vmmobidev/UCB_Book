@@ -1748,7 +1748,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Shyam.VAIDYA@ucb.com",
-                            "Photo": "ajay.jpg",
+                            "Photo": "shyam.jpg",
                             "ReportingManagerId": "U015935",
                             "Reportees": null
                             },

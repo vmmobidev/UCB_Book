@@ -24,7 +24,6 @@
     if (self) {
         // Initialization code
         [self initialize];
-
     }
     return self;
 }
