@@ -60,10 +60,6 @@
     // Do any additional setup after loading the view.
 //    self.mapViewOutLet.delegate = self;
 
-
-
-
-    
 }
 
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
@@ -74,8 +70,8 @@
     annotationView = [[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:identifier];
     annotationView.enabled = YES;
     annotationView.canShowCallout =YES;
-    annotationView.image = [UIImage imageNamed:@"pin_map.png"];
-    
+    annotationView.image = [UIImage imageNamed:@"ucb-location-icon.png"];
+    annotationView.frame = CGRectMake(0, 0, 45,50);
     annotationView.rightCalloutAccessoryView = [UIButton buttonWithType: UIButtonTypeDetailDisclosure];
     return annotationView;
 }

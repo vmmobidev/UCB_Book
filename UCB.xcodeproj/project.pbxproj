@@ -245,6 +245,7 @@
 		86B74AFB198B88BE0094C98C /* DirectoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74AFA198B88BE0094C98C /* DirectoryCell.m */; };
 		86B74AFF198BA22E0094C98C /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74AFE198BA22E0094C98C /* UserProfile.m */; };
 		86B74B02198BA4300094C98C /* WholeEmployeeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74B01198BA4300094C98C /* WholeEmployeeDetails.m */; };
+		86FA0EFB1993A1F50057EE67 /* ucb-location-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86FA0EFA1993A1F50057EE67 /* ucb-location-icon.png */; };
 		DAE7933B3C0040E080D4D848 /* libPods-UCB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B963E477C07B419AA6578034 /* libPods-UCB.a */; };
 /* End PBXBuildFile section */
 
@@ -584,6 +585,7 @@
 		86B74AFE198BA22E0094C98C /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfile.m; sourceTree = "<group>"; };
 		86B74B00198BA4300094C98C /* WholeEmployeeDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WholeEmployeeDetails.h; sourceTree = "<group>"; };
 		86B74B01198BA4300094C98C /* WholeEmployeeDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WholeEmployeeDetails.m; sourceTree = "<group>"; };
+		86FA0EFA1993A1F50057EE67 /* ucb-location-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ucb-location-icon.png"; sourceTree = "<group>"; };
 		B963E477C07B419AA6578034 /* libPods-UCB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0ADE6B22CF42749C65A34D /* Pods-UCB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCB.xcconfig"; path = "Pods/Pods-UCB.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1067,6 +1069,7 @@
 		86B74AED198B62180094C98C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				86FA0EFA1993A1F50057EE67 /* ucb-location-icon.png */,
 				863BEBE81993367600D7E84C /* UCB_Panorama_View.jpg */,
 				86236ED51990998600A631D1 /* pin_map.png */,
 				86236ED119908DB000A631D1 /* txtFldImg@2x.png */,
@@ -1322,6 +1325,7 @@
 				8633FA4B198CE4B800D77B8E /* Norway.jpg in Resources */,
 				8643C6B9198F6ACC000B7BA7 /* olivier_deschamps.jpg in Resources */,
 				8649E5DC19920394006AFAE7 /* CHANGES.txt in Resources */,
+				86FA0EFB1993A1F50057EE67 /* ucb-location-icon.png in Resources */,
 				8633FA34198CE4B800D77B8E /* Austria.jpg in Resources */,
 				8643C684198F6ACC000B7BA7 /* annick.jpg in Resources */,
 				8643C68A198F6ACC000B7BA7 /* brian.jpg in Resources */,
