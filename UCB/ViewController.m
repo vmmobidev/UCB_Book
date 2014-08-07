@@ -43,7 +43,7 @@
     
     NSObject<PLIPanorama> *panorama = nil;
     panorama = [PLSphericalPanorama panorama];
-    [(PLSphericalPanorama *)panorama setTexture:[PLTexture textureWithImage:[PLImage imageWithPath:[[NSBundle mainBundle] pathForResource:@"UCB-Raw-Image" ofType:@"png"]]]];
+    [(PLSphericalPanorama *)panorama setTexture:[PLTexture textureWithImage:[PLImage imageWithPath:[[NSBundle mainBundle] pathForResource:@"UCB_Panorama_View" ofType:@"jpg"]]]];
     
     [self.plView setPanorama:panorama];
 }
