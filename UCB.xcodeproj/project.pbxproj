@@ -65,8 +65,8 @@
 		8633FA59198CE4B800D77B8E /* Ukraine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA31198CE4B800D77B8E /* Ukraine.jpg */; };
 		8633FA5A198CE4B800D77B8E /* US.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA32198CE4B800D77B8E /* US.jpg */; };
 		863BEBE91993367600D7E84C /* UCB_Panorama_View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 863BEBE81993367600D7E84C /* UCB_Panorama_View.jpg */; };
-		863BEBEB19933B5D00D7E84C /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BEBEA19933B5D00D7E84C /* avatar.png */; };
 		863BEBED19933B7D00D7E84C /* avatarF.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BEBEC19933B7D00D7E84C /* avatarF.png */; };
+		863BEBF71993532100D7E84C /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BEBF61993532100D7E84C /* avatar.png */; };
 		8643C61F198F43B8000B7BA7 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8643C61E198F43B8000B7BA7 /* DetailsViewController.m */; };
 		8643C622198F4669000B7BA7 /* DirectReporteesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8643C621198F4669000B7BA7 /* DirectReporteesViewController.m */; };
 		8643C625198F5F2A000B7BA7 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8643C624198F5F2A000B7BA7 /* AboutViewController.m */; };
@@ -196,8 +196,6 @@
 		8649E60019920395006AFAE7 /* PLViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8649E5D819920394006AFAE7 /* PLViewBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8649E60119920395006AFAE7 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8649E5DB19920394006AFAE7 /* README.txt */; };
 		8649E603199209E3006AFAE7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8649E602199209E3006AFAE7 /* CoreMotion.framework */; };
-		8649E60519920C0F006AFAE7 /* UCB-Raw-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 8649E60419920C0F006AFAE7 /* UCB-Raw-Image.png */; };
-		865022721990880F00891CD7 /* UCB-Raw-Image-568_h.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 865022711990880F00891CD7 /* UCB-Raw-Image-568_h.jpg */; };
 		86502275199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86502273199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg */; };
 		86502276199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86502274199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg */; };
 		8650227719908A7A00891CD7 /* ubc_location.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8644312F198D0D4000A10371 /* ubc_location.txt */; };
@@ -331,8 +329,8 @@
 		8633FA31198CE4B800D77B8E /* Ukraine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ukraine.jpg; sourceTree = "<group>"; };
 		8633FA32198CE4B800D77B8E /* US.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = US.jpg; sourceTree = "<group>"; };
 		863BEBE81993367600D7E84C /* UCB_Panorama_View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UCB_Panorama_View.jpg; sourceTree = "<group>"; };
-		863BEBEA19933B5D00D7E84C /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		863BEBEC19933B7D00D7E84C /* avatarF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatarF.png; sourceTree = "<group>"; };
+		863BEBF61993532100D7E84C /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		8643C61D198F43B8000B7BA7 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		8643C61E198F43B8000B7BA7 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		8643C620198F4669000B7BA7 /* DirectReporteesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectReporteesViewController.h; sourceTree = "<group>"; };
@@ -530,8 +528,6 @@
 		8649E5DA19920394006AFAE7 /* PLViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLViewDelegate.h; sourceTree = "<group>"; };
 		8649E5DB19920394006AFAE7 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		8649E602199209E3006AFAE7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		8649E60419920C0F006AFAE7 /* UCB-Raw-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UCB-Raw-Image.png"; sourceTree = "<group>"; };
-		865022711990880F00891CD7 /* UCB-Raw-Image-568_h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UCB-Raw-Image-568_h.jpg"; sourceTree = "<group>"; };
 		86502273199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UCB-loginScreen-640x1136@2x.jpg"; sourceTree = "<group>"; };
 		86502274199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UCB-loginScreen640x960@2x.jpg"; sourceTree = "<group>"; };
 		866456B5198CE0C300ABE5A4 /* Postman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postman.h; sourceTree = "<group>"; };
@@ -751,7 +747,7 @@
 				8643C632198F6ACC000B7BA7 /* antimo.jpg */,
 				8643C633198F6ACC000B7BA7 /* arpit.jpg */,
 				8643C634198F6ACC000B7BA7 /* avatar.jpg */,
-				863BEBEA19933B5D00D7E84C /* avatar.png */,
+				863BEBF61993532100D7E84C /* avatar.png */,
 				863BEBEC19933B7D00D7E84C /* avatarF.png */,
 				8643C635198F6ACC000B7BA7 /* beth.jpg */,
 				8643C636198F6ACC000B7BA7 /* bill.jpg */,
@@ -1092,8 +1088,6 @@
 				86B74AF6198B7BA30094C98C /* menu@2x.png */,
 				86B74AF4198B7B9F0094C98C /* menu.png */,
 				86B74AEB198B62130094C98C /* Logo-258X60.png */,
-				8649E60419920C0F006AFAE7 /* UCB-Raw-Image.png */,
-				865022711990880F00891CD7 /* UCB-Raw-Image-568_h.jpg */,
 				86502273199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg */,
 				86502274199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg */,
 			);
@@ -1215,7 +1209,6 @@
 				86443129198D065800A10371 /* holidays.sqlite in Resources */,
 				8643C68B198F6ACC000B7BA7 /* burkhard.jpg in Resources */,
 				8643C68D198F6ACC000B7BA7 /* christine.jpg in Resources */,
-				8649E60519920C0F006AFAE7 /* UCB-Raw-Image.png in Resources */,
 				8643C6B1198F6ACC000B7BA7 /* masanori.jpg in Resources */,
 				8643C6AD198F6ACC000B7BA7 /* laurence.jpg in Resources */,
 				8633FA5A198CE4B800D77B8E /* US.jpg in Resources */,
@@ -1311,7 +1304,6 @@
 				86502276199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg in Resources */,
 				8643C6BD198F6ACC000B7BA7 /* osamu.jpg in Resources */,
 				867121D2198CAEBC00DFAC22 /* ic_device_access_call_large@2x.png in Resources */,
-				865022721990880F00891CD7 /* UCB-Raw-Image-568_h.jpg in Resources */,
 				8643C6CC198F6ACC000B7BA7 /* walter.jpg in Resources */,
 				8643C6AE198F6ACC000B7BA7 /* maciej.jpg in Resources */,
 				8643C685198F6ACC000B7BA7 /* antimo.jpg in Resources */,
@@ -1339,6 +1331,7 @@
 				867121D3198CAEBC00DFAC22 /* ic_content_email_large@2x.png in Resources */,
 				8633FA48198CE4B800D77B8E /* Mexico.jpg in Resources */,
 				8633FA41198CE4B800D77B8E /* Hungary.jpg in Resources */,
+				863BEBF71993532100D7E84C /* avatar.png in Resources */,
 				8643C698198F6ACC000B7BA7 /* eric.jpg in Resources */,
 				8643C6A7198F6ACC000B7BA7 /* jochum.jpg in Resources */,
 				8643C694198F6ACC000B7BA7 /* dirk.jpg in Resources */,
@@ -1359,7 +1352,6 @@
 				863BEBED19933B7D00D7E84C /* avatarF.png in Resources */,
 				8649E60119920395006AFAE7 /* README.txt in Resources */,
 				8643C6A0198F6ACC000B7BA7 /* hirofumi.jpg in Resources */,
-				863BEBEB19933B5D00D7E84C /* avatar.png in Resources */,
 				8643C6B6198F6ACC000B7BA7 /* minako.jpg in Resources */,
 				8643C67B198F6ACC000B7BA7 /* ajay.jpg in Resources */,
 				860CE0ED198BB23B0067FD1B /* ic_holidays@2x.png in Resources */,
