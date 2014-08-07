@@ -19,6 +19,7 @@
 
 }
 @property (weak, nonatomic) IBOutlet MKMapView *mapViewOutLet;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *mapModeSelector;
 
 @end
 
@@ -105,5 +106,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)changeMapType:(UISegmentedControl *)sender
+{
+    self.mapViewOutLet.mapType = sender.selectedSegmentIndex;
+}
 
 @end

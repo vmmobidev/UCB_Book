@@ -8,20 +8,17 @@
 
 #import "ViewController.h"
 #import "SignInViewController.h"
+#import "PLView.h"
+#import "PLJSONLoader.h"
 
-@interface ViewController () <UIScrollViewDelegate, signInDelegate>
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *backgroundImageHeightConst;
+@interface ViewController () <UIScrollViewDelegate, signInDelegate, PLViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *logInButton;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet PLView *plView;
 
 @end
 
 @implementation ViewController
-{
-    NSTimer *movementTimer;
-    NSInteger currentPageNo;
-}
+
 
 - (void)viewDidLoad
 {
@@ -31,7 +28,6 @@
     if ([UIScreen mainScreen].bounds.size.height != 568)
     {
 //        self.backgroundView.image = [UIImage imageNamed:@"UCB-Raw-Image-480h.png"];
-        self.backgroundImageHeightConst.constant = 480;
     }
     
     self.logInButton.layer.borderColor = [UIColor blackColor].CGColor;
@@ -40,51 +36,16 @@
     
     self.navigationController.navigationBarHidden = YES;
     
+    self.plView.delegate = self;
+	self.plView.isAccelerometerEnabled = YES;
+	self.plView.isScrollingEnabled = YES;
+	self.plView.isInertiaEnabled = YES;
     
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
+    NSObject<PLIPanorama> *panorama = nil;
+    panorama = [PLSphericalPanorama panorama];
+    [(PLSphericalPanorama *)panorama setTexture:[PLTexture textureWithImage:[PLImage imageWithPath:[[NSBundle mainBundle] pathForResource:@"UCB-Raw-Image" ofType:@"png"]]]];
     
-    movementTimer = [NSTimer scheduledTimerWithTimeInterval:2
-                                                     target:self
-                                                   selector:@selector(timerIsFired:)
-                                                   userInfo:nil
-                                                    repeats:YES];
-    
-    currentPageNo = 0;
-    [self setScrollView:self.scrollView toPageNo:currentPageNo animated:NO];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [movementTimer invalidate];
-    movementTimer = nil;
-}
-
-- (void)timerIsFired:(NSTimer *)firedTimer
-{
-    if (currentPageNo != 3)
-    {
-        currentPageNo++;
-        [self setScrollView:self.scrollView toPageNo:currentPageNo animated:YES];
-    }else
-    {
-        currentPageNo = 0;
-        [self setScrollView:self.scrollView toPageNo:currentPageNo animated:YES];
-    }
-}
-
-- (void)setScrollView:(UIScrollView *)scrollView toPageNo:(NSInteger)toPageNo animated:(BOOL)animated
-{
-    CGPoint nextContentOffset = CGPointMake(toPageNo*320, 0);
-    [scrollView setContentOffset:nextContentOffset animated:animated];
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    currentPageNo = [scrollView contentOffset].x / 320;
+    [self.plView setPanorama:panorama];
 }
 
 - (void)didReceiveMemoryWarning
@@ -109,6 +70,16 @@
 - (void)loginSucessfull
 {
     [self performSegueWithIdentifier:@"revealVCSegue" sender:self];
+}
+
+- (BOOL)view:(UIView<PLIView> *)pView shouldBeginInertia:(CGPoint)starPoint endPoint:(CGPoint)endPoint
+{
+    return YES;
+}
+
+-(BOOL)view:(UIView<PLIView> *)pView shouldRunInertia:(CGPoint)starPoint endPoint:(CGPoint)endPoint
+{
+    return YES;
 }
 
 @end

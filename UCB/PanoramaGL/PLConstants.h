@@ -123,15 +123,15 @@
 #pragma mark -
 #pragma mark inertia consts
 
-#define kDefaultInertiaInterval 1
+#define kDefaultInertiaInterval .5
 
 #pragma mark -
 #pragma mark accelerometer consts
 
-#define kDefaultAccelerometerSensitivity	7.0f
+#define kDefaultAccelerometerSensitivity	2.0f
 #define kDefaultAccelerometerInterval		1.0f/60.0f
-#define kAccelerometerSensitivityMinValue	1.0f
-#define kAccelerometerSensitivityMaxValue	10.0f
+#define kAccelerometerSensitivityMinValue	0.3f
+#define kAccelerometerSensitivityMaxValue	0.7f
 #define kAccelerometerMultiplyFactor		100.0f
 
 #pragma mark -
@@ -142,7 +142,7 @@
 #pragma mark -
 #pragma mark perspective consts
 
-#define kPerspectiveValue	290.0f
+#define kPerspectiveValue	270.0f
 #define kPerspectiveZNear	0.01f
 #define kPerspectiveZFar	100.0f
 

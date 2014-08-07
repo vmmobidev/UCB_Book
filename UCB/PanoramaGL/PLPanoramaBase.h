@@ -26,8 +26,8 @@
     #pragma mark -
     #pragma mark member variables
 @private
-	PLTexture **previewTextures;
-	PLTexture **textures;
+	PLTexture *__autoreleasing*previewTextures;
+	PLTexture *__autoreleasing*textures;
 }
 
 @end

@@ -169,19 +169,30 @@
     {
         return;
     }
+
+    UIApplication *application = [UIApplication sharedApplication];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"lync://"]];
     
-    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
-    
-    if ([MFMessageComposeViewController canSendText])
+    if ([application canOpenURL:url])
     {
-        messageController.body = @"";
-		messageController.recipients = [NSArray arrayWithObjects:toUser.mobileNo, nil];
-		messageController.messageComposeDelegate = self;
-        [self presentViewController:messageController
-                           animated:YES
-                         completion:^{
-                             
-                         }];
+        NSLog(@"Found lync");
+        [application openURL:url];
+    }else
+    {
+        MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+        
+        if ([MFMessageComposeViewController canSendText])
+        {
+            messageController.body = @"";
+            messageController.recipients = [NSArray arrayWithObjects:toUser.mobileNo, nil];
+            messageController.messageComposeDelegate = self;
+            [self presentViewController:messageController
+                               animated:YES
+                             completion:^{
+                                 
+                             }];
+        }
+
     }
 }
 

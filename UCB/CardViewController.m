@@ -213,20 +213,32 @@
         return;
     }
     
-    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+    UIApplication *application = [UIApplication sharedApplication];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"lync://"]];
     
-    if ([MFMessageComposeViewController canSendText])
+    if ([application canOpenURL:url])
     {
-        messageController.body = @"";
-		messageController.recipients = [NSArray arrayWithObjects:self.userToBeShown.mobileNo, nil];
-		messageController.messageComposeDelegate = self;
-        [self presentViewController:messageController
-                           animated:YES
-                         completion:^{
-                             
-                         }];
+        NSLog(@"Found lync");
+        [application openURL:url];
+    }else
+    {
+        MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+        
+        if ([MFMessageComposeViewController canSendText])
+        {
+            messageController.body = @"";
+            messageController.recipients = [NSArray arrayWithObjects:self.userToBeShown.mobileNo, nil];
+            messageController.messageComposeDelegate = self;
+            [self presentViewController:messageController
+                               animated:YES
+                             completion:^{
+                                 
+                             }];
+        }
+        
     }
 }
+
 - (IBAction)emailTo:(UIButton *)sender
 {
     MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc]init];

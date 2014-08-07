@@ -99,7 +99,7 @@
                             "Mobile": "+32-494-578282",
                             "Fax": "Not Available",
                             "Email": "Sylvie.Dumont@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U044070",
                             "Reportees": "U022308,U029880,U031196,U028067,U044204,U045965,U044449"
                             },
@@ -286,7 +286,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Delphine.Hajaji@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U000906",
                             "Reportees": null
                             },
@@ -320,7 +320,7 @@
                             "Mobiles": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Karol.Kobus@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U000906",
                             "Reportees": null
                             },
@@ -371,7 +371,7 @@
                             "Mobile": "+32-499-614 809",
                             "Fax": "Not Available",
                             "Email": "Dolores.Seoane@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U000906",
                             "Reportees": null
                             },
@@ -439,7 +439,7 @@
                             "Mobile": "+32-475-273543",
                             "Fax": "+32-2-386 3244",
                             "Email": "Xavier.Cullus@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U030154",
                             "Reportees": null
                             },
@@ -660,7 +660,7 @@
                             "Mobile": "+972-3-768 9456",
                             "Fax": "Not Available",
                             "Email": "Ranit.Aharonov@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U046306",
                             "Reportees": null
                             },
@@ -711,7 +711,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Not Available",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U046306",
                             "Reportees": null
                             },
@@ -728,7 +728,7 @@
                             "Mobile": "+972-54-460 4690",
                             "Fax": "Not Available",
                             "Email": "Yaara.Goldschmidt@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U046306",
                             "Reportees": null
                             },
@@ -745,7 +745,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "John.Harrington@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U046306",
                             "Reportees": null
                             },
@@ -762,7 +762,7 @@
                             "Mobile": "+972-3-768 9404",
                             "Fax": "Not Available",
                             "Email": "Hani.Neuvirth-Telem@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U046306",
                             "Reportees": null
                             },
@@ -779,7 +779,7 @@
                             "Mobile": "+972-3-768 9496",
                             "Fax": "Not Available",
                             "Email": "Naama.Parush-Shear-Yashuv@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U046306",
                             "Reportees": null
                             },
@@ -813,7 +813,7 @@
                             "Mobile": "+32-49-836 2355",
                             "Fax": "Not Available",
                             "Email": "Larissa.URBANUS@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U046306",
                             "Reportees": null
                             },
@@ -1068,7 +1068,7 @@
                             "Mobile": "Not Available",
                             "Fax": "+81-3-6864 7378",
                             "Email": "Tomoaki.Ikeda@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U014193",
                             "Reportees": null
                             },
@@ -1170,7 +1170,7 @@
                             "Mobile": "Not Available",
                             "Fax": "+81-3-6864 73678",
                             "Email": "Takashi.Naito@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U014193",
                             "Reportees": null
                             },
@@ -1187,7 +1187,7 @@
                             "Mobile": "Not Available",
                             "Fax": "+81-3-6864 73678",
                             "Email": "Muneki.Niikura@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U014193",
                             "Reportees": null
                             },
@@ -1204,7 +1204,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Koji.Sekino@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U014193",
                             "Reportees": null
                             },
@@ -1221,7 +1221,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Hiroyuki.Tamura@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U014193",
                             "Reportees": null
                             },
@@ -1238,7 +1238,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Katsumi.Tsukamoto@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U014193",
                             "Reportees": null
                             },
@@ -1255,7 +1255,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Ami.Watanuki@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U014193",
                             "Reportees": null
                             },
@@ -1272,7 +1272,7 @@
                             "Mobile": "Not Available",
                             "Fax": "Not Available",
                             "Email": "Kenichi.Yamamoto@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U014193",
                             "Reportees": null
                             },
@@ -1340,7 +1340,7 @@
                             "Mobile": "+32-47-648 2783",
                             "Fax": "Not Available",
                             "Email": "Steven.Vandamme@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U008268",
                             "Reportees": null
                             },
@@ -1442,7 +1442,7 @@
                             "Mobile": "+1-678-446 5862",
                             "Fax": "Not Available",
                             "Email": "Christine.O'Brien@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U048382",
                             "Reportees": null
                             },
@@ -1459,7 +1459,7 @@
                             "Mobile": "52 1 55 1068 8238",
                             "Fax": "Not Available",
                             "Email": "Cid.Samperio@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U048382",
                             "Reportees": null
                             },
@@ -1782,7 +1782,7 @@
                             "Mobile": "+86-13-761912557",
                             "Fax": "Not Available",
                             "Email": "Weixing.Dai@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U033639",
                             "Reportees": null
                             },
@@ -1799,7 +1799,7 @@
                             "Mobile": "+86-13-761912557",
                             "Fax": "Not Available",
                             "Email": "Jack.GU@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U033639",
                             "Reportees": null
                             },
@@ -1833,7 +1833,7 @@
                             "Mobile": "+1-39-178 61782",
                             "Fax": "Not Available",
                             "Email": "Minghao.Zhu@ucb.com",
-                            "Photo": "avatar.jpg",
+                            "Photo": "avatar.png",
                             "ReportingManagerId": "U033639",
                             "Reportees": null
                             }
