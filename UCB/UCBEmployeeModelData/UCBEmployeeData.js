@@ -99,7 +99,7 @@
                             "Mobile": "+32-494-578282",
                             "Fax": "Not Available",
                             "Email": "Sylvie.Dumont@ucb.com",
-                            "Photo": "avatar.png",
+                            "Photo": "avatarF.png",
                             "ReportingManagerId": "U044070",
                             "Reportees": "U022308,U029880,U031196,U028067,U044204,U045965,U044449"
                             },

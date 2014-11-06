@@ -17,6 +17,8 @@
 		861272EB198CB76900B5A169 /* HolidayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861272EA198CB76900B5A169 /* HolidayViewController.m */; };
 		861272ED198CB8F100B5A169 /* ind_flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 861272EC198CB8F100B5A169 /* ind_flag.png */; };
 		861272F0198CB97D00B5A169 /* HolidayDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */; };
+		8613340719F11211008C12F6 /* UCB_Panorama_View_Latest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8613340619F11211008C12F6 /* UCB_Panorama_View_Latest.jpg */; };
+		8613340B19F13B04008C12F6 /* UCB-loginScreen640x960.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8613340A19F13B04008C12F6 /* UCB-loginScreen640x960.jpg */; };
 		86236ED219908DB000A631D1 /* txtFldImg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86236ED119908DB000A631D1 /* txtFldImg@2x.png */; };
 		86236ED61990998600A631D1 /* pin_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 86236ED51990998600A631D1 /* pin_map.png */; };
 		862D15FB198D163F00837F51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15FA198D163F00837F51 /* QuartzCore.framework */; };
@@ -64,7 +66,7 @@
 		8633FA58198CE4B800D77B8E /* UK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA30198CE4B800D77B8E /* UK.jpg */; };
 		8633FA59198CE4B800D77B8E /* Ukraine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA31198CE4B800D77B8E /* Ukraine.jpg */; };
 		8633FA5A198CE4B800D77B8E /* US.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8633FA32198CE4B800D77B8E /* US.jpg */; };
-		863BEBE91993367600D7E84C /* UCB_Panorama_View.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 863BEBE81993367600D7E84C /* UCB_Panorama_View.jpg */; };
+		863BEBE91993367600D7E84C /* UCB_Panorama_View_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 863BEBE81993367600D7E84C /* UCB_Panorama_View_1.jpg */; };
 		863BEBED19933B7D00D7E84C /* avatarF.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BEBEC19933B7D00D7E84C /* avatarF.png */; };
 		863BEBF71993532100D7E84C /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 863BEBF61993532100D7E84C /* avatar.png */; };
 		8643C61F198F43B8000B7BA7 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8643C61E198F43B8000B7BA7 /* DetailsViewController.m */; };
@@ -218,6 +220,7 @@
 		867F6E95198FBA3E0011018D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F4198D15EC00837F51 /* libz.dylib */; };
 		867F6E96198FBA450011018D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F6198D15F600837F51 /* MobileCoreServices.framework */; };
 		867F6E97198FBA4D0011018D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862D15F8198D15FE00837F51 /* StoreKit.framework */; };
+		8682293A19948009006E2E97 /* ucb-location-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8682293919948009006E2E97 /* ucb-location-icon.png */; };
 		8689E94F198F66960019AA08 /* MapDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8689E94E198F66960019AA08 /* MapDetailsViewController.m */; };
 		8689E951198F85F20019AA08 /* ic_ucb_logo_option_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */; };
 		8689E953198F8CD10019AA08 /* aboutUs.html in Resources */ = {isa = PBXBuildFile; fileRef = 8689E952198F8CD10019AA08 /* aboutUs.html */; };
@@ -245,7 +248,6 @@
 		86B74AFB198B88BE0094C98C /* DirectoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74AFA198B88BE0094C98C /* DirectoryCell.m */; };
 		86B74AFF198BA22E0094C98C /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74AFE198BA22E0094C98C /* UserProfile.m */; };
 		86B74B02198BA4300094C98C /* WholeEmployeeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B74B01198BA4300094C98C /* WholeEmployeeDetails.m */; };
-		86FA0EFB1993A1F50057EE67 /* ucb-location-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86FA0EFA1993A1F50057EE67 /* ucb-location-icon.png */; };
 		DAE7933B3C0040E080D4D848 /* libPods-UCB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B963E477C07B419AA6578034 /* libPods-UCB.a */; };
 /* End PBXBuildFile section */
 
@@ -273,6 +275,9 @@
 		861272EC198CB8F100B5A169 /* ind_flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ind_flag.png; sourceTree = "<group>"; };
 		861272EE198CB97D00B5A169 /* HolidayDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayDetailsViewController.h; sourceTree = "<group>"; };
 		861272EF198CB97D00B5A169 /* HolidayDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayDetailsViewController.m; sourceTree = "<group>"; };
+		8613340519F10F80008C12F6 /* PLConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLConstants.h; sourceTree = "<group>"; };
+		8613340619F11211008C12F6 /* UCB_Panorama_View_Latest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UCB_Panorama_View_Latest.jpg; sourceTree = "<group>"; };
+		8613340A19F13B04008C12F6 /* UCB-loginScreen640x960.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UCB-loginScreen640x960.jpg"; sourceTree = "<group>"; };
 		86236ED119908DB000A631D1 /* txtFldImg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "txtFldImg@2x.png"; sourceTree = "<group>"; };
 		86236ED51990998600A631D1 /* pin_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_map.png; sourceTree = "<group>"; };
 		862D15EE198D15CC00837F51 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -329,7 +334,7 @@
 		8633FA30198CE4B800D77B8E /* UK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UK.jpg; sourceTree = "<group>"; };
 		8633FA31198CE4B800D77B8E /* Ukraine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ukraine.jpg; sourceTree = "<group>"; };
 		8633FA32198CE4B800D77B8E /* US.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = US.jpg; sourceTree = "<group>"; };
-		863BEBE81993367600D7E84C /* UCB_Panorama_View.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UCB_Panorama_View.jpg; sourceTree = "<group>"; };
+		863BEBE81993367600D7E84C /* UCB_Panorama_View_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UCB_Panorama_View_1.jpg; sourceTree = "<group>"; };
 		863BEBEC19933B7D00D7E84C /* avatarF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatarF.png; sourceTree = "<group>"; };
 		863BEBF61993532100D7E84C /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		8643C61D198F43B8000B7BA7 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
@@ -448,7 +453,6 @@
 		8649E58919920394006AFAE7 /* PLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCamera.h; sourceTree = "<group>"; };
 		8649E58A19920394006AFAE7 /* PLCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCamera.m; sourceTree = "<group>"; };
 		8649E58B19920394006AFAE7 /* PLCameraProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCameraProtected.h; sourceTree = "<group>"; };
-		8649E58C19920394006AFAE7 /* PLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLConstants.h; sourceTree = "<group>"; };
 		8649E58D19920394006AFAE7 /* PLCubicPanorama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCubicPanorama.h; sourceTree = "<group>"; };
 		8649E58E19920394006AFAE7 /* PLCubicPanorama.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCubicPanorama.m; sourceTree = "<group>"; };
 		8649E58F19920394006AFAE7 /* PLCylindricalPanorama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCylindricalPanorama.h; sourceTree = "<group>"; };
@@ -546,6 +550,7 @@
 		867121D7198CB83F00DFAC22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		867121D9198CBA8C00DFAC22 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		867F6E90198FBA090011018D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		8682293919948009006E2E97 /* ucb-location-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ucb-location-icon.png"; sourceTree = "<group>"; };
 		8689E94D198F66960019AA08 /* MapDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDetailsViewController.h; sourceTree = "<group>"; };
 		8689E94E198F66960019AA08 /* MapDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDetailsViewController.m; sourceTree = "<group>"; };
 		8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_ucb_logo_option_01.png; sourceTree = "<group>"; };
@@ -585,7 +590,6 @@
 		86B74AFE198BA22E0094C98C /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfile.m; sourceTree = "<group>"; };
 		86B74B00198BA4300094C98C /* WholeEmployeeDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WholeEmployeeDetails.h; sourceTree = "<group>"; };
 		86B74B01198BA4300094C98C /* WholeEmployeeDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WholeEmployeeDetails.m; sourceTree = "<group>"; };
-		86FA0EFA1993A1F50057EE67 /* ucb-location-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ucb-location-icon.png"; sourceTree = "<group>"; };
 		B963E477C07B419AA6578034 /* libPods-UCB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0ADE6B22CF42749C65A34D /* Pods-UCB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCB.xcconfig"; path = "Pods/Pods-UCB.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -851,7 +855,7 @@
 				8649E58919920394006AFAE7 /* PLCamera.h */,
 				8649E58A19920394006AFAE7 /* PLCamera.m */,
 				8649E58B19920394006AFAE7 /* PLCameraProtected.h */,
-				8649E58C19920394006AFAE7 /* PLConstants.h */,
+				8613340519F10F80008C12F6 /* PLConstants.h */,
 				8649E58D19920394006AFAE7 /* PLCubicPanorama.h */,
 				8649E58E19920394006AFAE7 /* PLCubicPanorama.m */,
 				8649E58F19920394006AFAE7 /* PLCylindricalPanorama.h */,
@@ -1069,8 +1073,9 @@
 		86B74AED198B62180094C98C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				86FA0EFA1993A1F50057EE67 /* ucb-location-icon.png */,
-				863BEBE81993367600D7E84C /* UCB_Panorama_View.jpg */,
+				8682293919948009006E2E97 /* ucb-location-icon.png */,
+				863BEBE81993367600D7E84C /* UCB_Panorama_View_1.jpg */,
+				8613340619F11211008C12F6 /* UCB_Panorama_View_Latest.jpg */,
 				86236ED51990998600A631D1 /* pin_map.png */,
 				86236ED119908DB000A631D1 /* txtFldImg@2x.png */,
 				8689E950198F85F20019AA08 /* ic_ucb_logo_option_01.png */,
@@ -1093,6 +1098,7 @@
 				86B74AEB198B62130094C98C /* Logo-258X60.png */,
 				86502273199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg */,
 				86502274199088F900891CD7 /* UCB-loginScreen640x960@2x.jpg */,
+				8613340A19F13B04008C12F6 /* UCB-loginScreen640x960.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -1247,6 +1253,7 @@
 				8633FA45198CE4B800D77B8E /* Italy.jpg in Resources */,
 				86236ED219908DB000A631D1 /* txtFldImg@2x.png in Resources */,
 				8633FA4A198CE4B800D77B8E /* New-zealand.jpg in Resources */,
+				8613340B19F13B04008C12F6 /* UCB-loginScreen640x960.jpg in Resources */,
 				8643C692198F6ACC000B7BA7 /* david_wilson.jpg in Resources */,
 				86502275199088F900891CD7 /* UCB-loginScreen-640x1136@2x.jpg in Resources */,
 				8643C693198F6ACC000B7BA7 /* didier.jpg in Resources */,
@@ -1271,7 +1278,7 @@
 				8643C696198F6ACC000B7BA7 /* duane.jpg in Resources */,
 				8643C683198F6ACC000B7BA7 /* anne.jpg in Resources */,
 				8643C6C1198F6ACC000B7BA7 /* ralph.jpg in Resources */,
-				863BEBE91993367600D7E84C /* UCB_Panorama_View.jpg in Resources */,
+				863BEBE91993367600D7E84C /* UCB_Panorama_View_1.jpg in Resources */,
 				867121D4198CAEBC00DFAC22 /* ic_func_textmsg_primary_large@2x.png in Resources */,
 				8643C6BA198F6ACC000B7BA7 /* olivier_hustin.jpg in Resources */,
 				8633FA53198CE4B800D77B8E /* Spain.jpg in Resources */,
@@ -1325,12 +1332,12 @@
 				8633FA4B198CE4B800D77B8E /* Norway.jpg in Resources */,
 				8643C6B9198F6ACC000B7BA7 /* olivier_deschamps.jpg in Resources */,
 				8649E5DC19920394006AFAE7 /* CHANGES.txt in Resources */,
-				86FA0EFB1993A1F50057EE67 /* ucb-location-icon.png in Resources */,
 				8633FA34198CE4B800D77B8E /* Austria.jpg in Resources */,
 				8643C684198F6ACC000B7BA7 /* annick.jpg in Resources */,
 				8643C68A198F6ACC000B7BA7 /* brian.jpg in Resources */,
 				86B74AEC198B62130094C98C /* Logo-258X60.png in Resources */,
 				8643C6A8198F6ACC000B7BA7 /* judith.jpg in Resources */,
+				8613340719F11211008C12F6 /* UCB_Panorama_View_Latest.jpg in Resources */,
 				8633FA52198CE4B800D77B8E /* South-korea.jpg in Resources */,
 				867121D3198CAEBC00DFAC22 /* ic_content_email_large@2x.png in Resources */,
 				8633FA48198CE4B800D77B8E /* Mexico.jpg in Resources */,
@@ -1342,6 +1349,7 @@
 				8643C6C7198F6ACC000B7BA7 /* srinivasa.jpg in Resources */,
 				8643C6BE198F6ACC000B7BA7 /* pascal.jpg in Resources */,
 				8649E5E319920394006AFAE7 /* LICENSE.txt in Resources */,
+				8682293A19948009006E2E97 /* ucb-location-icon.png in Resources */,
 				860CE0E3198BA94A0067FD1B /* ic_logout@2x.png in Resources */,
 				8643C6B8198F6ACC000B7BA7 /* olivier_corin.jpg in Resources */,
 				8643C6B2198F6ACC000B7BA7 /* maud.jpg in Resources */,
@@ -1600,8 +1608,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: senthil nathan Karuppaiah (QGMN7468R5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: senthil nathan Karuppaiah (QGMN7468R5)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UCB",
@@ -1622,8 +1630,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: senthil nathan Karuppaiah (QGMN7468R5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: senthil nathan Karuppaiah (QGMN7468R5)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UCB",

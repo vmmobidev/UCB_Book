@@ -36,8 +36,8 @@
 #pragma mark -
 #pragma mark texture consts
 
-#define kTextureMaxWidth	1024
-#define kTextureMaxHeight	1024
+#define kTextureMaxWidth	10680
+#define kTextureMaxHeight	2383
 
 #pragma mark -
 #pragma mark cube consts
@@ -123,7 +123,7 @@
 #pragma mark -
 #pragma mark inertia consts
 
-#define kDefaultInertiaInterval .5
+#define kDefaultInertiaInterval 3
 
 #pragma mark -
 #pragma mark accelerometer consts
@@ -142,7 +142,7 @@
 #pragma mark -
 #pragma mark perspective consts
 
-#define kPerspectiveValue	270.0f
+#define kPerspectiveValue	290.0f
 #define kPerspectiveZNear	0.01f
 #define kPerspectiveZFar	100.0f
 
